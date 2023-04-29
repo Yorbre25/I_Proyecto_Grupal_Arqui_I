@@ -11,4 +11,5 @@ module controlUnit(input [1:0] opType, input [3:0] opCode, output immSrc,branchF
 	branchFlagControl myBranchFlag (.opType(opType),.branchFlag(branchFlag));
 	aluControl myAluControl(.opType(opType),.opCode(opCode),.aluControl(aluControl));
 	memWriteControl myMemWriteControl(.opType(opType),.opCode(opCode),.memWrite(memWrite));
+	memToRegControl myMemToRegControl(.opType(opType),.opCode(opCode),.memToReg(memToReg));
 endmodule 

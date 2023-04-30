@@ -11,10 +11,10 @@ z2
 cModel Technology
 Z0 dC:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/simulation/questa
 T_opt
-!s110 1682873937
-V6Z9zlZAkZZ`A]bBbd9c>;0
+!s110 1682888733
+VL@Mb>>aj_iOnM>4hAf41<1
 04 11 4 work UnitTestALU fast 0
-=1-047c16432f6e-644e9e51-30-2fc4
+=1-047c16432f6e-644ed81d-c0-19bc
 !s124 OEM10U5 
 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work +acc
 Z1 tCvgOpt 0
@@ -22,7 +22,7 @@ n@_opt
 OL;O;2021.2;73
 vALU
 Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z3 !s110 1682873936
+Z3 !s110 1682888732
 !i10b 1
 !s100 TB9o46aDDY^?U7BT9R:LP0
 ISBPieSn<QNX8bXDW]<^MR2
@@ -38,7 +38,7 @@ Z5 OL;L;2021.2;73
 r1
 !s85 0
 31
-Z6 !s108 1682873936.000000
+Z6 !s108 1682888732.000000
 !s107 C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture|C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv|
 !i113 0
@@ -76,15 +76,15 @@ vOperator
 R2
 R3
 !i10b 1
-!s100 3jN8e6h[gDL9jn?HdLL^<2
-IbDlB[dGQ8EL@EjmYDYR>[0
+!s100 :5c7[m]^9;^KCMNmMVXeY1
+IQ?W^aLjGe2ACWBfK<XV3^0
 S1
 R0
-w1682870878
+w1682885852
 8C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv
 FC:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv
 !i122 1
-L0 1 32
+Z9 L0 1 32
 R4
 R5
 r1
@@ -102,15 +102,15 @@ vSetFlags
 R2
 R3
 !i10b 1
-!s100 nXhhS>I:P;i@]e[?EPN9k2
-IMbI8Thg:h@MCGgUm6NI613
+!s100 3FKVRzB9[Hh>GXic[Ki`42
+I6Ye5;X^3R[ngAO_1RO_[;0
 S1
 R0
-w1682872800
+w1682888438
 8C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/SetFlags.sv
 FC:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/SetFlags.sv
 !i122 0
-Z9 L0 1 31
+R9
 R4
 R5
 r1
@@ -124,70 +124,18 @@ R7
 R8
 R1
 n@set@flags
-vTestALU
-R2
-R3
-!i10b 1
-!s100 El7];5NAAknEK=LUePzY>1
-If4iL>c?157P85Q<n615D?2
-S1
-R0
-w1682872920
-8C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/TestALU.sv
-FC:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/TestALU.sv
-!i122 5
-L0 1 23
-R4
-R5
-r1
-!s85 0
-31
-R6
-!s107 C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/TestALU.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture|C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/TestALU.sv|
-!i113 0
-R7
-R8
-R1
-n@test@a@l@u
-vTestOperator
-R2
-R3
-!i10b 1
-!s100 HNKgl9SX<CSN:NGa19?SN0
-I91zLYd^VKoiTG]<`TLF_J1
-S1
-R0
-w1682871299
-8C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/TestOperator.sv
-FC:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/TestOperator.sv
-!i122 4
-R9
-R4
-R5
-r1
-!s85 0
-31
-R6
-!s107 C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/TestOperator.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture|C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/TestOperator.sv|
-!i113 0
-R7
-R8
-R1
-n@test@operator
 vUnitTestALU
 R2
 R3
 !i10b 1
-!s100 DV=ef5zC905?[Z0_24kU:2
-I>Kbh;m];42ZnDD81^]cOX0
+!s100 B2K[NZiHNJDbef50IB>Z]0
+I;40XPhG87X4B1UZMN5WH=1
 S1
 R0
-w1682873315
+w1682888719
 8C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/UnitTestALU.sv
 FC:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/UnitTestALU.sv
-!i122 6
+!i122 4
 L0 1 91
 R4
 R5

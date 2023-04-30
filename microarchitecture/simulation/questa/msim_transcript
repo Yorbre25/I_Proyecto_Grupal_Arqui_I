@@ -1,0 +1,165 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do processor_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work rtl_work 
+# Copying c:/intelfpga_lite/22.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/SetFlags.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 10:58:56 on Apr 30,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/SetFlags.sv 
+# -- Compiling module SetFlags
+# 
+# Top level modules:
+# 	SetFlags
+# End time: 10:58:56 on Apr 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 10:58:56 on Apr 30,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv 
+# -- Compiling module Operator
+# 
+# Top level modules:
+# 	Operator
+# End time: 10:58:56 on Apr 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 10:58:56 on Apr 30,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv 
+# -- Compiling module Mux
+# 
+# Top level modules:
+# 	Mux
+# End time: 10:58:56 on Apr 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 10:58:56 on Apr 30,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 10:58:56 on Apr 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/TestOperator.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 10:58:56 on Apr 30,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/TestOperator.sv 
+# -- Compiling module TestOperator
+# 
+# Top level modules:
+# 	TestOperator
+# End time: 10:58:56 on Apr 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/TestALU.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 10:58:56 on Apr 30,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/TestALU.sv 
+# -- Compiling module TestALU
+# 
+# Top level modules:
+# 	TestALU
+# End time: 10:58:56 on Apr 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/UnitTestALU.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 10:58:56 on Apr 30,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/UnitTestALU.sv 
+# -- Compiling module UnitTestALU
+# 
+# Top level modules:
+# 	UnitTestALU
+# End time: 10:58:56 on Apr 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  UnitTestALU
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" UnitTestALU 
+# Start time: 10:58:56 on Apr 30,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.UnitTestALU(fast)
+# Loading work.ALU(fast)
+# Loading work.Operator(fast)
+# Loading work.Mux(fast)
+# Loading work.SetFlags(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'r_mov'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /UnitTestALU/alu1/operator File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'r_comp'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /UnitTestALU/alu1/operator File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'r_add'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /UnitTestALU/alu1/operator File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'r_sub'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /UnitTestALU/alu1/operator File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'r_mul'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /UnitTestALU/alu1/operator File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'r_div'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /UnitTestALU/alu1/operator File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'r_xor'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /UnitTestALU/alu1/operator File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'r_and'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /UnitTestALU/alu1/operator File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'r_not'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv(12).
+#    Time: 0 ps  Iteration: 0  Instance: /UnitTestALU/alu1/operator File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'r_shl'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv(13).
+#    Time: 0 ps  Iteration: 0  Instance: /UnitTestALU/alu1/operator File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'r_shr'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv(14).
+#    Time: 0 ps  Iteration: 0  Instance: /UnitTestALU/alu1/operator File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 12
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'r_mov'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /UnitTestALU/alu1/mux1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'r_comp'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /UnitTestALU/alu1/mux1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'r_add'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /UnitTestALU/alu1/mux1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'r_sub'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /UnitTestALU/alu1/mux1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'r_mul'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /UnitTestALU/alu1/mux1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'r_div'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /UnitTestALU/alu1/mux1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'r_xor'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /UnitTestALU/alu1/mux1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'r_and'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /UnitTestALU/alu1/mux1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'r_not'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /UnitTestALU/alu1/mux1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'r_shl'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv(12).
+#    Time: 0 ps  Iteration: 0  Instance: /UnitTestALU/alu1/mux1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'r_shr'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv(13).
+#    Time: 0 ps  Iteration: 0  Instance: /UnitTestALU/alu1/mux1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'result'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv(14).
+#    Time: 0 ps  Iteration: 0  Instance: /UnitTestALU/alu1/mux1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'result'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/SetFlags.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /UnitTestALU/alu1/set_flags File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 14
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# End time: 10:59:02 on Apr 30,2023, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 24

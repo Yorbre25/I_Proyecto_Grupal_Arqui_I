@@ -1,4 +1,4 @@
-module instructionDecode(input clk,input rst,en, input [31:0] inst,input WE,input [3:0] Rd,input [31:0] WD,output [31:0] bufferOut);
+module instructionDecode(input clk,input rst,en, input [31:0] inst,input WE,input [3:0] Rd,input [31:0] WD,output [147:0] bufferOut);
 	
 
 	//sub modules output

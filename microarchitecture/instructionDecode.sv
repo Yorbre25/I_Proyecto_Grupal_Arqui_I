@@ -27,7 +27,6 @@ module instructionDecode(input clk,input rst,en, input [31:0] inst,input WE,inpu
 	registerBank #(.Index_size(4),.width(32)) myRegisterBank (.clk(clk),.rst(rst),.Ra(Ra), .Rb(Rb) ,.Rd(Rd),.WE(WE),.WD(WD),.RD1(RD1),.RD2(RD2));
 	
 	
-	
 	//buffer setup
 	buffer #(.Buffer_size(116)) ID_EX (.rst(rst),.clk(clk),.en(en),.bufferInput(bufferInput),.bufferOut(bufferOut));
 	

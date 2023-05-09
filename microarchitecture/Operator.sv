@@ -15,7 +15,7 @@ module Operator #(parameter N = 4)(
 );
 	
 
-	assign r_mov = a;
+	assign r_mov = b;
 	assign r_add = a + b;
 	assign r_sub = a - b;
 	assign r_comp = a - b;
@@ -23,9 +23,9 @@ module Operator #(parameter N = 4)(
 	assign r_div = a / b;
 	assign r_xor = a ^ b;
 	assign r_and = a & b;
-	assign r_not = ~a;
-	assign r_shl = a << b;
-	assign r_shr = a >> b;
+	assign r_not = ~b;
+	assign r_shl = a <<< b;
+	assign r_shr = a >>> b;
 	
 
 

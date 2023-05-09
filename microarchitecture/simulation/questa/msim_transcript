@@ -24,21 +24,91 @@
 # Copying c:/intelfpga_lite/22.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/SetFlags.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 13:56:28 on May 07,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/SetFlags.sv 
+# -- Compiling module SetFlags
+# 
+# Top level modules:
+# 	SetFlags
+# End time: 13:56:28 on May 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 13:56:28 on May 07,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv 
+# -- Compiling module Operator
+# 
+# Top level modules:
+# 	Operator
+# End time: 13:56:28 on May 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 13:56:28 on May 07,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv 
+# -- Compiling module Mux
+# 
+# Top level modules:
+# 	Mux
+# End time: 13:56:28 on May 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 13:56:28 on May 07,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 13:56:29 on May 07,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 13:56:29 on May 07,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv 
+# -- Compiling module buffer
+# 
+# Top level modules:
+# 	buffer
+# End time: 13:56:29 on May 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/operatorsAluMux.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 13:56:29 on May 07,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/operatorsAluMux.sv 
+# -- Compiling module operatorsALUMux
+# 
+# Top level modules:
+# 	operatorsALUMux
+# End time: 13:56:29 on May 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mux41.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 13:56:29 on May 07,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mux41.sv 
+# -- Compiling module mux41
+# 
+# Top level modules:
+# 	mux41
+# End time: 13:56:29 on May 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/exec.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 13:46:41 on May 07,2023
+# Start time: 13:56:29 on May 07,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/exec.sv 
 # -- Compiling module exec
 # 
 # Top level modules:
 # 	exec
-# End time: 13:46:41 on May 07,2023, Elapsed time: 0:00:00
+# End time: 13:56:29 on May 07,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  testExec
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" testExec 
-# Start time: 13:46:41 on May 07,2023
+# Start time: 13:56:29 on May 07,2023
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Error: (vopt-13130) Failed to find design unit testExec.
 #         Searched libraries:
@@ -58,6 +128,6 @@
 # Error loading design
 # Error: Error loading design
 #        Pausing macro execution
-# MACRO ./processor_run_msim_rtl_verilog.do PAUSED at line 11
-# End time: 13:47:12 on May 07,2023, Elapsed time: 0:00:31
+# MACRO ./processor_run_msim_rtl_verilog.do PAUSED at line 18
+# End time: 14:13:59 on May 07,2023, Elapsed time: 0:17:30
 # Errors: 1, Warnings: 0

@@ -31,7 +31,7 @@ module UnitTestALU;
 		
 		alu_select = 3;
 		#5;
-		assert(result === 2) else $error("Test failed for a");
+		assert(result === 3) else $error("Test failed for b");
 		assert(flags[0] === 0) else $error("Test failed zero flag mov");
 		assert(flags[1] === 0) else $error("Test failed negative flag mov");
 		
@@ -61,19 +61,19 @@ module UnitTestALU;
 		
 		alu_select = 8;
 		#5;
-		assert(result === -3) else $error("Test failed for ~a");
+		assert(result === -4) else $error("Test failed for ~b");
 		assert(flags[0] === 0) else $error("Test failed zero flag not");
 		assert(flags[1] === 0) else $error("Test failed negative flag not");
 		
 		alu_select = 9;
 		#5;
-		assert(result === 0) else $error("Test failed for 2<<3");
+		assert(result === 0) else $error("Test failed for 2<<<3");
 		assert(flags[0] === 0) else $error("Test failed zero flag shiftL");
 		assert(flags[1] === 0) else $error("Test failed negative flag shiftL");
 
 		alu_select = 10;
 		#5;
-		assert(result === 0) else $error("Test failed for 2>>3");
+		assert(result === 0) else $error("Test failed for 2>>>3");
 		assert(flags[0] === 0) else $error("Test failed zero flag shiftR");
 		assert(flags[1] === 0) else $error("Test failed negative flag shiftR");		
 		

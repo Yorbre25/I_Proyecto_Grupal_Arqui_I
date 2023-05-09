@@ -18,7 +18,7 @@ module SetFlags #(parameter N = 4)(
 			flag0 = 1'b0;
 		
 		//Negative flag flags[1]
-		if(select <= 5)
+		if(select <= 5 || select == 9 || select == 10)
 			flag1 = result[N-1];
 		else
 			flag1 = 0;

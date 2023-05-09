@@ -11,7 +11,7 @@ cModel Technology
 Z0 dD:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/simulation/modelsim
 valuControl
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1683666186
+Z2 !s110 1683666762
 !i10b 1
 !s100 @73_LlZY2]]2GadBz>4=Y3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1683666186.000000
+Z7 !s108 1683666762.000000
 !s107 D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/aluControl.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture|D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/aluControl.sv|
 !i113 1
@@ -65,7 +65,7 @@ R10
 nbranch@flag@control
 vbuffer
 R1
-Z12 !s110 1683666185
+R2
 !i10b 1
 !s100 4@kAc`c`_lm:KeFB6h;722
 R3
@@ -73,7 +73,7 @@ IoW33A72ZDUz84kDkZIYUJ3
 R4
 S1
 R0
-w1683335689
+Z12 w1683666560
 8D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv
 FD:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv
 !i122 0
@@ -82,7 +82,7 @@ R6
 r1
 !s85 0
 31
-Z13 !s108 1683666185.000000
+R7
 !s107 D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture|D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv|
 !i113 1
@@ -91,7 +91,7 @@ R9
 R10
 vcontrolUnit
 R1
-R12
+R2
 !i10b 1
 !s100 ha2C<f^f`jDdYnT4A^D3R0
 R3
@@ -99,7 +99,7 @@ I>Kj@foic74kWGelJ9NB3z3
 R4
 S1
 R0
-w1683660185
+R12
 8D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/controlUnit.sv
 FD:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/controlUnit.sv
 !i122 4
@@ -108,7 +108,7 @@ R6
 r1
 !s85 0
 31
-R13
+R7
 !s107 D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/controlUnit.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture|D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/controlUnit.sv|
 !i113 1
@@ -126,7 +126,7 @@ I2h9P=a0JZz0Vf:XSaL1aN3
 R4
 S1
 R0
-w1683659356
+R12
 8D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/immSrcControl.sv
 FD:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/immSrcControl.sv
 !i122 5
@@ -135,7 +135,7 @@ R6
 r1
 !s85 0
 31
-R13
+R7
 !s107 D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/immSrcControl.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture|D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/immSrcControl.sv|
 !i113 1
@@ -145,24 +145,24 @@ R10
 nimm@src@control
 vinstructionDecode
 R1
-R12
+R2
 !i10b 1
-!s100 9A;:UBOhai_LPa9BKiVg?0
+!s100 4Y0l;IB53Oef1::O7^@cC0
 R3
-Iz6S4l1XjBm0JIFoRB^n:i1
+ImjR3G2Ib`UV7hY8[>MB5N1
 R4
 S1
 R0
-w1683660348
+R12
 8D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionDecode.sv
 FD:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionDecode.sv
 !i122 1
-L0 1 49
+L0 1 48
 R6
 r1
 !s85 0
 31
-R13
+R7
 !s107 D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionDecode.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture|D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionDecode.sv|
 !i113 1
@@ -180,7 +180,7 @@ I]_6G3dcOO;fI6Z2_KJC@30
 R4
 S1
 R0
-w1683666103
+R12
 8D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionDecode_tb.sv
 FD:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionDecode_tb.sv
 !i122 11
@@ -207,7 +207,7 @@ I^<=GggHC<eGn^UnNRC?^:2
 R4
 S1
 R0
-w1683342164
+R12
 8D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/memToRegControl.sv
 FD:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/memToRegControl.sv
 !i122 9
@@ -234,11 +234,11 @@ IG6_`Q0l`62Dae?l`E6TJI3
 R4
 S1
 R0
-w1683342402
+R12
 8D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/memWriteControl.sv
 FD:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/memWriteControl.sv
 !i122 8
-Z14 L0 1 8
+Z13 L0 1 8
 R6
 r1
 !s85 0
@@ -253,7 +253,7 @@ R10
 nmem@write@control
 vregisterBank
 R1
-R12
+R2
 !i10b 1
 !s100 A;Xf7X8^6;HVn[F0JSXmU3
 R3
@@ -261,7 +261,7 @@ IZ5GBMJofHO@_@UnY7``GT1
 R4
 S1
 R0
-w1683339296
+R12
 8D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/registerBank.sv
 FD:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/registerBank.sv
 !i122 2
@@ -270,7 +270,7 @@ R6
 r1
 !s85 0
 31
-R13
+R7
 !s107 D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/registerBank.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture|D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/registerBank.sv|
 !i113 1
@@ -288,11 +288,11 @@ I`nGC6k^R@`NgO;Uk^:C]A2
 R4
 S1
 R0
-w1683660234
+R12
 8D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/regWriteControl.sv
 FD:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/regWriteControl.sv
 !i122 10
-R14
+R13
 R6
 r1
 !s85 0
@@ -307,7 +307,7 @@ R10
 nreg@write@control
 vsignExtend
 R1
-R12
+R2
 !i10b 1
 !s100 I5NCGK<H3eDHZg`C`_aWP2
 R3
@@ -324,7 +324,7 @@ R6
 r1
 !s85 0
 31
-R13
+R7
 !s107 D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/signExtend.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture|D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/signExtend.sv|
 !i113 1

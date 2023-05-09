@@ -12,129 +12,129 @@
 # 
 # vlog -sv -work work +incdir+D:/TEC/Primer\ Semestre\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:03:05 on May 09,2023
+# Start time: 15:12:42 on May 09,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv 
 # -- Compiling module buffer
 # 
 # Top level modules:
 # 	buffer
-# End time: 15:03:05 on May 09,2023, Elapsed time: 0:00:00
+# End time: 15:12:42 on May 09,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/Primer\ Semestre\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionDecode.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:03:05 on May 09,2023
+# Start time: 15:12:42 on May 09,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionDecode.sv 
 # -- Compiling module instructionDecode
 # 
 # Top level modules:
 # 	instructionDecode
-# End time: 15:03:05 on May 09,2023, Elapsed time: 0:00:00
+# End time: 15:12:42 on May 09,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/Primer\ Semestre\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/registerBank.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:03:05 on May 09,2023
+# Start time: 15:12:42 on May 09,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/registerBank.sv 
 # -- Compiling module registerBank
 # 
 # Top level modules:
 # 	registerBank
-# End time: 15:03:05 on May 09,2023, Elapsed time: 0:00:00
+# End time: 15:12:42 on May 09,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/Primer\ Semestre\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/signExtend.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:03:05 on May 09,2023
+# Start time: 15:12:42 on May 09,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/signExtend.sv 
 # -- Compiling module signExtend
 # 
 # Top level modules:
 # 	signExtend
-# End time: 15:03:05 on May 09,2023, Elapsed time: 0:00:00
+# End time: 15:12:42 on May 09,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/Primer\ Semestre\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/controlUnit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:03:05 on May 09,2023
+# Start time: 15:12:42 on May 09,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/controlUnit.sv 
 # -- Compiling module controlUnit
 # 
 # Top level modules:
 # 	controlUnit
-# End time: 15:03:05 on May 09,2023, Elapsed time: 0:00:00
+# End time: 15:12:42 on May 09,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/Primer\ Semestre\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/immSrcControl.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:03:05 on May 09,2023
+# Start time: 15:12:42 on May 09,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/immSrcControl.sv 
 # -- Compiling module immSrcControl
 # 
 # Top level modules:
 # 	immSrcControl
-# End time: 15:03:06 on May 09,2023, Elapsed time: 0:00:01
+# End time: 15:12:42 on May 09,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/Primer\ Semestre\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/branchFlagControl.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:03:06 on May 09,2023
+# Start time: 15:12:42 on May 09,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/branchFlagControl.sv 
 # -- Compiling module branchFlagControl
 # 
 # Top level modules:
 # 	branchFlagControl
-# End time: 15:03:06 on May 09,2023, Elapsed time: 0:00:00
+# End time: 15:12:42 on May 09,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/Primer\ Semestre\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/aluControl.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:03:06 on May 09,2023
+# Start time: 15:12:42 on May 09,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/aluControl.sv 
 # -- Compiling module aluControl
 # 
 # Top level modules:
 # 	aluControl
-# End time: 15:03:06 on May 09,2023, Elapsed time: 0:00:00
+# End time: 15:12:42 on May 09,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/Primer\ Semestre\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/memWriteControl.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:03:06 on May 09,2023
+# Start time: 15:12:42 on May 09,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/memWriteControl.sv 
 # -- Compiling module memWriteControl
 # 
 # Top level modules:
 # 	memWriteControl
-# End time: 15:03:06 on May 09,2023, Elapsed time: 0:00:00
+# End time: 15:12:42 on May 09,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/Primer\ Semestre\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/memToRegControl.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:03:06 on May 09,2023
+# Start time: 15:12:42 on May 09,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/memToRegControl.sv 
 # -- Compiling module memToRegControl
 # 
 # Top level modules:
 # 	memToRegControl
-# End time: 15:03:06 on May 09,2023, Elapsed time: 0:00:00
+# End time: 15:12:42 on May 09,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/Primer\ Semestre\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/regWriteControl.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:03:06 on May 09,2023
+# Start time: 15:12:42 on May 09,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/regWriteControl.sv 
 # -- Compiling module regWriteControl
 # 
 # Top level modules:
 # 	regWriteControl
-# End time: 15:03:06 on May 09,2023, Elapsed time: 0:00:00
+# End time: 15:12:42 on May 09,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+D:/TEC/Primer\ Semestre\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionDecode_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:03:06 on May 09,2023
+# Start time: 15:12:42 on May 09,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionDecode_tb.sv 
 # -- Compiling module instructionDecode_tb
 # 
 # Top level modules:
 # 	instructionDecode_tb
-# End time: 15:03:06 on May 09,2023, Elapsed time: 0:00:00
+# End time: 15:12:42 on May 09,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  instructionDecode_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" instructionDecode_tb 
-# Start time: 15:03:06 on May 09,2023
+# Start time: 15:12:42 on May 09,2023
 # Loading sv_std.std
 # Loading work.instructionDecode_tb
 # Loading work.instructionDecode
@@ -177,5 +177,5 @@
 # Op code proccessed propertly
 # Break key hit
 # Simulation stop requested.
-# End time: 15:06:30 on May 09,2023, Elapsed time: 0:03:24
+# End time: 15:13:02 on May 09,2023, Elapsed time: 0:00:20
 # Errors: 0, Warnings: 0

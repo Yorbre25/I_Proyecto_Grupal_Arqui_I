@@ -54,17 +54,9 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH testExec -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME UnitTestALU -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id UnitTestALU
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME UnitTestALU -section_id UnitTestALU
 set_global_assignment -name EDA_TEST_BENCH_NAME TestALU -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id TestALU
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME TestALU -section_id TestALU
 set_global_assignment -name EDA_TEST_BENCH_NAME TestOperator -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id TestOperator
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME TestOperator -section_id TestOperator
 set_global_assignment -name EDA_TEST_BENCH_NAME testExec -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testExec
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testExec -section_id testExec
@@ -75,9 +67,6 @@ set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id TestALU
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME TestALU -section_id TestALU
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id TestOperator
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME TestOperator -section_id TestOperator
-set_global_assignment -name EDA_TEST_BENCH_FILE UnitTestALU.sv -section_id UnitTestALU
-set_global_assignment -name EDA_TEST_BENCH_FILE TestALU.sv -section_id TestALU
-set_global_assignment -name EDA_TEST_BENCH_FILE TestOperator.sv -section_id TestOperator
 set_global_assignment -name SYSTEMVERILOG_FILE UnitTestALU.sv
 set_global_assignment -name SYSTEMVERILOG_FILE TestOperator.sv
 set_global_assignment -name SYSTEMVERILOG_FILE TestALU.sv
@@ -98,7 +87,6 @@ set_global_assignment -name SYSTEMVERILOG_FILE aluControl.sv
 set_global_assignment -name SYSTEMVERILOG_FILE memWriteControl.sv
 set_global_assignment -name SYSTEMVERILOG_FILE memToRegControl.sv
 set_global_assignment -name SYSTEMVERILOG_FILE mux41.sv
-set_global_assignment -name SYSTEMVERILOG_FILE writeBack.sv
 set_global_assignment -name SYSTEMVERILOG_FILE instructionFetch.sv
 set_global_assignment -name SYSTEMVERILOG_FILE instructionMemory.sv
 set_global_assignment -name SOURCE_FILE instructionMemory.mem

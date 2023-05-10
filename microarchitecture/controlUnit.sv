@@ -6,6 +6,7 @@ module controlUnit(input [1:0] opType, input [3:0] opCode,Rd, output immSrc,bran
  //memWrite: operacion escribe en memoria
  //memToReg: de memoria a registro
  //regWrite: se escribe a registro
+ //ldFlag: branch que indica que si la operacion futura es un load, es usada para la detecion posterior de riesgos
  
 	immSrcControl myImmSrc(.opType(opType),.immSrc(immSrc));
 	branchFlagControl myBranchFlag (.opType(opType),.branchFlag(branchFlag));

@@ -1,6 +1,7 @@
 start:
-    ld r1,r15,r3
+    LD r1,r15,r3
     ld r1, r15
+    mov r3, r1
 branch1:
     add r2,r6,#2
     add r4, r3, r9

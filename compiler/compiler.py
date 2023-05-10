@@ -2,7 +2,7 @@ Instructions = {
     "sub":{"opType":"art", "opcode":0},
     "cmp":{"opType":"art", "opcode":1},
     "add":{"opType":"art", "opcode":2},
-    "save":{"opType":"art", "opcode":3},
+    "mov":{"opType":"art", "opcode":3},
     "mult":{"opType":"art", "opcode":4},
     "div":{"opType":"art", "opcode":5},
     "xor":{"opType":"art", "opcode":6},
@@ -30,18 +30,15 @@ def openFile():
     for line in f:
         if not line.isspace():
             try:
-                AnalyzeLine(line, counter)
+                AnalyzeLine(line.lower(), counter)
             except:
                 print("Exception in line ", counter)
             counter += 1
-    #print("Counter ", branchLine)
-    #print(functions)
+  
     SetBranches()
-    print("_______________________")
-    #print(instructionResult)
-    for x in instructionResult:
-        print(x)
     f.close()
+
+    CreateFile()
 
 def AnalyzeLine(line, counter):
     global branchLine
@@ -63,12 +60,12 @@ def GetFunction(functionText, registersList):
     code = ""
     #If operation es aritmethic
     if(result.get("opType") == "art"):
-        flag =  IsInmediate(registersList)
+        flag =  IsInmediate(registersList[len(registersList)-1])
         code += "01" if flag else "00"
         opcode = format(result.get("opcode"), 'b')
         while (len(opcode) < 4): opcode = "0"+opcode
         code += opcode
-        if(functionText == "cmp" or functionText == "save" or functionText == "not"): #It's an op of 2 operands
+        if(functionText == "cmp" or functionText == "mov" or functionText == "not"): #It's an op of 2 operands
             code += GetAllRegistersOpcode(registersList[0], "r0" ,registersList[1])
         else:
             code += GetAllRegistersOpcode(registersList[0], registersList[1], registersList[2])
@@ -99,6 +96,7 @@ def GetRegistersInList(registersString):
     return registers
 
 def IsInmediate(register3):
+    
     flag = False
     if("#" in register3):
         flag = True
@@ -171,8 +169,17 @@ def SetBranches():
                     result = "0" + result
                 counter += 1
             instructionResult[branchLine] = newInstruction + result
-            
-            
         branchLine += 1
     return ""
+
+def CreateFile():
+    with open('output.txt', 'w') as f:
+        counter = 0
+        for line in instructionResult:
+            if(counter == len(instructionResult) - 1):
+                f.writelines(line)
+            else:
+                f.writelines(line+"\n")
+            counter += 1
+    f.close()
 openFile()

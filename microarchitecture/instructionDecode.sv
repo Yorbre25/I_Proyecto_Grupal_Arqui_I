@@ -1,4 +1,4 @@
-module instructionDecode(input clk,input rst,en, input [31:0] inst,input WE,input [3:0] Rd,input [31:0] WD,output [148:0] bufferOut);
+module instructionDecode(input clk,input rst,en, input [31:0] inst,input WE,input [3:0] Rd,input [31:0] WD,output [154:0] bufferOut);
 	
 
 	//sub modules output
@@ -18,7 +18,7 @@ module instructionDecode(input clk,input rst,en, input [31:0] inst,input WE,inpu
 	
 	
 	//buffer concatenation
-	logic [148:0] bufferInput;
+	logic [154:0] bufferInput;
 	
 	
 	
@@ -30,7 +30,7 @@ module instructionDecode(input clk,input rst,en, input [31:0] inst,input WE,inpu
 	
 	
 	//buffer setup
-	buffer #(.Buffer_size(149)) ID_EX (.rst(rst),.clk(clk),.en(en),.bufferInput(bufferInput),.bufferOut(bufferOut));
+	buffer #(.Buffer_size(155)) ID_EX (.rst(rst),.clk(clk),.en(en),.bufferInput(bufferInput),.bufferOut(bufferOut));
 	
 	//control unit to the control flags
 	controlUnit myControlUnit(.opType(opType),.opCode(opCode),.Rd(Rc),.immSrc(immSrc),.branchFlag(branchFlag),.memWrite(memWrite),.memToReg(memToReg),.regWrite(regWrite), .aluControl(aluControl));
@@ -43,6 +43,6 @@ module instructionDecode(input clk,input rst,en, input [31:0] inst,input WE,inpu
 	assign Ra=inst[21:18];
 	assign Rb=inst[17:14];
 	assign imm=inst[17:0];
-	assign bufferInput={immSrc,branchFlag,memWrite,memToReg,regWrite,aluControl,Ra,RD1,Rb,RD2,Rc,RD3,extendImm};
+	assign bufferInput={opType,opCode,immSrc,branchFlag,memWrite,memToReg,regWrite,aluControl,Ra,RD1,Rb,RD2,Rc,RD3,extendImm};
 
 endmodule 

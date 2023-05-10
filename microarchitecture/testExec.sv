@@ -1,17 +1,18 @@
 module testExec;
 	parameter WIDTH = 4;
-	parameter BW = 26;
+	parameter BW = 32;
 
 	logic clk, rst, en;
 	logic signed [WIDTH-1:0] rd1, rd2, pc, imm, aluOut, result;
 	logic signed [WIDTH-1:0] rd3;
-	logic [3:0] aluControl;
+	logic [1:0] opType;
+	logic [3:0] aluControl, opCode;
 	logic [3:0] Ra, Rb, Rc;
 	logic immSrc, branchFlag, memWrite, memToReg, regWrite;
 	logic Fa, Fb;
 	logic [BW-1:0] bufferOut;
 	
-	exec #(.N(WIDTH), .BW(BW)) exec1(clk, rst, en, rd1, rd2, pc, imm, aluOut, result, rd3, aluControl, Ra, Rb, Rc, immSrc, branchFlag, memWrite, memToReg, regWrite, Fa, Fb, bufferOut);
+	exec #(.N(WIDTH), .BW(BW)) exec1(clk, rst, en, rd1, rd2, pc, imm, aluOut, result, rd3, aluControl, Ra, Rb, Rc, immSrc, branchFlag, memWrite, memToReg, regWrite, opType, opCode, Fa, Fb, bufferOut);
 	
 	
 	
@@ -33,6 +34,8 @@ module testExec;
 		Rb = 2;
 		Rc = 3;
 		rd3 = 0;
+		opType = 0;
+		opCode = 1;
 		
 		//Inputs
 		rd1 = 2; 
@@ -68,6 +71,8 @@ module testExec;
 		assert(bufferOut[20] === 0) else $error("negFlag value"); //negFlag
 		assert(bufferOut[21] === 0) else $error("zeroFlag value 1"); //zeroFlag
 		assert(bufferOut[25:22] === 4) else $error("aluCurrentResult value"); //aluCurrentResult
+		assert(bufferOut[27:26] == 1)  else $error("opCode value"); //opCode
+		assert(bufferOut[31:28] == 0)  else $error("opType value"); //opType
 		$display("Data: %b", bufferOut);
 
 		

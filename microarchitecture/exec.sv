@@ -6,6 +6,8 @@ module exec #(parameter N=4, parameter BW=82)(
 	input [3:0] aluControl,
 	input [3:0] Ra, Rb, Rc, // Register number
 	input immSrc, branchFlag, memWrite, memToReg, regWrite,
+	input [1:0] opType,
+	input [3:0] opCode,
 	input Fa, Fb, //Hazard Unit Flags
 	output [BW-1:0] bufferOut
 );
@@ -34,13 +36,12 @@ module exec #(parameter N=4, parameter BW=82)(
 	
 	
 //divide instruction:
-//	   | aluCurrentResult | zeroFlag | negFlag | branchFlag | memWrite | memToReg | regWrite | Ra | Rb | Rc | rd3  |
+//	   | opType | opCode | aluCurrentResult | zeroFlag | negFlag | branchFlag | memWrite | memToReg | regWrite | Ra | Rb | Rc | rd3  |
 //Size:
-//	   |		[N]			 |  [1]     |   [1]   |    [1]     |   [1]    |    [1]   |   [1]    |[4] |[4] |[4] | [N]  |
-//	--------------------------------------------------------------------------------------------------------------------
-//    |0					  31|        32|       33|          34|        35|        36|        37|  41|  45|  49|    81|
+//	   |   [2] 	|   [4]  |       [N]	       |  [1]     |   [1]   |    [1]     |   [1]    |    [1]   |   [1]    |[4] |[4] |[4] | [N]  | 
+//	----------------------------------------------------------------------------------------------------------------
+//    |57		|85		|81				    |49		   |48	    |47			  |46			 |45			|44		  | 43 | 39 | 35 |31   0|
 
-  	assign bufferInput={aluCurrentResult,zeroFlag,negFlag,branchFlag,memWrite,memToReg,regWrite,Ra,Rb,Rc,rd3};
-//	assign bufferInput=aluCurrentResult;
+  	assign bufferInput={opType,opCode,aluCurrentResult,zeroFlag,negFlag,branchFlag,memWrite,memToReg,regWrite,Ra,Rb,Rc,rd3};
 	
 endmodule

@@ -11,18 +11,18 @@ z2
 cModel Technology
 Z0 dC:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/simulation/questa
 T_opt
-Z1 !s110 1683651829
-V4fa6XV`S`z;4Zi6me;3Mc2
+!s110 1683730059
+V8e2_z2c^26jQ9>Vkk>@k82
 04 8 4 work testExec fast 0
-=1-047c16432f6e-645a7cf5-341-c4
+=1-047c16432f6e-645bae8b-4a-302c
 !s124 OEM10U10 
 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work +acc
-Z2 tCvgOpt 0
+Z1 tCvgOpt 0
 n@_opt
 OL;O;2021.2;73
 vALU
-Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-R1
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1683730058
 !i10b 1
 !s100 TB9o46aDDY^?U7BT9R:LP0
 ISBPieSn<QNX8bXDW]<^MR2
@@ -38,17 +38,17 @@ Z5 OL;L;2021.2;73
 r1
 !s85 0
 31
-Z6 !s108 1683651829.000000
+Z6 !s108 1683730058.000000
 !s107 C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture|C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv|
 !i113 0
 Z7 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 Z8 !s92 -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R2
+R1
 n@a@l@u
 vbuffer
+R2
 R3
-R1
 !i10b 1
 !s100 Nz48BWFlFb4AdilM5?7CD1
 IU0dhcON[DJR65KA9:fR3N3
@@ -70,20 +70,20 @@ R6
 !i113 0
 R7
 R8
-R2
-vexec
-R3
 R1
+vexec
+R2
+R3
 !i10b 1
-!s100 Ze6?c@F8X>eVI^n1g:5I01
-I^c_[GAJCkhe9ediOEM8221
+!s100 KQ?dj:XaFSW3HdIfOkZWC3
+Ih2=:fQ2HnPYUSWPkiPhgO3
 S1
 R0
-w1683648208
+w1683729754
 8C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/exec.sv
 FC:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/exec.sv
 !i122 7
-L0 2 45
+L0 2 46
 R4
 R5
 r1
@@ -95,10 +95,10 @@ R6
 !i113 0
 R7
 R8
-R2
-vMux
-R3
 R1
+vMux
+R2
+R3
 !i10b 1
 !s100 2E2<<U=F`QK0BjEW@8Kc;0
 I56K3J>57N4:VlfMQQhUXz0
@@ -120,11 +120,11 @@ R6
 !i113 0
 R7
 R8
-R2
+R1
 n@mux
 vmux41
+R2
 R3
-R1
 !i10b 1
 !s100 _Me6:JXjfA6n6LI`E>6ek1
 I5KU?eL?Xe4b;7m@MBF[AK3
@@ -146,10 +146,10 @@ R6
 !i113 0
 R7
 R8
-R2
-vOperator
-R3
 R1
+vOperator
+R2
+R3
 !i10b 1
 !s100 ]hiD<Dae0;=J?2WjoK;4D2
 Ij9IFFkeZ;e=]7S;Q7UoYJ2
@@ -171,11 +171,11 @@ R6
 !i113 0
 R7
 R8
-R2
+R1
 n@operator
 voperatorsALUMux
+R2
 R3
-R1
 !i10b 1
 !s100 fd6=CUY8K4oRTdcnNcY1R0
 I1V<PkD=0b>R_K9hhVn:?F1
@@ -197,11 +197,11 @@ R6
 !i113 0
 R7
 R8
-R2
+R1
 noperators@a@l@u@mux
 vSetFlags
+R2
 R3
-R1
 !i10b 1
 !s100 94ZIWaOY7L^6Yl79]:EV]2
 I>5T1VfmNgKI[Ed5YdbJWW0
@@ -223,21 +223,21 @@ R6
 !i113 0
 R7
 R8
-R2
+R1
 n@set@flags
 vtestExec
+R2
 R3
-R1
 !i10b 1
-!s100 Lj5=Z1YY]NUED755b@3J?1
-IHkH?G3=iA[:hO?Kbz8V:i1
+!s100 oVEAK>a<<hPJZMHdT]S@h3
+I1;J12ZI54c;9nQ6aMfzb62
 S1
 R0
-w1683651815
+w1683730036
 8C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/testExec.sv
 FC:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/testExec.sv
 !i122 8
-L0 1 95
+L0 1 100
 R4
 R5
 r1
@@ -249,5 +249,5 @@ R6
 !i113 0
 R7
 R8
-R2
+R1
 ntest@exec

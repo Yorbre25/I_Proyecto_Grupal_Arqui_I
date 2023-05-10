@@ -11,7 +11,8 @@ module Operator #(parameter N = 4)(
 	output logic signed [N-1:0] r_and,
 	output logic signed [N-1:0] r_not,
 	output logic signed [N-1:0] r_shl,
-	output logic signed [N-1:0] r_shr
+	output logic signed [N-1:0] r_shr,
+	output logic signed [N-1:0] r_mod
 );
 	
 
@@ -26,6 +27,7 @@ module Operator #(parameter N = 4)(
 	assign r_not = ~b;
 	assign r_shl = a <<< b;
 	assign r_shr = a >>> b;
+	assign r_mod = a % b;
 	
 
 

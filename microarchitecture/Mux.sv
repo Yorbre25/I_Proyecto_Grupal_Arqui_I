@@ -11,6 +11,7 @@ module Mux #(parameter N = 4)(
 	input logic [N-1:0] r_not,
 	input logic [N-1:0] r_shl,
 	input logic [N-1:0] r_shr,
+	input logic [N-1:0] r_mod,
 	output logic [N-1:0] result
 );
 
@@ -30,6 +31,7 @@ module Mux #(parameter N = 4)(
 					8: result_temp = r_not;
 					9: result_temp = r_shl;
 					10: result_temp = r_shr;
+					11: result_temp = r_mod;
 					default: result_temp = 0;
 				endcase
 			end

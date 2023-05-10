@@ -10,11 +10,11 @@ module TestALU;
 	ALU #(.N(WIDTH)) alu(a,b,alu_select,result,flags);
 	
 	initial begin
-		a = 2;
+		a = 3;
 		b = 2;
 		alu_select = 0;
 		#10;
-		for (i=0; i <= 9; i=i+1)
+		for (i=0; i <= 11; i=i+1)
 			begin
 				alu_select = alu_select + 1;
 				#10;

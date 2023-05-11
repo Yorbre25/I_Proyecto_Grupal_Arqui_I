@@ -42,7 +42,7 @@ set_global_assignment -name DEVICE 5CSEMA4U23C6
 set_global_assignment -name TOP_LEVEL_ENTITY hazardUnit
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:23:33  APRIL 28, 2023"
-set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.1 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name BOARD "Atlas-SoC (DE0-Nano-SoC)"
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (SystemVerilog)"
@@ -119,9 +119,6 @@ set_global_assignment -name SYSTEMVERILOG_FILE testBuffer.sv
 set_global_assignment -name EDA_TEST_BENCH_NAME testBuffer -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testBuffer
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testBuffer -section_id testBuffer
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name SYSTEMVERILOG_FILE hazardUnit.sv
 set_global_assignment -name SYSTEMVERILOG_FILE resetModule.sv
 set_global_assignment -name SYSTEMVERILOG_FILE loadFlag.sv
@@ -143,7 +140,6 @@ set_global_assignment -name EDA_TEST_BENCH_FILE instructionFetch_tb.sv -section_
 set_global_assignment -name EDA_TEST_BENCH_FILE instructionMemory.mem -section_id instructionFetch_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE instructionDecode_tb.sv -section_id instructionDecode_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE buffer_tb.sv -section_id buffer_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE testBuffer.sv -section_id testBuffer
 set_global_assignment -name EDA_TEST_BENCH_FILE branchTaken_tb.sv -section_id branchTaken_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE branchTaken.sv -section_id branchTaken_tb
 set_global_assignment -name EDA_TEST_BENCH_NAME hazardUnit_tb -section_id eda_simulation

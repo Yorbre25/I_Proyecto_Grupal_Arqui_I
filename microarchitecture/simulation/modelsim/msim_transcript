@@ -12,39 +12,39 @@
 # 
 # vlog -sv -work work +incdir+D:/TEC/Primer\ Semestre\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/hazardUnit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:32:30 on May 10,2023
+# Start time: 11:52:45 on May 10,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/hazardUnit.sv 
 # -- Compiling module hazardUnit
 # 
 # Top level modules:
 # 	hazardUnit
-# End time: 02:32:30 on May 10,2023, Elapsed time: 0:00:00
+# End time: 11:52:45 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+D:/TEC/Primer\ Semestre\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/hazardUnit_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:32:30 on May 10,2023
+# Start time: 11:52:45 on May 10,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/hazardUnit_tb.sv 
 # -- Compiling module hazardUnit_tb
 # 
 # Top level modules:
 # 	hazardUnit_tb
-# End time: 02:32:30 on May 10,2023, Elapsed time: 0:00:00
+# End time: 11:52:45 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/Primer\ Semestre\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/hazardUnit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:32:30 on May 10,2023
+# Start time: 11:52:45 on May 10,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/hazardUnit.sv 
 # -- Compiling module hazardUnit
 # 
 # Top level modules:
 # 	hazardUnit
-# End time: 02:32:30 on May 10,2023, Elapsed time: 0:00:00
+# End time: 11:52:45 on May 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  hazardUnit_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" hazardUnit_tb 
-# Start time: 02:32:30 on May 10,2023
+# Start time: 11:52:45 on May 10,2023
 # Loading sv_std.std
 # Loading work.hazardUnit_tb
 # Loading work.hazardUnit
@@ -99,5 +99,5 @@
 # Flush 3  realizado correctamente
 # Flush 4 realizado correctamente
 # Flush 5 no realizado correctamente
-# End time: 02:34:15 on May 10,2023, Elapsed time: 0:01:45
+# End time: 11:52:52 on May 10,2023, Elapsed time: 0:00:07
 # Errors: 0, Warnings: 0

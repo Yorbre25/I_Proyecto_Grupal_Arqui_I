@@ -1,14 +1,14 @@
-
-module exec #(parameter N=4, parameter BW=82)(
+parameter setValuesBuffer = 16;
+module exec #(parameter N= 24, parameter BW=setValuesBuffer + 2*N)(
 	input clk, rst, en, //clock, flush, stall
 	input [N-1:0] rd1, rd2, pc, imm, aluOut, result, // Posible Alu entries
 	input [N-1:0] rd3,
 	input [3:0] aluControl,
-	input [3:0] Ra, Rb, Rc, // Register number
+	input [3:0] Rc, // Register number
 	input immSrc, branchFlag, memWrite, memToReg, regWrite,
+	input Fa, Fb,
 	input [1:0] opType,
 	input [3:0] opCode,
-	input Fa, Fb, //Hazard Unit Flags
 	output [BW-1:0] bufferOut
 );
 	
@@ -21,10 +21,21 @@ module exec #(parameter N=4, parameter BW=82)(
 	logic zeroFlag, negFlag;
 	
 	//Alu entry selector
-	operatorsALUMux #(.opSize(4)) aluMux(.RD1(rd1), .RD2(rd2), .Imm(imm), .pc(pc), .AluOut(aluOut), .Result(result), .immSrc(immSrc), .branchFlag(branchFlag), .Fa(Fa), .Fb(Fb), .op1(op1), .op2(op2));
-	
-	
-	ALU #(.N(4)) alu(.a(op1), .b(op2), .select(aluControl), .result(aluCurrentResult), .flags(flags));
+	ALUMux #(.N(N)) AluMux1(
+		.rd1(rd1), 
+		.rd2(rd2), 
+		.pc(pc), 
+		.imm(imm), 
+		.aluOut(aluOut), 
+		.result(result), 
+		.aluControl(aluControl), 
+		.immSrc(immSrc), 
+		.branchFlag(branchFlag), 
+		.Fa(Fa), 
+		.Fb(Fb), 
+		.flags(flags), 
+		.aluCurrentResult(aluCurrentResult)
+	);
 	
 	
 	//buffer setup
@@ -35,13 +46,15 @@ module exec #(parameter N=4, parameter BW=82)(
 	assign negFlag = flags[1];
 	
 	
+	
+	
 //divide instruction:
-//	   | opType | opCode | aluCurrentResult | zeroFlag | negFlag | branchFlag | memWrite | memToReg | regWrite | Ra | Rb | Rc | rd3  |
+//	   | opType | opCode | aluCurrentResult | zeroFlag | negFlag | branchFlag | memWrite | memToReg | regWrite | Rc | rd3  |
 //Size:
-//	   |   [2] 	|   [4]  |       [N]	       |  [1]     |   [1]   |    [1]     |   [1]    |    [1]   |   [1]    |[4] |[4] |[4] | [N]  | 
+//	   |   [2] 	|   [4]  |       [N]	       |  [1]     |   [1]   |    [1]     |   [1]    |    [1]   |   [1]    |[4] | [N]  | 
 //	----------------------------------------------------------------------------------------------------------------
-//    |57		|85		|81				    |49		   |48	    |47			  |46			 |45			|44		  | 43 | 39 | 35 |31   0|
+//    |63		|61		|57				    |33		   |32	    |31			  |30			 |29			|28		  | 27 |23   0|
 
-  	assign bufferInput={opType,opCode,aluCurrentResult,zeroFlag,negFlag,branchFlag,memWrite,memToReg,regWrite,Ra,Rb,Rc,rd3};
+  	assign bufferInput={opType,opCode,aluCurrentResult,zeroFlag,negFlag,branchFlag,memWrite,memToReg,regWrite, Rc, rd3};
 	
 endmodule

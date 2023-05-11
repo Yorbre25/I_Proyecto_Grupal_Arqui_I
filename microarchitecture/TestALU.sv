@@ -1,5 +1,5 @@
 module TestALU;
-	parameter WIDTH = 4;
+	parameter WIDTH = 24;
 
 	logic [WIDTH-1:0] a,b, result;
 	logic [3:0] alu_select;
@@ -10,8 +10,8 @@ module TestALU;
 	ALU #(.N(WIDTH)) alu(a,b,alu_select,result,flags);
 	
 	initial begin
-		a = 3;
-		b = 2;
+		a = 14;
+		b = 1;
 		alu_select = 0;
 		#10;
 		for (i=0; i <= 11; i=i+1)

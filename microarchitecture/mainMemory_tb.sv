@@ -67,9 +67,11 @@ module mainMemory_tb();
 		
 		
 		#10; //negedge
-		
+		address_a=0;
+		wren_a=0;
 		
 		#10; //posedge
+		
 		assert(q_b==65535) $display("Escritura no realizada con wren_b en bajo");
 		else $error("Escritura realizada con wren_b en bajo");
 		

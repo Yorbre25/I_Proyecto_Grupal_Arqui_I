@@ -58,17 +58,21 @@ module testExec;
 		aluControl = 0;
 		branchFlag = 0; 
 		
-//		// Apply reset
-//		rst = 1;
-//		#5;
-//		rst = 0;
-//		#5;
 
 	
 		// rd1 + rd2 
 		rd1 = 2; rd2 = 2; pc = 2; imm = 2; aluOut = 0; result = 0;
 		immSrc = 0; branchFlag = 0; aluControl = 1;
-		#30;
+		#10; //negedge
+		
+		// rd1 == imm
+		
+		#10; //posedge
+		rd1 = 2; rd2 = 2; pc = 0; imm = 2; aluOut = 0; result = 0;
+		aluControl = 4;
+		immSrc = 1; branchFlag = 0; 
+		
+		#10;// negedge
 		assert(bufferOut[23:0] === 0) else $error("rd value"); //rd3
 		assert(bufferOut[27:24] === 3) else $error("Rc value"); //Rc
 		assert(bufferOut[28] === 0) else $error("regWrite value"); //regWrite
@@ -81,25 +85,24 @@ module testExec;
 		assert(bufferOut[61:58] == 1)  else $error("opCode value"); //opCode
 		assert(bufferOut[63:62] == 0)  else $error("opType value"); //opType
 		$display("Data: %b", bufferOut[57:34]);
-		$display("Data: %b", bufferOut);
 		
-		
-		rd1 = 2; rd2 = 2; pc = 0; imm = 2; aluOut = 0; result = 0;
-		aluControl = 4;
-		immSrc = 1; branchFlag = 0; 
-		#30;
-		assert(bufferOut[57:34] === 0) else $error("Test to compare rd1 and imm");//aluCurrentResult
-		assert(bufferOut[33] === 1) else $error("zeroFlag value 2"); //zeroFlag
-		$display("Data: %b", bufferOut[57:34]);
-		
-		
+		#10; //posedge
 		rd1 = 2; rd2 = 2; pc = 1; imm = 1; aluOut = 0; result = 0;
 		aluControl = 0;
 		immSrc = 0; branchFlag = 1; 
-		#30;
-		assert($signed(bufferOut[25:22]) === -1) else $error("Test to sub pc and rd2");//aluCurrentResult
-		assert(bufferOut[20] === 1) else $error("negFlag value 2"); //zeroFlag
-		$display("Data: %b", bufferOut);
+		
+		#10; //negedge
+		assert(bufferOut[57:34] === 0) else $error("Test to compare rd1 and imm");//aluCurrentResult
+		assert(bufferOut[33] === 1) else $error("zeroFlag value 2"); //zeroFlag
+		$display("Data: %b", bufferOut[57:34]);
+			
+		#10; //posedge
+		// pc - rd2
+
+		#10; //negedge
+		assert($signed(bufferOut[57:34]) === -1) else $error("Test to sub pc and rd2");//aluCurrentResult
+		assert(bufferOut[34] === 1) else $error("negFlag value 2"); //zeroFlag
+		$display("Data: %b", bufferOut[57:34]);
 		
 		
 	end

@@ -26,110 +26,110 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/SetFlags.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:48:36 on May 11,2023
+# Start time: 19:03:27 on May 11,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/SetFlags.sv 
 # -- Compiling module SetFlags
 # 
 # Top level modules:
 # 	SetFlags
-# End time: 17:48:36 on May 11,2023, Elapsed time: 0:00:00
+# End time: 19:03:27 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:48:36 on May 11,2023
+# Start time: 19:03:27 on May 11,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv 
 # -- Compiling module Operator
 # 
 # Top level modules:
 # 	Operator
-# End time: 17:48:36 on May 11,2023, Elapsed time: 0:00:00
+# End time: 19:03:27 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:48:36 on May 11,2023
+# Start time: 19:03:27 on May 11,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv 
 # -- Compiling module Mux
 # 
 # Top level modules:
 # 	Mux
-# End time: 17:48:36 on May 11,2023, Elapsed time: 0:00:00
+# End time: 19:03:27 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:48:36 on May 11,2023
+# Start time: 19:03:27 on May 11,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 17:48:36 on May 11,2023, Elapsed time: 0:00:00
+# End time: 19:03:27 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:48:36 on May 11,2023
+# Start time: 19:03:27 on May 11,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv 
 # -- Compiling module buffer
 # 
 # Top level modules:
 # 	buffer
-# End time: 17:48:37 on May 11,2023, Elapsed time: 0:00:01
+# End time: 19:03:28 on May 11,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/operatorsAluMux.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:48:37 on May 11,2023
+# Start time: 19:03:28 on May 11,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/operatorsAluMux.sv 
 # -- Compiling module operatorsALUMux
 # 
 # Top level modules:
 # 	operatorsALUMux
-# End time: 17:48:37 on May 11,2023, Elapsed time: 0:00:00
+# End time: 19:03:28 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/mux41.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:48:37 on May 11,2023
+# Start time: 19:03:28 on May 11,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/mux41.sv 
 # -- Compiling module mux41
 # 
 # Top level modules:
 # 	mux41
-# End time: 17:48:37 on May 11,2023, Elapsed time: 0:00:00
+# End time: 19:03:28 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/exec.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:48:37 on May 11,2023
+# Start time: 19:03:28 on May 11,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/exec.sv 
 # -- Compiling package exec_sv_unit
 # -- Compiling module exec
 # 
 # Top level modules:
 # 	exec
-# End time: 17:48:37 on May 11,2023, Elapsed time: 0:00:00
+# End time: 19:03:28 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/ALUMux.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:48:37 on May 11,2023
+# Start time: 19:03:28 on May 11,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/ALUMux.sv 
 # -- Compiling module ALUMux
 # 
 # Top level modules:
 # 	ALUMux
-# End time: 17:48:37 on May 11,2023, Elapsed time: 0:00:00
+# End time: 19:03:29 on May 11,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/testExec.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:48:37 on May 11,2023
+# Start time: 19:03:29 on May 11,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/testExec.sv 
 # -- Compiling module testExec
 # 
 # Top level modules:
 # 	testExec
-# End time: 17:48:37 on May 11,2023, Elapsed time: 0:00:00
+# End time: 19:03:29 on May 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  testExec
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" testExec 
-# Start time: 17:48:38 on May 11,2023
+# Start time: 19:03:29 on May 11,2023
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading sv_std.std
 # Loading work.testExec(fast)
@@ -203,19 +203,9 @@
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 # Data: 000000000000000000000100
-# Data: 0000010000000000000000000001000000000011000000000000000000000000
-# ** Error: Test to compare rd1 and imm
-#    Time: 60 ps  Scope: testExec File: C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/testExec.sv Line: 91
-# ** Error: zeroFlag value 2
-#    Time: 60 ps  Scope: testExec File: C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/testExec.sv Line: 92
-# Data: 000000000000000000000100
-# ** Error: Test to sub pc and rd2
-#    Time: 90 ps  Scope: testExec File: C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/testExec.sv Line: 100
-# ** Error: negFlag value 2
-#    Time: 90 ps  Scope: testExec File: C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/testExec.sv Line: 101
-# Data: 0000011111111111111111111111110110000011000000000000000000000000
-# Causality operation skipped due to absence of debug database file
+# Data: 000000000000000000000000
+# Data: 111111111111111111111111
 # Break key hit
 # Simulation stop requested.
-# End time: 17:52:26 on May 11,2023, Elapsed time: 0:03:48
-# Errors: 4, Warnings: 26
+# End time: 19:03:43 on May 11,2023, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 26

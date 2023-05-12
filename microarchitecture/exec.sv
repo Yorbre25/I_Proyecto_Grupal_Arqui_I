@@ -1,5 +1,5 @@
 
-module exec #(parameter N=4, parameter BW=82)(
+module exec #(parameter N=24, parameter BW=71)(
 	input clk, rst, en, //clock, flush, stall
 	input [N-1:0] rd1, rd2, pc, imm, aluOut, result, // Posible Alu entries
 	input [N-1:0] rd3,
@@ -21,10 +21,10 @@ module exec #(parameter N=4, parameter BW=82)(
 	logic zeroFlag, negFlag;
 	
 	//Alu entry selector
-	operatorsALUMux #(.opSize(4)) aluMux(.RD1(rd1), .RD2(rd2), .Imm(imm), .pc(pc), .AluOut(aluOut), .Result(result), .immSrc(immSrc), .branchFlag(branchFlag), .Fa(Fa), .Fb(Fb), .op1(op1), .op2(op2));
+	operatorsALUMux #(.opSize(N)) aluMux(.RD1(rd1), .RD2(rd2), .Imm(imm), .pc(pc), .AluOut(aluOut), .Result(result), .immSrc(immSrc), .branchFlag(branchFlag), .Fa(Fa), .Fb(Fb), .op1(op1), .op2(op2));
 	
 	
-	ALU #(.N(4)) alu(.a(op1), .b(op2), .select(aluControl), .result(aluCurrentResult), .flags(flags));
+	ALU #(.N(N)) alu(.a(op1), .b(op2), .select(aluControl), .result(aluCurrentResult), .flags(flags));
 	
 	
 	//buffer setup
@@ -40,7 +40,7 @@ module exec #(parameter N=4, parameter BW=82)(
 //Size:
 //	   |   [2] 	|   [4]  |       [N]	       |  [1]     |   [1]   |    [1]     |   [1]    |    [1]   |   [1]    |[4] |[4] |[4] | [N]  | 
 //	----------------------------------------------------------------------------------------------------------------
-//    |57		|85		|81				    |49		   |48	    |47			  |46			 |45			|44		  | 43 | 39 | 35 |31   0|
+//    |71		|69		|65				    |41		   |40	    |39			  |38			 |37			|36		  | 35 | 31 | 27 |23   0|
 
   	assign bufferInput={opType,opCode,aluCurrentResult,zeroFlag,negFlag,branchFlag,memWrite,memToReg,regWrite,Ra,Rb,Rc,rd3};
 	

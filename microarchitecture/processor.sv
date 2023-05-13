@@ -1,8 +1,11 @@
 parameter RW = 24;
+parameter IF_BW = 57;
 parameter ID_BW = 147;
+parameter EX_MEM = 64;
 module processor;
-
 	
+vc
+
 	hazardUnit myhazardUnit(
 		.Ra(Ra),
 		.Rb(Rb),
@@ -23,8 +26,10 @@ module processor;
 		.Forward2(Forward2)
 	);
 	
+	
 	logic [31:0] inst;
 	logic [RW-1:0] pc;
+	logic [IF_BW-1:0] bufferOut_if;
 	
 	instructionFetch myInstructionFetch(
 		.clk(clk),               //
@@ -32,32 +37,36 @@ module processor;
 		.en(en),						 //
 		.branchFlag(branchFlag), //
 		.branchAddr(branchAddr), //
-		//output
-		.instruction(inst),
-		.pc(pc)
+		.bufferOut(bufferOut_if)
 	);
 	
-	logic [ID_BW-1:0] bufferOut_id
+	logic [ID_BW-1:0] bufferOut_id;
+	logic [31:0] inst_if_id;
+	logic [RW:0] pc_if_id;
+	
+	// Get ID buffer values
+	assign inst_if_id = bufferOut_if[31:0];
+	assign pc_if_id = bufferOut_if[56:32];
 	
 	instructionDecode myInstructionDecode(
 		.clk(clk),
 		.rst(rst),
 		.en(en),
-		.inst(inst),
-		.WE(WE),
-		.Rd(Rd),
-		.WD(WD),
-		.pc(pc),
+		.inst(inst_if_id),
+		.WE(WE),      //
+		.Rd(Rd),      //
+		.WD(WD),      //
+		.pc(pc_if_id),
 		.bufferOut(bufferOut_id)
 	);
 
 	
-	logic [1:0] opType;
-	logic [3:0] opCode;
-	logic immSrc, branchFlag, memWrite, memToReg, regWrite;
-	logic signed [3:0] aluControl, Ra, Rb, Rc;
-	logic signed [RW-1:0] rd1, rd2, rd3;
-	logic signed [RW-1:0] extendImm;
+	logic [1:0] opType_id_ex;
+	logic [3:0] opCode_id_ex;
+	logic immSrc_id_ex, branchFlag_id_ex, memWrite_id_ex, memToReg_id_ex, regWrite_id_ex;
+	logic signed [3:0] aluControl_id_ex, Rc_id_ex;
+	logic signed [RW-1:0] rd1_id_ex, rd2_id_ex, rd3_id_ex;
+	logic signed [RW-1:0] extendImm_id_ex;
 	
 	// Get ID buffer values
 	assign pc_id_exec = bufferOut_id[146:123]
@@ -73,7 +82,9 @@ module processor;
 	assign rd2_id_ex = bufferOut_id[75:52];
 	assign Rc_id_ex = bufferOut_id[51:48];
 	assign rd3_id_ex = bufferOut_id[47:24];
-	assign extendImm_id_ex = bufferOut_id[23:0];
+	assign extendImm_id_ex = bufferOut_id[23:0];  //
+	
+	logic [Ex_MEM-1:0]bufferOut_ex;
 	
 	
 	exec #(.N(RW), .BW(BufferW)) myExec(
@@ -91,15 +102,36 @@ module processor;
 	.Rc(Rc_id_ex),
 	.immSrc(immSrc_id_ex), 
 	.branchFlag(branchFlag_id_ex), 
-	.memWrite(memWrite_id_ex), 
+	.memWrite(memWrite_id_ex),
 	.memToReg(memToReg_id_ex), 
 	.regWrite(regWrite_id_ex),
 	.Fa(Fa), 				//
 	.Fb(Fb),					//
 	.opType(opType_id_ex), 
 	.opCode(opCode_id_ex),
-	.bufferOut(bufferOut)
+	.bufferOut(bufferOut_ex)
 	);
+	
+	
+	logic [31:0] data_ex_mem;
+	logic [13:0] addr_ex_mem;
+	
+	
+	// Get ID buffer values
+	
+	instructionMemory #(.address_size(14),.data_width(8)) mymem (
+		.addr(addr_ex_mem), //
+		.data(data_ex_mem) //
+	);
+	
+	writeBack #(.N(RW))(
+		.readDataW(readDataW), //
+		.aluOutW(aluOutW),     //
+		.memToReg(memToReg),   //
+		.resultW(resultW)     //
+	);
+	
+
 
 
 endmodule;

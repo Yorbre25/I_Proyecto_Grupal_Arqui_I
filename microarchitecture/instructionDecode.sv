@@ -1,4 +1,4 @@
-module instructionDecode(input clk,input rst,en, input [31:0] inst,input WE,input [3:0] Rd,input [23:0] WD,output [122:0] bufferOut);
+module instructionDecode(input clk,input rst,en, input [31:0] inst,input WE,input [3:0] Rd,input [23:0] WD,input[31:0] pc, output [146:0] bufferOut );
 	
 
 	//sub modules output
@@ -18,7 +18,7 @@ module instructionDecode(input clk,input rst,en, input [31:0] inst,input WE,inpu
 	
 	
 	//buffer concatenation
-	logic [122:0] bufferInput;
+	logic [146:0] bufferInput;
 	
 	
 	
@@ -30,7 +30,7 @@ module instructionDecode(input clk,input rst,en, input [31:0] inst,input WE,inpu
 	
 	
 	//buffer setup
-	buffer #(.Buffer_size(123)) ID_EX (.rst(rst),.clk(clk),.en(en),.bufferInput(bufferInput),.bufferOut(bufferOut));
+	buffer #(.Buffer_size(146)) ID_EX (.rst(rst),.clk(clk),.en(en),.bufferInput(bufferInput),.bufferOut(bufferOut));
 	
 	//control unit to the control flags
 	controlUnit myControlUnit(.opType(opType),.opCode(opCode),.Rd(Rc),.immSrc(immSrc),.branchFlag(branchFlag),.memWrite(memWrite),.memToReg(memToReg),.regWrite(regWrite), .aluControl(aluControl));
@@ -45,11 +45,11 @@ module instructionDecode(input clk,input rst,en, input [31:0] inst,input WE,inpu
 	assign imm=inst[17:0];
 	
 //divide instruction:
-//	   | opType | opCode | immSrc | branchFlag | memWrite | memToReg | regWrite | aluControl | Ra | RD1 | Rb | RD2 | Rc | RD3 | entendImm |
+//	   |pc | opType | opCode | immSrc | branchFlag | memWrite | memToReg | regWrite | aluControl | Ra | RD1 | Rb | RD2 | Rc | RD3 | extendImm |
 //Size:
-//	   |   [2] 	|   [4]  |  [1]   |    [1]     |   [1]    |   [1]	  |    [1]   |     [4]    | [4]| [N] |[4] |[N]  |[4] |  [N]|    [N]    | 
+//	   |[N]|   [2] 	|   [4]  |  [1]   |    [1]   |   [1]    |   [1]	  |    [1]   |     [4]     | [4]| [N] |[4] |[N]  |[4] |  [N]|    [N]    | 
 //	----------------------------------------------------------------------------------------------------------------------------------------
-//    |122     |120     |116		|115		    |114	    	|113		  |112       |111         |107 |103  |79  |75   |51  |47   |23        0|
-	assign bufferInput={opType,opCode,immSrc,branchFlag,memWrite,memToReg,regWrite,aluControl,Ra,RD1,Rb,RD2,Rc,RD3,extendImm};
+//    |146|122       |120     |116		|115		    |114	  	 |113		  |112       |111          |107 |103  |79  |75   |51  |47   |23        0|
+	assign bufferInput={pc,opType,opCode,immSrc,branchFlag,memWrite,memToReg,regWrite,aluControl,Ra,RD1,Rb,RD2,Rc,RD3,extendImm};
 
 endmodule 

@@ -10,6 +10,7 @@ Instructions = {
     "not":{"opType":"art", "opcode":8},
     "sl":{"opType":"art", "opcode":9},
     "sr":{"opType":"art", "opcode":10},
+    "mod":{"opType":"art", "opcode":11},
     "ld":{"opType":"mem", "opcode":0},
     "str":{"opType":"mem", "opcode":1},
     "bi":{"opType":"cont", "opcode":0},

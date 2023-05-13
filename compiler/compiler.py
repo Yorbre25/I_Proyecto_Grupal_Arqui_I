@@ -26,7 +26,7 @@ actualInstruction = 0
 instructionResult = []
 
 def openFile():
-    f = open("input.s", "r")
+    f = open("Software/main.txt", "r")
     counter = 0
     for line in f:
         if not line.isspace():
@@ -138,6 +138,11 @@ def GetRegisterOpcode(register):
 
 def SetBranches():
     branchLine = 0
+    print("__________________")
+    print(instructionResult)
+    print("__________________")
+    print(functions) 
+    print("XXXXXXXXXXXXX")
     for branch in instructionResult:
         
         if( "=" in branch):
@@ -146,8 +151,10 @@ def SetBranches():
             newInstruction = branch[:branch.find("=")]
             branchLabel = branch[branch.find("=") + 1 :]
             print("Instruccion ",newInstruction)
-
+            print("Branch Label is: ", branchLabel)
+    
             jump = functions.get(branchLabel)
+            
             actualInstructionAux = branchLine
             print("Pc Relative ", jump)
             print("Actual Line ", branchLine)

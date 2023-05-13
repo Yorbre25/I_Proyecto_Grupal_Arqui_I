@@ -1,4 +1,3 @@
-for frames in range(5,400,5):
 Main:
 MOV r1, r0
 ProgramLoop:
@@ -9,7 +8,7 @@ ADD r1,r1,#5
 MOV r3,r0
 MOVIMGTOHDMI:
 mov r4, 0
-bi MOVIMG
+bi MOVIMGLoop
 XLoop:
 MOV r4,#299
 CMP r3,r4

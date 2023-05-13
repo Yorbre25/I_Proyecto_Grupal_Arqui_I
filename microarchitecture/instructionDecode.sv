@@ -43,6 +43,13 @@ module instructionDecode(input clk,input rst,en, input [31:0] inst,input WE,inpu
 	assign Ra=inst[21:18];
 	assign Rb=inst[17:14];
 	assign imm=inst[17:0];
+	
+//divide instruction:
+//	   | opType | opCode | immSrc | branchFlag | memWrite | memToReg | regWrite | aluControl | Ra | RD1 | Rb | RD2 | Rc | RD3 | entendImm |
+//Size:
+//	   |   [2] 	|   [4]  |  [1]   |    [1]     |   [1]    |   [1]	  |    [1]   |     [4]    | [4]| [N] |[4] |[N]  |[4] |  [N]|    [N]    | 
+//	----------------------------------------------------------------------------------------------------------------------------------------
+//    |122     |120     |116		|115		    |114	    	|113		  |112       |111         |107 |103  |79  |75   |51  |47   |23        0|
 	assign bufferInput={opType,opCode,immSrc,branchFlag,memWrite,memToReg,regWrite,aluControl,Ra,RD1,Rb,RD2,Rc,RD3,extendImm};
 
 endmodule 

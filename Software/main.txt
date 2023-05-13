@@ -1,0 +1,68 @@
+for frames in range(5,400,5):
+Main:
+MOV r1, r0
+ProgramLoop:
+MOV r2, #400
+CMP r1, r2
+Bg Exit
+ADD r1,r1,#5
+MOV r3,r0
+MOVIMGTOHDMI:
+mov r4, 0
+bi MOVIMG
+XLoop:
+MOV r4,#299
+CMP r3,r4
+MOV r5,r0
+Bg ProgramLoop
+bi YLoop
+YLoop:
+MOV r4,#299
+CMP r5,r4
+Bg XLoop
+MOV r6, sinPointer
+LD  r6, r6, r5
+MULT r6, r6, r1
+DIV r6, r6, #100
+ADD r6, r6, r3
+MOD r6, r6, #300
+MOV r7, sinPointer
+LD  r7, r7, r3
+MULT r7, r7, r1
+DIV r7, r7, #100
+ADD r7, r7, r5
+mod r7, r7, #300
+bi CMPX
+exitYLoop:
+ADD r5,r5,#1
+bi YLoop
+CMPX:
+CMP r6, r4
+Bleq CMPY
+Bi exitYLoop
+CMPY:
+CMP r7, r4
+Bleq MOVIMGIMG
+bi exitYLoop
+MOVIMGIMG:
+MOV r8,IMG1Pointer
+MOV r9,IMG2Pointer
+MULT r10, r6, #300
+ADD r10,r10, r7
+MULT r11, r3, #300
+ADD r11, r11, r5
+LD r12, r8, r11
+STR r12, r9, r10
+bi exitYLoop
+MOVIMGLoop:
+MOV r8, #90000
+MOV r6, IMG1Pointer
+MOV r7, IMG2Pointer
+LD r9, r7, r4
+STR r9, r6, r4
+ADD r4, r4, #1
+cmp r4, r8
+Bleq MOVIMGLoop
+bi XLoop
+Exit:
+MOV r1,#0

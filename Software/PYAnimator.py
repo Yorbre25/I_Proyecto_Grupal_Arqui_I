@@ -17,19 +17,21 @@ def main():
                 mem1 *= Axy
                 mem1 = mem1//100
                 mem1 += x
-                mem2 = mem1
-                mem1 = mem1 % Lxy
+                mem1 = mem1%300
+                mem2 = int(SinData[x])
+                mem2 *= Axy
+                mem2 = mem2//100
+                mem2 += y
+                mem2 = mem2%300
 
-                mem3 = int(SinData[x])
-                mem3 *= Axy
-                mem3 = mem3//100
-                mem3 += y
-                mem4 = mem3
-                mem3 = mem3 % Lxy
-
-                if(mem2 == mem1 and mem3 == mem4):
+                if(mem2 < 299 and mem1 < 299):
                     pixel = Frame1.getpixel((x,y))
-                    Frame2.putpixel((mem1,mem3),pixel)
+                    try:
+                        Frame2.putpixel((mem1+1,mem2+1),pixel)
+                    except:
+                        print('Ha fallado')
+                        print((mem1+1,mem2+1))
+                        exit()
                 #newX = 
                 #print(pixel)
         Frame2.save('img/barbaraImgParsed'+str(Axy//5)+'.png','PNG')

@@ -1,9 +1,13 @@
-module hazardUnit(input [3:0] Ra,Rb,Rd_EXMEM,Rd_MEMWB,input  [1:0] opType,input  [3:0] opCode,input [31:0] aluResult,Result,input  branchTakenFlag,output Fa,Fb,stall,flush1,flush2,flush3,flush4,flush5,output logic [31:0] Forward1,Forward2);
+module hazardUnit(input [3:0] Ra,Rb,Rd_EXMEM,Rd_MEMWB,input  [1:0] opTypeMem,opTypeWB,input  [3:0] opCodeMem,opCodeWB,input [31:0] aluResult,Result,input  branchTakenFlag,output Fa,Fb,stall,flush1,flush2,flush3,flush4,flush5,output logic [31:0] Forward1,Forward2);
 
-	logic flushCondition,ldFlag;
+	logic flushCondition,ldFlag,writtenOnMem,writtenOnWB;
 	
 	
-	assign ldFlag= (opType==2'b10) & (opCode==4'b0000);
+	assign ldFlag= (opTypeMem==2'b10) & (opCodeMem==4'b0000);
+	assign writtenOnMem= !opTypeMem[1] | (opTypeMem==2'b10 & opCodeMem==0);
+	assign writtenOnWB= !opTypeWB[1] | (opTypeWB==2'b10 & opCodeWB==0); 
+	
+	
 	assign stall = ((Ra==Rd_EXMEM) & ldFlag) | ((Rb==Rd_EXMEM) & ldFlag);
 	assign flushCondition=branchTakenFlag;
 	assign flush1=0;
@@ -11,8 +15,8 @@ module hazardUnit(input [3:0] Ra,Rb,Rd_EXMEM,Rd_MEMWB,input  [1:0] opType,input 
 	assign flush3=flushCondition;
 	assign flush4=flushCondition;
 	assign flush5=0;
-	assign Fa= (Ra==Rd_EXMEM) | (Ra==Rd_MEMWB);
-	assign Fb= (Rb==Rd_EXMEM) | (Rb==Rd_MEMWB);
+	assign Fa= (Ra==Rd_EXMEM & writtenOnMem) | (Ra==Rd_MEMWB & writtenOnWB);
+	assign Fb= (Rb==Rd_EXMEM & writtenOnMem) | (Rb==Rd_MEMWB & writtenOnWB);
 	always_comb begin
 	
 		if(Ra==Rd_EXMEM)Forward1=aluResult;

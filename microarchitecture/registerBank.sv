@@ -12,7 +12,7 @@ module registerBank #(parameter Index_size=4,parameter width=32)(input clk,rst, 
 	
 	
 
-	always_ff @(negedge clk or posedge rst) begin
+	always_ff @(posedge clk or posedge rst) begin
 	  if(rst) begin
 		register[2**Index_size-1:0]=0;
 	  end

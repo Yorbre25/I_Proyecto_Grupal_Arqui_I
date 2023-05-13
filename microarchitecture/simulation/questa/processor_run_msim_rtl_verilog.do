@@ -13,7 +13,6 @@ vlog -sv -work work +incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_arc
 vlog -sv -work work +incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/operatorsAluMux.sv}
 vlog -sv -work work +incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/mux41.sv}
 vlog -sv -work work +incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/exec.sv}
-vlog -sv -work work +incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/ALUMux.sv}
 
 vlog -sv -work work +incdir+C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/GitHub/ybrenes_computer_architecture_1_2023/microarchitecture/testExec.sv}
 

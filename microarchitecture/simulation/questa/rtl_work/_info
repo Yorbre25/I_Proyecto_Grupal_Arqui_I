@@ -1,0 +1,253 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/simulation/questa
+T_opt
+Z1 !s110 1683651829
+V4fa6XV`S`z;4Zi6me;3Mc2
+04 8 4 work testExec fast 0
+=1-047c16432f6e-645a7cf5-341-c4
+!s124 OEM10U10 
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vALU
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R1
+!i10b 1
+!s100 TB9o46aDDY^?U7BT9R:LP0
+ISBPieSn<QNX8bXDW]<^MR2
+S1
+R0
+w1682888778
+8C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv
+FC:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv
+!i122 3
+L0 1 19
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z6 !s108 1683651829.000000
+!s107 C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture|C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv|
+!i113 0
+Z7 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 !s92 -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@a@l@u
+vbuffer
+R3
+R1
+!i10b 1
+!s100 Nz48BWFlFb4AdilM5?7CD1
+IU0dhcON[DJR65KA9:fR3N3
+S1
+R0
+w1683648161
+8C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv
+FC:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv
+!i122 4
+Z9 L0 1 12
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture|C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv|
+!i113 0
+R7
+R8
+R2
+vexec
+R3
+R1
+!i10b 1
+!s100 Ze6?c@F8X>eVI^n1g:5I01
+I^c_[GAJCkhe9ediOEM8221
+S1
+R0
+w1683648208
+8C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/exec.sv
+FC:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/exec.sv
+!i122 7
+L0 2 45
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/exec.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture|C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/exec.sv|
+!i113 0
+R7
+R8
+R2
+vMux
+R3
+R1
+!i10b 1
+!s100 2E2<<U=F`QK0BjEW@8Kc;0
+I56K3J>57N4:VlfMQQhUXz0
+S1
+R0
+w1682870739
+8C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv
+FC:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv
+!i122 2
+L0 1 38
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture|C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv|
+!i113 0
+R7
+R8
+R2
+n@mux
+vmux41
+R3
+R1
+!i10b 1
+!s100 _Me6:JXjfA6n6LI`E>6ek1
+I5KU?eL?Xe4b;7m@MBF[AK3
+S1
+R0
+w1682873533
+8C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mux41.sv
+FC:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mux41.sv
+!i122 6
+L0 1 15
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mux41.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture|C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mux41.sv|
+!i113 0
+R7
+R8
+R2
+vOperator
+R3
+R1
+!i10b 1
+!s100 ]hiD<Dae0;=J?2WjoK;4D2
+Ij9IFFkeZ;e=]7S;Q7UoYJ2
+S1
+R0
+w1683593881
+8C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv
+FC:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv
+!i122 1
+Z10 L0 1 32
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture|C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv|
+!i113 0
+R7
+R8
+R2
+n@operator
+voperatorsALUMux
+R3
+R1
+!i10b 1
+!s100 fd6=CUY8K4oRTdcnNcY1R0
+I1V<PkD=0b>R_K9hhVn:?F1
+S1
+R0
+w1683643909
+8C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/operatorsAluMux.sv
+FC:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/operatorsAluMux.sv
+!i122 5
+R9
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/operatorsAluMux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture|C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/operatorsAluMux.sv|
+!i113 0
+R7
+R8
+R2
+noperators@a@l@u@mux
+vSetFlags
+R3
+R1
+!i10b 1
+!s100 94ZIWaOY7L^6Yl79]:EV]2
+I>5T1VfmNgKI[Ed5YdbJWW0
+S1
+R0
+w1683594031
+8C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/SetFlags.sv
+FC:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/SetFlags.sv
+!i122 0
+R10
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/SetFlags.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture|C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/SetFlags.sv|
+!i113 0
+R7
+R8
+R2
+n@set@flags
+vtestExec
+R3
+R1
+!i10b 1
+!s100 Lj5=Z1YY]NUED755b@3J?1
+IHkH?G3=iA[:hO?Kbz8V:i1
+S1
+R0
+w1683651815
+8C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/testExec.sv
+FC:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/testExec.sv
+!i122 8
+L0 1 95
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/testExec.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture|C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/testExec.sv|
+!i113 0
+R7
+R8
+R2
+ntest@exec

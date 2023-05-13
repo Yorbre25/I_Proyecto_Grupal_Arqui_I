@@ -29,9 +29,15 @@ module mainMemory_tb();
 		address_b=10;
 		data_a=255;
 		data_b=65535;
-		wren_a=1;
+		wren_a=0;
 		wren_b=0;
 		
+		#10; //negedge
+		
+		#10; //posedge
+		wren_a=1;
+		assert(q_a==24'hffffff) $display("Lectura correcta de estado inicial");
+		else $error("Lectura incorrecta de estado inicial");
 		#10; //negedge
 		
 		#10; //posedge

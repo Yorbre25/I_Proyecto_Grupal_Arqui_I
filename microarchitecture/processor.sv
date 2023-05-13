@@ -1,29 +1,53 @@
 parameter RW = 24;
 parameter IF_BW = 57;
 parameter ID_BW = 147;
-parameter EX_MEM = 64;
-module processor;
+parameter EX_BW = 64;
+parameter MEM_BW = 60;
+module processor(input);
+
+	logic branchTakenFlag;
+	logic rst_if, rst2_id, rst3_ex, rst4_mem
+	logic flush1, flush2, flush3, flush4;
+	logic Fa, Fb
 	
-vc
+	branchTaken myBranchTakenFlag(
+		.opType(opType), //
+		.opCode(opCode), //
+		.flags(flags),  //
+		.branchTakenFlag(branchTakenFlag) 
+	);
+	
+	resetModule(
+		.rst(rst), //
+		.flush1(flush1), 
+		.flush2(flush2), 
+		.flush3(flush3), 
+		.flush4(flush4), 
+		.rst1.(rst_if), 
+		.rst2(rst_id), 
+		.rst3(rst_ex), 
+		.rst4(rst_mem)
+);
 
 	hazardUnit myhazardUnit(
-		.Ra(Ra),
-		.Rb(Rb),
-		.Rd_EXMEM(Rd_EXMEM),
-		.Rd_MEMWB(Rd_MEMWB),
-		.opTypeMem(opTypeMem),
-		.opTypeWB(opTypeWB),
-		.opCodeMem(opCodeMem),
-		.opCodeWB(opCodeWB),
-		.aluResult(aluResult),
-		.Result(Result), 
-		.branchTakenFlag(branchTakenFlag),
-		.Fa(Fa),.Fb(Fb),.stall(stall),
-		.flush1(flush1),.flush2(flush2),
-		.flush3(flush3),.flush4(flush4),
-		.flush5(flush5), 
-		.Forward1(Forward1),
-		.Forward2(Forward2)
+		.Ra(Ra), //
+		.Rb(Rb), //
+		.Rd_EXMEM(Rd_EXMEM), //
+		.Rd_MEMWB(Rd_MEMWB), //
+		.opTypeMem(opTypeMem), //
+		.opTypeWB(opTypeWB), //
+		.opCodeMem(opCodeMem), //
+		.opCodeWB(opCodeWB), //
+		.aluResult(aluResult), //
+		.Result(Result),  //
+		.branchTakenFlag(branchTakenFlag), //
+		.Fa(Fa),.Fb(Fb),
+		.stall(stall), //
+		.flush1(flush1),.flush2(flush2), 
+		.flush3(flush3),.flush4(flush4), 
+		.flush5(flush5), //
+		.Forward1(Forward1), //
+		.Forward2(Forward2) //
 	);
 	
 	
@@ -105,29 +129,80 @@ vc
 	.memWrite(memWrite_id_ex),
 	.memToReg(memToReg_id_ex), 
 	.regWrite(regWrite_id_ex),
-	.Fa(Fa), 				//
-	.Fb(Fb),					//
+	.Fa(Fa), 				
+	.Fb(Fb),					
 	.opType(opType_id_ex), 
 	.opCode(opCode_id_ex),
 	.bufferOut(bufferOut_ex)
 	);
 	
 	
-	logic [31:0] data_ex_mem;
-	logic [13:0] addr_ex_mem;
+	logic memWrite_ex_mem,memToReg_ex_mem,regWrite_ex_mem;
+	logic [1:0] opType_ex_mem;
+	logic [3:0] opCode_ex_mem;
+	logic [23:0] address1_ex_mem,address2_ex_mem;
+	logic [3:0] Rc_ex_mem,switches_ex_mem;
+	logic [23:0] writeData_ex_mem,q_ex_mem;
+	logic [35:0] gpio1_ex_mem,gpio2_ex_mem;
+	
+	logic [59:0] bufferOut;
 	
 	
-	// Get ID buffer values
 	
-	instructionMemory #(.address_size(14),.data_width(8)) mymem (
-		.addr(addr_ex_mem), //
-		.data(data_ex_mem) //
+	
+	
+	// Get exec buffer values
+	bufferOut_ex[23:0]   //rd3
+	assign rc_ex_mem = bufferOut_ex[27:24] 
+	assign regWrite_ex_mem = bufferOut_ex[28]
+	assign memToReg_ex_mem = bufferOut_ex[29] 
+	assign memWrite_ex_mem = bufferOut_ex[30]
+	bufferOut_ex[31] //branchFlag
+	bufferOut_ex[32] //negFlag
+	bufferOut_ex[33] //zeroFlag
+	bufferOut_ex[57:34]//aluCurrentResult
+	assign opType_ex_mem = bufferOut_ex[61:58] //opCode
+	assign opCode_ex_mem = bufferOut_ex[63:62] //opType
+	
+	logic [MEM_BW-1:0]bufferOut_mem;
+	
+	memoryStage myMemoryStage(
+		.clk(clk),
+		.rst(rst),
+		.en(en),
+		.opType(opType_ex_mem),
+		.opCode(opCode_ex_mem),
+		.address1(),
+		.address2(),
+		.memWrite(memWrite_ex_mem),
+		.memToReg(memToReg_ex_mem),
+		.regWrite(regWrite_ex_mem),
+		.Rc(rc_ex_mem),
+		.writeData(),
+		.switches(),
+		.gpio1(),
+		.gpio2(),
+		.q(q),
+		.bufferOut(bufferOut_mem)
 	);
+	
+	
+	logic memToReg_mem_wb;
+	
+	//Get MEM buffer values
+	bufferOut_mem[23:0] // address1
+	bufferOut_mem[47:24] // qa
+	bufferOut_mem[51:48] // Rc
+	bufferOut_mem[52] // regWrite
+	assign memToReg_mem_wb = bufferOut_mem[53] // memToReg
+	bufferOut_mem[58:54] // opCode
+	bufferOut_mem[60:59] // opType
+	
 	
 	writeBack #(.N(RW))(
 		.readDataW(readDataW), //
 		.aluOutW(aluOutW),     //
-		.memToReg(memToReg),   //
+		.memToReg(memToReg_mem_wb),
 		.resultW(resultW)     //
 	);
 	

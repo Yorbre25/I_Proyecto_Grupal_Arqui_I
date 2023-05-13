@@ -3,9 +3,9 @@
 module instructionFetch_tb();
 
 	logic clk,rst,en,branchFlag;
-	logic [31:0] branchAddr,instruction,pc;
-	
-	instructionFetch myInstructionFetch(.clk(clk),.rst(rst),.en(en),.branchFlag(branchFlag),.branchAddr(branchAddr),.instruction(instruction),.pc(pc));
+	logic [23:0] branchAddr;
+	logic [55:0] bufferOut;
+	instructionFetch myInstructionFetch(.clk(clk),.rst(rst),.en(en),.branchFlag(branchFlag),.branchAddr(branchAddr),.bufferOut(bufferOut));
 	
 	
 	always begin

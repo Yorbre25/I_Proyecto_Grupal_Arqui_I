@@ -9,7 +9,7 @@ module IOMemory(input clk, rst,en,input [7:0] address,input [23:0] dataIn,input 
 	assign memory[35:0]=readMemory;
 	assign gpio2=memory[35:0];
 	
-	always_ff @(negedge clk or posedge rst) begin
+	always_ff @(posedge clk or posedge rst) begin
 		if(rst)readMemory[35:0]=0;
 		else begin
 			if(address<=35 & en)readMemory[address]=dataIn[0];

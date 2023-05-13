@@ -7,9 +7,9 @@ module buffer #(parameter Buffer_size=32)(input rst,clk,en,input [Buffer_size-1:
 			if(en)state=bufferInput;
 		end
 	end
-	always_ff @(posedge clk)begin
-		bufferOut=state;
-	end
+	
+	assign bufferOut=state;
+	
 
 
 endmodule 

@@ -16,7 +16,7 @@ module dataMemory_tb();
 	end
 	
 	initial begin
-		clk=1;
+		clk=0;
 		rst=1;
 		memWrite=0;
 		address1=75;
@@ -26,32 +26,32 @@ module dataMemory_tb();
 		switches=4'b1010;
 		gpio1=4;
 		
-		#10; //negedge
+		#10; //posedge
 		
 		
-		#10;//posedge
+		#10;//negedge
 		rst=0;
 		
-		#10; //negedge
-		
 		#10; //posedge
+		
+		#10; //negedge
 		memWrite=1;
 		address1=76;
 		assert(qa==1) $display("Lectura switches correcta");
 		else $error("Lectura desde switches incorrecta");
 		
-		#10; //negedge
+		#10; //posedge
 		
-		#10;//posedge
+		#10;//negedge
 		memWrite=0;
 		address2=0;
 		data1=27;
 		assert(qa==255) $display("Lectura de la posicion 50000 de memoria despues de la escritura fue correcta");
 		else $error("Lectura de la posicion 50000 de memoria despues de la escritura fue correcta");
 		
-		#10;//negedge
+		#10;//posedge
 		
-		#10; //posedge
+		#10; //negedge
 		memWrite=1;
 		address1=30;
 		data1=1;
@@ -63,23 +63,23 @@ module dataMemory_tb();
 		else $error("Lectura desde el puerto dos de la posicion escrita anteriormente incorrecta");
 		
 		
-		#10; //negedge
-		
-		
 		#10; //posedge
+		
+		
+		#10; //negedge
 		address1=38;
 		memWrite=0;
 		assert(qa==1) $display("Lectura correcta de los GPIO escritos");
 		else $error("Lectura incorrecta de los GPIO escritos");
 		
-		#10; //negedge
-		
 		#10; //posedge
+		
+		#10; //negedge
 		
 		assert(qa==1) $display("Lectura correcta de los GPIO como entradas");
 		else $error("Lectura incorrecta de los GPIO como entradas");
 		
-		#10; //negedge
+		#10; //posedge
 		
 		
 		

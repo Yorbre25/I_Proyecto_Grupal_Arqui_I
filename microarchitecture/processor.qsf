@@ -131,7 +131,6 @@ set_global_assignment -name SYSTEMVERILOG_FILE hazardUnit_tb.sv
 set_global_assignment -name EDA_TEST_BENCH_NAME hazardUnit_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id hazardUnit_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME hazardUnit_tb -section_id hazardUnit_tb
-set_global_assignment -name QIP_FILE mainMemory.qip
 set_global_assignment -name SYSTEMVERILOG_FILE IOMemory.sv
 set_global_assignment -name SYSTEMVERILOG_FILE chipSet.sv
 set_global_assignment -name SYSTEMVERILOG_FILE dataMemory.sv
@@ -149,6 +148,10 @@ set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id dataMemory_t
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME dataMemory_tb -section_id dataMemory_tb
 set_global_assignment -name SYSTEMVERILOG_FILE memoryStage.sv
 set_global_assignment -name SYSTEMVERILOG_FILE memoryStage_tb.sv
+set_global_assignment -name EDA_TEST_BENCH_NAME memoryStage_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id memoryStage_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME memoryStage_tb -section_id memoryStage_tb
+set_global_assignment -name QIP_FILE mainMemory.qip
 set_global_assignment -name EDA_TEST_BENCH_FILE UnitTestALU.sv -section_id UnitTestALU
 set_global_assignment -name EDA_TEST_BENCH_FILE TestALU.sv -section_id TestALU
 set_global_assignment -name EDA_TEST_BENCH_FILE TestOperator.sv -section_id TestOperator
@@ -173,9 +176,6 @@ set_global_assignment -name EDA_TEST_BENCH_FILE chipSet_tb.sv -section_id chipSe
 set_global_assignment -name EDA_TEST_BENCH_FILE chipSet.sv -section_id chipSet_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE dataMemory.sv -section_id dataMemory_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE dataMemory_tb.sv -section_id dataMemory_tb
-set_global_assignment -name EDA_TEST_BENCH_NAME memoryStage_tb -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id memoryStage_tb
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME memoryStage_tb -section_id memoryStage_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE memoryStage.sv -section_id memoryStage_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE memoryStage_tb.sv -section_id memoryStage_tb
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top

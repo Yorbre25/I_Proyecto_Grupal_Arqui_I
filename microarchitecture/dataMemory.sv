@@ -7,7 +7,7 @@ module dataMemory(input clk,rst,memWrite,input [18:0] address1,address2,input [2
 	
 	mainMemory mymainMemory(.address_a(address1[17:0]-76),
 	.address_b(address2[17:0]),
-	.clock(!clk),
+	.clock(clk),
 	.data_a(data1),
 	.data_b(data2),
 	.wren_a(en2),

@@ -12,99 +12,99 @@
 # 
 # vlog -vlog01compat -work work +incdir+D:/TEC/Primer\ Semestre\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:37:39 on May 11,2023
+# Start time: 23:35:15 on May 12,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory.v 
 # -- Compiling module mainMemory
 # 
 # Top level modules:
 # 	mainMemory
-# End time: 19:37:39 on May 11,2023, Elapsed time: 0:00:00
+# End time: 23:35:15 on May 12,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/Primer\ Semestre\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:37:39 on May 11,2023
+# Start time: 23:35:15 on May 12,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv 
 # -- Compiling module buffer
 # 
 # Top level modules:
 # 	buffer
-# End time: 19:37:39 on May 11,2023, Elapsed time: 0:00:00
+# End time: 23:35:15 on May 12,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/Primer\ Semestre\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mux21.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:37:39 on May 11,2023
+# Start time: 23:35:15 on May 12,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mux21.sv 
 # -- Compiling module mux21
 # 
 # Top level modules:
 # 	mux21
-# End time: 19:37:39 on May 11,2023, Elapsed time: 0:00:00
+# End time: 23:35:15 on May 12,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/Primer\ Semestre\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/IOMemory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:37:39 on May 11,2023
+# Start time: 23:35:16 on May 12,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/IOMemory.sv 
 # -- Compiling module IOMemory
 # 
 # Top level modules:
 # 	IOMemory
-# End time: 19:37:39 on May 11,2023, Elapsed time: 0:00:00
+# End time: 23:35:16 on May 12,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/Primer\ Semestre\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/chipSet.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:37:39 on May 11,2023
+# Start time: 23:35:16 on May 12,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/chipSet.sv 
 # -- Compiling module chipSet
 # 
 # Top level modules:
 # 	chipSet
-# End time: 19:37:39 on May 11,2023, Elapsed time: 0:00:00
+# End time: 23:35:16 on May 12,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/Primer\ Semestre\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/dataMemory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:37:39 on May 11,2023
+# Start time: 23:35:16 on May 12,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/dataMemory.sv 
 # -- Compiling module dataMemory
 # 
 # Top level modules:
 # 	dataMemory
-# End time: 19:37:39 on May 11,2023, Elapsed time: 0:00:00
+# End time: 23:35:16 on May 12,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/Primer\ Semestre\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/memoryStage.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:37:39 on May 11,2023
+# Start time: 23:35:16 on May 12,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/memoryStage.sv 
 # -- Compiling module memoryStage
 # 
 # Top level modules:
 # 	memoryStage
-# End time: 19:37:39 on May 11,2023, Elapsed time: 0:00:00
+# End time: 23:35:16 on May 12,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+D:/TEC/Primer\ Semestre\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/memoryStage.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:37:39 on May 11,2023
+# Start time: 23:35:16 on May 12,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/memoryStage.sv 
 # -- Compiling module memoryStage
 # 
 # Top level modules:
 # 	memoryStage
-# End time: 19:37:39 on May 11,2023, Elapsed time: 0:00:00
+# End time: 23:35:16 on May 12,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/Primer\ Semestre\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/memoryStage_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:37:39 on May 11,2023
+# Start time: 23:35:16 on May 12,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/memoryStage_tb.sv 
 # -- Compiling module memoryStage_tb
 # 
 # Top level modules:
 # 	memoryStage_tb
-# End time: 19:37:39 on May 11,2023, Elapsed time: 0:00:00
+# End time: 23:35:16 on May 12,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  memoryStage_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" memoryStage_tb 
-# Start time: 19:37:39 on May 11,2023
+# Start time: 23:35:16 on May 12,2023
 # Loading sv_std.std
 # Loading work.memoryStage_tb
 # Loading work.memoryStage
@@ -123,7 +123,7 @@
 # MACRO ./processor_run_msim_rtl_verilog.do PAUSED at line 19
 vsim -L altera_mf_ver -L lpm_ver memoryStage_tb
 # vsim -L altera_mf_ver -L lpm_ver memoryStage_tb 
-# Start time: 19:37:39 on May 11,2023
+# Start time: 23:35:16 on May 12,2023
 # Loading sv_std.std
 # Loading work.memoryStage_tb
 # Loading work.memoryStage
@@ -139,34 +139,13 @@ vsim -L altera_mf_ver -L lpm_ver memoryStage_tb
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
 # ** Warning: (vsim-3015) [PCDPC] - Port size (18) does not match connection size (32) for port 'address_a'. The port definition is at: D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory.v(41).
 #    Time: 0 ps  Iteration: 0  Instance: /memoryStage_tb/myMemoryStage/myDataMemory/mymainMemory File: D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/dataMemory.sv Line: 8
-add wave -position insertpoint  \
-sim:/memoryStage_tb/address1 \
-sim:/memoryStage_tb/address2 \
-sim:/memoryStage_tb/bufferOut \
-sim:/memoryStage_tb/clk \
-sim:/memoryStage_tb/en \
-sim:/memoryStage_tb/gpio1 \
-sim:/memoryStage_tb/gpio2 \
-sim:/memoryStage_tb/memToReg \
-sim:/memoryStage_tb/memWrite \
-sim:/memoryStage_tb/opCode \
-sim:/memoryStage_tb/opType \
-sim:/memoryStage_tb/q \
-sim:/memoryStage_tb/Rc
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: AMD  Hostname: DESKTOP-10GV6F8  ProcessID: 1572
-#           Attempting to use alternate WLF file "./wlft4rek89".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft4rek89
-add wave -position insertpoint  \
-sim:/memoryStage_tb/regWrite \
-sim:/memoryStage_tb/rst \
-sim:/memoryStage_tb/switches \
-sim:/memoryStage_tb/writeData
 run -all
 # Banderas correctas
 # salida de memoria correcta
+# Address de salida correcta
+# Banderas correctas
+# salida de memoria correcta
 # Break key hit
-# Break in Module altsyncram_body at $MODEL_TECH/../altera/verilog/src/altera_mf.v line 49951
-# End time: 19:40:22 on May 11,2023, Elapsed time: 0:02:43
-# Errors: 1, Warnings: 3
+# Break in Module altsyncram_body at $MODEL_TECH/../altera/verilog/src/altera_mf.v line 49586
+# End time: 23:35:46 on May 12,2023, Elapsed time: 0:00:30
+# Errors: 1, Warnings: 1

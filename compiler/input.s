@@ -9,4 +9,4 @@ cmp r11, r3
 beq salto
 xor r4, r1, r2
 cmp r1, #-11
-bneq salto
+beq salto

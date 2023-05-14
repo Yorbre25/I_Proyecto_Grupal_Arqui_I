@@ -172,7 +172,7 @@ def SetBranches():
             resultAux = format(pcRelative, 'b')
             result = resultAux.replace("-","")
 
-            result = negative_to_twos_complement(int(resultAux), 19)
+            result = negative_to_twos_complement(int(resultAux), 18)
             
             instructionResult[branchLine] = newInstruction + result
             print("Branch code result: ", instructionResult[branchLine])

@@ -1,4 +1,4 @@
-module hazardUnit(input [3:0] Ra,Rb,Rd_EXMEM,Rd_MEMWB,input  [1:0] opTypeMem,opTypeWB,input  [3:0] opCodeMem,opCodeWB,input [31:0] aluResult,Result,input  branchTakenFlag,output Fa,Fb,stall,flush1,flush2,flush3,flush4,flush5,output logic [31:0] Forward1,Forward2);
+module hazardUnit(input [3:0] Ra,Rb,Rd_EXMEM,Rd_MEMWB,input  [1:0] opTypeMem,opTypeWB,input  [3:0] opCodeMem,opCodeWB,input [23:0] aluResult,Result,input  branchTakenFlag,output Fa,Fb,stall,flush1,flush2,flush3,flush4,flush5,output logic [23:0] Forward1,Forward2);
 
 	logic flushCondition,ldFlag,writtenOnMem,writtenOnWB;
 	

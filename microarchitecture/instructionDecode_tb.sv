@@ -18,7 +18,12 @@ module instructionDecode_tb();
 		rst=1;
 		en=1;
 		WE=0;
-		Rd=0;
+		Rd=0;   //calculo inmediato  not r1,#10;
+		
+												//mov r2, #256
+												
+					//st registro  	  //str r1 [r2+r0] r0 ==0
+					//load registro 2   // load r3 [r2+r0]
 		WD=0;
 		#10; //negedge
 		

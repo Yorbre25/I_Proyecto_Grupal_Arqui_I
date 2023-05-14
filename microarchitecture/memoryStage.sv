@@ -10,4 +10,6 @@ module memoryStage(input clk,rst,en,input [1:0] opType,input [3:0] opCode,input 
 	buffer #(.Buffer_size(60)) myBuffer(.rst(rst),.clk(clk),.en(en),.bufferInput(bufferInput),.bufferOut(bufferOut));
 	
 	assign bufferInput={opType,opCode,memToReg,regWrite,Rc,qa,address1};
+	
+	// |59:58|57:54|53|52|51:48| 47:24|23:0|
 endmodule 

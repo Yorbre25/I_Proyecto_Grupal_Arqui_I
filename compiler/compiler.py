@@ -180,12 +180,23 @@ def CreateFile():
     with open('output.mem', 'w') as f:
         counter = 0
         for line in instructionResult:
-            hexadecimal = hex(int(line,2))
+            hexadecimal = ConvertToHex(line)
             if(counter == len(instructionResult) - 1):
-                f.writelines(hexadecimal[8:10]+"\n"+hexadecimal[6:8]+"\n"+hexadecimal[4:6]+"\n"+hexadecimal[2:4])
+                f.writelines(hexadecimal[6:8]+"\n"+hexadecimal[4:6]+"\n"+hexadecimal[2:4]+"\n"+hexadecimal[0:2])
             else:
-                f.writelines(hexadecimal[8:10]+"\n"+hexadecimal[6:8]+"\n"+hexadecimal[4:6]+"\n"+hexadecimal[2:4]+"\n")
+                f.writelines(hexadecimal[6:8]+"\n"+hexadecimal[4:6]+"\n"+hexadecimal[2:4]+"\n"+hexadecimal[0:2]+"\n")
             counter += 1
     f.close()
+
+def ConvertToHex(binaryNumber):
+    hexNumber = hex(int(binaryNumber,2))
+    hexNumberSplit = hexNumber.split("x")
+    hexNumber = hexNumberSplit[1]
+    counter = len(hexNumber)
+    while (counter < 8):
+        hexNumber = "0" +hexNumber
+        counter += 1
+    return hexNumber
+CreateFile()
 
 openFile()

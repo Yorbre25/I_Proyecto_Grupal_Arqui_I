@@ -13,11 +13,11 @@ module processor(input rst,input clk, input [35:0] gpio1,input [23:0] parallelAd
 	logic branchTakenFlag;
 	logic rst_pc,rst_if, rst_id, rst_ex, rst_mem;
 	logic flush1, flush2, flush3, flush4,flush5;
-	logic Fa, Fb;
+	logic Fa, Fb,Fc;
 	logic [1:0] opType_ex_mem;
 	logic [3:0] opCode_ex_mem;
 	logic stall,en;
-	logic [23:0] Forward1,Forward2;
+	logic [23:0] Forward1,Forward2,Forward3;
 	logic [3:0] ra_id_ex,rb_id_ex;
 	logic [31:0] inst;
 	logic [RW-1:0] pc;
@@ -86,6 +86,7 @@ module processor(input rst,input clk, input [35:0] gpio1,input [23:0] parallelAd
 	hazardUnit myhazardUnit(
 		.Ra(ra_id_ex), 
 		.Rb(rb_id_ex), 
+		.Rc(Rc_id_ex),
 		.Rd_EXMEM(rc_ex_mem), 
 		.Rd_MEMWB(rc_mem_wb), 
 		.opTypeMem(opType_ex_mem), 
@@ -95,12 +96,15 @@ module processor(input rst,input clk, input [35:0] gpio1,input [23:0] parallelAd
 		.aluResult(aluResult), 
 		.Result(resultW), 
 		.branchTakenFlag(branchTakenFlag), 
-		.Fa(Fa),.Fb(Fb),
+		.Fa(Fa),.Fb(Fb),.Fc(Fc),
 		.stall(stall), 
 		.flush1(flush1),.flush2(flush2), 
 		.flush3(flush3),.flush4(flush4),.flush5(flush5),
 		.Forward1(Forward1), 
-		.Forward2(Forward2) 
+		.Forward2(Forward2), 
+		.Forward3(Forward3),
+		.regWriteMem(regWrite_ex_mem),
+		.regWriteWB(regWriteWB)
 	);
 	
 	
@@ -165,12 +169,13 @@ module processor(input rst,input clk, input [35:0] gpio1,input [23:0] parallelAd
 	.rst(rst_ex), 
 	.en(en),
 	.rd1(rd1_id_ex), 
-	.rd2(rd2_id_ex), 
+	.rd2(rd2_id_ex),
+	.rd3(rd3_id_ex),	
 	.pc(pc_id_ex), 
 	.imm(extendImm_id_ex), 				
-	.aluOut(Forward1), 		
-	.result(Forward2),
-	.rd3(rd3_id_ex),
+	.Forward1(Forward1), 		
+	.Forward2(Forward2),
+	.Forward3(Forward3),
 	.aluControl(aluControl_id_ex),
 	.Rc(Rc_id_ex),
 	.immSrc(immSrc_id_ex), 
@@ -179,7 +184,8 @@ module processor(input rst,input clk, input [35:0] gpio1,input [23:0] parallelAd
 	.memToReg(memToReg_id_ex), 
 	.regWrite(regWrite_id_ex),
 	.Fa(Fa), 				
-	.Fb(Fb),					
+	.Fb(Fb),	
+	.Fc(Fc),
 	.opType(opType_id_ex), 
 	.opCode(opCode_id_ex),
 	.bufferOut(bufferOut_ex)

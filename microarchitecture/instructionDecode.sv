@@ -1,4 +1,4 @@
-module instructionDecode(input clk,input rst,en, input [31:0] inst,input WE,input [3:0] Rd,input [23:0] WD,input[23:0] pc, output [146:0] bufferOut );
+module instructionDecode(input clk,input rst,en, input [31:0] inst,input WE,input [3:0] Rd,input [23:0] WD,input[23:0] pc, output [147:0] bufferOut );
 	
 
 	//sub modules output
@@ -30,7 +30,7 @@ module instructionDecode(input clk,input rst,en, input [31:0] inst,input WE,inpu
 	
 	
 	//buffer setup
-	buffer #(.Buffer_size(146)) ID_EX (.rst(rst),.clk(clk),.en(en),.bufferInput(bufferInput),.bufferOut(bufferOut));
+	buffer #(.Buffer_size(147)) ID_EX (.rst(rst),.clk(clk),.en(en),.bufferInput(bufferInput),.bufferOut(bufferOut));
 	
 	//control unit to the control flags
 	controlUnit myControlUnit(.opType(opType),.opCode(opCode),.Rd(Rc),.immSrc(immSrc),.branchFlag(branchFlag),.memWrite(memWrite),.memToReg(memToReg),.regWrite(regWrite), .aluControl(aluControl));

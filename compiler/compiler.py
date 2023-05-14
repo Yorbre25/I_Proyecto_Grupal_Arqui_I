@@ -177,13 +177,15 @@ def SetBranches():
     return ""
 
 def CreateFile():
-    with open('output.txt', 'w') as f:
+    with open('output.mem', 'w') as f:
         counter = 0
         for line in instructionResult:
+            hexadecimal = hex(int(line,2))
             if(counter == len(instructionResult) - 1):
-                f.writelines(line)
+                f.writelines(hexadecimal[8:10]+"\n"+hexadecimal[6:8]+"\n"+hexadecimal[4:6]+"\n"+hexadecimal[2:4])
             else:
-                f.writelines(line+"\n")
+                f.writelines(hexadecimal[8:10]+"\n"+hexadecimal[6:8]+"\n"+hexadecimal[4:6]+"\n"+hexadecimal[2:4]+"\n")
             counter += 1
     f.close()
+
 openFile()

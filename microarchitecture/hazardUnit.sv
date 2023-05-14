@@ -15,8 +15,8 @@ module hazardUnit(input [3:0] Ra,Rb,Rd_EXMEM,Rd_MEMWB,input  [1:0] opTypeMem,opT
 	assign flush3=flushCondition;
 	assign flush4=flushCondition;
 	assign flush5=0;
-	assign Fa= (Ra==Rd_EXMEM & writtenOnMem) | (Ra==Rd_MEMWB & writtenOnWB);
-	assign Fb= (Rb==Rd_EXMEM & writtenOnMem) | (Rb==Rd_MEMWB & writtenOnWB);
+	assign Fa= (Ra==Rd_EXMEM & writtenOnMem & Ra!=0) | (Ra==Rd_MEMWB & writtenOnWB & Ra!=0);
+	assign Fb= (Rb==Rd_EXMEM & writtenOnMem & Rb!=0) | (Rb==Rd_MEMWB & writtenOnWB & Rb!=0);
 	always_comb begin
 	
 		if(Ra==Rd_EXMEM)Forward1=aluResult;

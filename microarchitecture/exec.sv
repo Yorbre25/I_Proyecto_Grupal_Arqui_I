@@ -16,7 +16,6 @@ module exec #(parameter N= 24, parameter BW=setValuesBuffer + 2*N)(
 	logic [1:0] flags;
 	logic [N-1:0] aluCurrentResult;
 	logic [N-1:0] op1,op2;
-	logic [N-1:0] rdt;
 	logic [BW-1:0] bufferInput;
 	logic zeroFlag, negFlag;
 	

@@ -1,3 +1,4 @@
+`timescale 1ns/1ns
 module processor_tb();
 		
 		logic rst,clk;
@@ -16,7 +17,7 @@ module processor_tb();
 			clk=0;
 			rst=1;
 			gpio1=0;
-			parallelAdress=0;
+			parallelAdress=179;
 			switches=0;
 			
 			#10; //posedge

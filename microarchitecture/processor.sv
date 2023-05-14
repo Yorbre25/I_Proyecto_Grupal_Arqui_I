@@ -14,10 +14,50 @@ module processor(input rst,input clk, input [35:0] gpio1,input [23:0] parallelAd
 	logic rst_pc,rst_if, rst_id, rst_ex, rst_mem;
 	logic flush1, flush2, flush3, flush4,flush5;
 	logic Fa, Fb;
+	logic [1:0] opType_ex_mem;
+	logic [3:0] opCode_ex_mem;
+	logic stall,en;
+	logic [23:0] Forward1,Forward2;
+	logic [3:0] ra_id_ex,rb_id_ex;
+	logic [31:0] inst;
+	logic [RW-1:0] pc;
+	logic [IF_BW-1:0] bufferOut_if;
+	logic [ID_BW-1:0] bufferOut_id;
+	logic [31:0] inst_if_id;
+	logic [RW:0] pc_if_id;
+	logic [1:0] opType_id_ex;
+	logic [3:0] opCode_id_ex;
+	logic immSrc_id_ex, branchFlag_id_ex, memWrite_id_ex, memToReg_id_ex, regWrite_id_ex;
+	logic [23:0] pc_id_ex;
+	logic signed [3:0] aluControl_id_ex, Rc_id_ex;
+	logic signed [RW-1:0] rd1_id_ex, rd2_id_ex, rd3_id_ex;
+	logic signed [RW-1:0] extendImm_id_ex;
+	logic memWrite_ex_mem,memToReg_ex_mem,regWrite_ex_mem;
+	
+	logic [23:0] address1_ex_mem,address2_ex_mem;
+	logic [3:0] rc_ex_mem,switches_ex_mem;
+	logic [23:0] writeData_ex_mem,q_ex_mem;
+	logic [35:0] gpio1_ex_mem,gpio2_ex_mem;
+	logic [59:0] bufferOut;
 	
 	
-
-
+	
+	
+	logic [1:0] flags_ex;
+	logic branchFlag_ex;
+	logic [23:0] aluResult;
+	logic [23:0] writeData;
+	logic [MEM_BW-1:0]bufferOut_mem;
+	
+	
+	logic memToReg_mem_wb;
+	logic [3:0] rc_mem_wb;
+	logic [1:0] optype_mem_wb;
+	logic [3:0] opcode_mem_wb;
+	logic regWriteWB;
+	logic [23:0] addressWB,readMemoryWB;
+	logic [23:0] resultW;
+	logic [EX_BW-1:0]bufferOut_ex;
 	branchTaken myBranchTakenFlag(
 		.opType(opType_ex_mem), 
 		.opCode(opCode_ex_mem), 
@@ -25,7 +65,7 @@ module processor(input rst,input clk, input [35:0] gpio1,input [23:0] parallelAd
 		.branchTakenFlag(branchTakenFlag) 
 	);
 	
-	resetModule(
+	resetModule myResetModule(
 		.rst(rst), 
 		.flush1(flush1), 
 		.flush2(flush2), 
@@ -41,8 +81,8 @@ module processor(input rst,input clk, input [35:0] gpio1,input [23:0] parallelAd
 );
 
 
-	logic stall,en;
-	logic [23:0] Forward1,Forward2;
+	
+	
 	hazardUnit myhazardUnit(
 		.Ra(ra_id_ex), 
 		.Rb(rb_id_ex), 
@@ -66,9 +106,7 @@ module processor(input rst,input clk, input [35:0] gpio1,input [23:0] parallelAd
 	
 	assign en=!stall;
 	
-	logic [31:0] inst;
-	logic [RW-1:0] pc;
-	logic [IF_BW-1:0] bufferOut_if;
+	
 	
 	instructionFetch myInstructionFetch(
 		.clk(clk),               
@@ -81,9 +119,7 @@ module processor(input rst,input clk, input [35:0] gpio1,input [23:0] parallelAd
 		.bufferOut(bufferOut_if)
 	);
 	
-	logic [ID_BW-1:0] bufferOut_id;
-	logic [31:0] inst_if_id;
-	logic [RW:0] pc_if_id;
+	
 	
 	// Get ID buffer values
 	assign inst_if_id = bufferOut_if[55:24];
@@ -102,14 +138,8 @@ module processor(input rst,input clk, input [35:0] gpio1,input [23:0] parallelAd
 	);
 
 	
-	logic [1:0] opType_id_ex;
-	logic [3:0] opCode_id_ex;
-	logic immSrc_id_ex, branchFlag_id_ex, memWrite_id_ex, memToReg_id_ex, regWrite_id_ex;
-	logic [23:0] pc_id_ex;
-	logic signed [3:0] aluControl_id_ex, Rc_id_ex;
-	logic signed [RW-1:0] rd1_id_ex, rd2_id_ex, rd3_id_ex;
-	logic signed [RW-1:0] extendImm_id_ex;
-	logic [3:0] ra_id_ex,rb_id_ex;
+	
+	
 	// Get ID buffer values
 	assign pc_id_ex = bufferOut_id[146:123];
 	assign opType_id_ex = bufferOut_id[122:121];
@@ -128,7 +158,7 @@ module processor(input rst,input clk, input [35:0] gpio1,input [23:0] parallelAd
 	assign rd3_id_ex = bufferOut_id[47:24];
 	assign extendImm_id_ex = bufferOut_id[23:0];  
 	
-	logic [EX_BW-1:0]bufferOut_ex;
+	
 	
 	exec #(.N(RW), .BW(EX_BW)) myExec(
 	.clk(clk), 
@@ -156,22 +186,7 @@ module processor(input rst,input clk, input [35:0] gpio1,input [23:0] parallelAd
 	);
 	
 	
-	logic memWrite_ex_mem,memToReg_ex_mem,regWrite_ex_mem;
-	logic [1:0] opType_ex_mem;
-	logic [3:0] opCode_ex_mem;
-	logic [23:0] address1_ex_mem,address2_ex_mem;
-	logic [3:0] rc_ex_mem,switches_ex_mem;
-	logic [23:0] writeData_ex_mem,q_ex_mem;
-	logic [35:0] gpio1_ex_mem,gpio2_ex_mem;
-	logic [59:0] bufferOut;
 	
-	
-	
-	
-	logic [1:0] flags_ex;
-	logic branchFlag_ex;
-	logic [23:0] aluResult;
-	logic [23:0] writeData;
 	
 	// Get exec buffer values
 	assign writeData=bufferOut_ex[23:0];  //rd3
@@ -185,7 +200,7 @@ module processor(input rst,input clk, input [35:0] gpio1,input [23:0] parallelAd
 	assign opCode_ex_mem = bufferOut_ex[61:58]; //opCode
 	assign opType_ex_mem= bufferOut_ex[63:62]; //opType
 	
-	logic [MEM_BW-1:0]bufferOut_mem;
+	
 	
 	memoryStage myMemoryStage(
 		.clk(clk),
@@ -208,12 +223,6 @@ module processor(input rst,input clk, input [35:0] gpio1,input [23:0] parallelAd
 	);
 	
 	
-	logic memToReg_mem_wb;
-	logic [3:0] rc_mem_wb;
-	logic [1:0] optype_mem_wb;
-	logic [3:0] opcode_mem_wb;
-	logic regWriteWB;
-	logic [23:0] addressWB,readMemoryWB;
 	
 	//Get MEM buffer values
 	assign addressWB=bufferOut_mem[23:0]; // address1
@@ -226,9 +235,9 @@ module processor(input rst,input clk, input [35:0] gpio1,input [23:0] parallelAd
 	
 
 	
-	logic [23:0] resultW;
 	
-	writeBack #(.N(RW))(
+	
+	writeBack #(.N(RW)) myWriteback(
 		.readDataW(readMemoryWB), 
 		.aluOutW(addressWB),     
 		.memToReg(memToReg_mem_wb),

@@ -117,17 +117,11 @@ def GetAllRegistersOpcode(register1, register2, register3):
         registerNumber = register3.replace("#","")
         registerNumber = int(registerNumber)
         reg3Aux = format(registerNumber, 'b')
-        reg3 = reg3Aux.replace("-","")
-        counter = len(reg3)
         #print("Int is: ", registerNumber)
         #print("reg3Aux is: ", reg3Aux)
         #print("reg3 is: ", reg3)
-        while(counter < 18):
-            if("-" in reg3Aux and counter == 17):
-                reg3 = "1" + reg3
-            else:
-                reg3 = "0" + reg3
-            counter += 1
+        reg3 = negative_to_twos_complement(int(reg3Aux),2)
+        
     else:
         reg3 = GetRegisterOpcode(register3)
         reg3 += "0" * 14

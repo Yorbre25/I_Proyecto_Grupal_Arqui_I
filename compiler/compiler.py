@@ -1,9 +1,9 @@
 Instructions = {
     "sub":{"opType":"art", "opcode":0},
-    "cmp":{"opType":"art", "opcode":1},
-    "add":{"opType":"art", "opcode":2},
+    "add":{"opType":"art", "opcode":1},
+    "mult":{"opType":"art", "opcode":2},
     "mov":{"opType":"art", "opcode":3},
-    "mult":{"opType":"art", "opcode":4},
+    "cmp":{"opType":"art", "opcode":4},
     "div":{"opType":"art", "opcode":5},
     "xor":{"opType":"art", "opcode":6},
     "and":{"opType":"art", "opcode":7},
@@ -114,6 +114,9 @@ def GetAllRegistersOpcode(register1, register2, register3):
         reg3Aux = format(registerNumber, 'b')
         reg3 = reg3Aux.replace("-","")
         counter = len(reg3)
+        print("Int is: ", registerNumber)
+        print("reg3Aux is: ", reg3Aux)
+        print("reg3 is: ", reg3)
         while(counter < 18):
             if("-" in reg3Aux and counter == 17):
                 reg3 = "1" + reg3

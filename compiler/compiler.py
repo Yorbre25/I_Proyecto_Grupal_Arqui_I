@@ -67,7 +67,10 @@ def GetFunction(functionText, registersList):
         while (len(opcode) < 4): opcode = "0"+opcode
         code += opcode
         if(functionText == "cmp" or functionText == "mov" or functionText == "not"): #It's an op of 2 operands
-            code += GetAllRegistersOpcode(registersList[0], "r0" ,registersList[1])
+            if(functionText == "cmp"):
+                code += GetAllRegistersOpcode("r0", registersList[0] ,registersList[1]) 
+            else:   
+                code += GetAllRegistersOpcode(registersList[0], "r0" ,registersList[1])
         else:
             code += GetAllRegistersOpcode(registersList[0], registersList[1], registersList[2])
     #If operation is Memory

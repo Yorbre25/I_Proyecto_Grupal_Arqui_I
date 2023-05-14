@@ -1,14 +1,4 @@
-start:
-    LD r1,r15,r3
-    ld r1, r15
-    mov r3, r1
-branch1:
-    add r2,r6,#2
-    add r4, r3, r9
-    add r4, r3, r9
-    bi branch3
-branch2:
-    add r4, r3, r9
-    bi branch1
-branch3:
-    add r4, r3, r9
+not r1, #10
+mov r2, #255
+str r1, r2, r0
+ld r1, r2, r0

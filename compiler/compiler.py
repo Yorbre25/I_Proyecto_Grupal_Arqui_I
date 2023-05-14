@@ -64,6 +64,7 @@ def GetFunction(functionText, registersList):
     #If operation es aritmethic
     if(result.get("opType") == "art"):
         flag =  IsInmediate(registersList[len(registersList)-1])
+        
         code += "01" if flag else "00"
         opcode = format(result.get("opcode"), 'b')
         while (len(opcode) < 4): opcode = "0"+opcode
@@ -120,7 +121,7 @@ def GetAllRegistersOpcode(register1, register2, register3):
         #print("Int is: ", registerNumber)
         #print("reg3Aux is: ", reg3Aux)
         #print("reg3 is: ", reg3)
-        reg3 = negative_to_twos_complement(int(reg3Aux),2)
+        reg3 = negative_to_twos_complement(int(reg3Aux,2),18)
         
     else:
         reg3 = GetRegisterOpcode(register3)

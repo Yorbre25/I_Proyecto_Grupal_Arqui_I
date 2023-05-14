@@ -15,7 +15,6 @@ module exec #(parameter N= 24, parameter BW=setValuesBuffer + 2*N)(
 	//sub modules output
 	logic [1:0] flags;
 	logic [N-1:0] aluCurrentResult,RD3Out;
-	logic [N-1:0] op1,op2;
 	logic [BW-1:0] bufferInput;
 	logic zeroFlag, negFlag;
 	

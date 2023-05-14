@@ -42,7 +42,7 @@ Bi exitYLoop
 CMPY:
 CMP r7, r4
 Bleq MOVIMGIMG
-bi exitYLoop
+bi BlankIMG
 MOVIMGIMG:
 MOV r8,IMG1Pointer
 MOV r9,IMG2Pointer
@@ -63,5 +63,12 @@ ADD r4, r4, #1
 cmp r4, r8
 Bleq MOVIMGLoop
 bi XLoop
+BlankIMG:
+MOV r8,IMG1Pointer
+MOV r9,IMG2Pointer
+MULT r10, r6, #300
+ADD r10,r10, r7
+STR r12, r9, r0
+bi exitYLoop
 Exit:
 MOV r1,#0

@@ -16,6 +16,7 @@ module exec #(parameter N= 24, parameter BW=setValuesBuffer + 2*N)(
 	logic [1:0] flags;
 	logic [N-1:0] aluCurrentResult,RD3Out;
 	logic [BW-1:0] bufferInput;
+	logic [1:0]currentFlag;
 	logic zeroFlag, negFlag;
 	
 	//Alu entry selector
@@ -39,13 +40,20 @@ module exec #(parameter N= 24, parameter BW=setValuesBuffer + 2*N)(
 		.RD3Out(RD3Out)
 	);
 	
+	flagRegister myFlagRegister(
+		.opType(opType), 
+		.opCode(opCode),
+		.newFlags(flags),
+		.currentFlag(currentFlag)
+);	
+
 	
 	//buffer setup
 	buffer #(.Buffer_size(BW)) EX_MEM (.rst(rst), .clk(clk), .en(en), .bufferInput(bufferInput), .bufferOut(bufferOut));
 	
 	
-	assign zeroFlag = flags[0];
-	assign negFlag = flags[1];
+	assign zeroFlag = currentFlag[0];
+	assign negFlag = currentFlag[1];
 	
 	
 	

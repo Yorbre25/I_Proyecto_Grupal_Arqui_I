@@ -1,3 +1,5 @@
+import numpy as np
+
 Instructions = {
     "sub":{"opType":"art", "opcode":0},
     "add":{"opType":"art", "opcode":1},
@@ -117,9 +119,9 @@ def GetAllRegistersOpcode(register1, register2, register3):
         reg3Aux = format(registerNumber, 'b')
         reg3 = reg3Aux.replace("-","")
         counter = len(reg3)
-        print("Int is: ", registerNumber)
-        print("reg3Aux is: ", reg3Aux)
-        print("reg3 is: ", reg3)
+        #print("Int is: ", registerNumber)
+        #print("reg3Aux is: ", reg3Aux)
+        #print("reg3 is: ", reg3)
         while(counter < 18):
             if("-" in reg3Aux and counter == 17):
                 reg3 = "1" + reg3
@@ -151,12 +153,13 @@ def SetBranches():
               
             newInstruction = branch[:branch.find("=")]
             branchLabel = branch[branch.find("=") + 1 :]
-            print("Instruccion ",newInstruction)
+            #print("Instruccion ",newInstruction)
+            #print("Branch Label ",branchLabel)
 
             jump = functions.get(branchLabel)
             actualInstructionAux = branchLine
-            print("Pc Relative ", jump)
-            print("Actual Line ", branchLine)
+            #print("Pc Relative ", jump)
+            #print("Actual Line ", branchLine)
             if(jump > branchLine):
                 while(jump > actualInstructionAux):
                     pcRelative += 4
@@ -168,14 +171,11 @@ def SetBranches():
 
             resultAux = format(pcRelative, 'b')
             result = resultAux.replace("-","")
-            counter = len(result)
-            while(counter < 18):
-                if("-" in resultAux and counter == 17):
-                    result = "1" + result
-                else:
-                    result = "0" + result
-                counter += 1
+
+            result = negative_to_twos_complement(int(resultAux), 19)
+            
             instructionResult[branchLine] = newInstruction + result
+            print("Branch code result: ", instructionResult[branchLine])
         branchLine += 1
     return ""
 
@@ -200,6 +200,24 @@ def ConvertToHex(binaryNumber):
         hexNumber = "0" +hexNumber
         counter += 1
     return hexNumber
-CreateFile()
 
+def negative_to_twos_complement(number, num_bits):
+    if (number<0):
+        # Convertir el número negativo a su valor absoluto
+        abs_number = abs(number)
+
+        # Representar el número en binario
+        binary = bin(abs_number)[2:].zfill(num_bits)
+
+        # Invertir los bits
+        inverted_bits = ''.join('1' if bit == '0' else '0' for bit in binary)
+
+        # Sumar 1 al número invertido
+        twos_complement = np.binary_repr(int(inverted_bits, 2) + 1, width=num_bits)
+
+        return twos_complement
+    else:
+        binary = bin(number)[2:].zfill(num_bits)
+        return binary
+    
 openFile()

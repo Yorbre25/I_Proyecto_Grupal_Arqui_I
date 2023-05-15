@@ -44,7 +44,8 @@ module exec #(parameter N= 24, parameter BW=setValuesBuffer + 2*N)(
 		.opType(opType), 
 		.opCode(opCode),
 		.newFlags(flags),
-		.currentFlag(currentFlag)
+		.currentFlag(currentFlag),
+		.rst(rst)
 );	
 
 	

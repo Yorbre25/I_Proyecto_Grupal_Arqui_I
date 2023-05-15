@@ -1,4 +1,4 @@
-module instructionDecode(input clk,input rst,en, input [31:0] inst,input WE,input [3:0] Rd,input [23:0] WD,input[23:0] pc, output [147:0] bufferOut );
+module instructionDecode(input clk,input rst,rstTotal,en, input [31:0] inst,input WE,input [3:0] Rd,input [23:0] WD,input[23:0] pc, output [146:0] bufferOut );
 	
 
 	//sub modules output
@@ -26,7 +26,7 @@ module instructionDecode(input clk,input rst,en, input [31:0] inst,input WE,inpu
 	signExtend #(.beforeExtend(18),.afterExtend(24)) myExtend(.in(imm),.out(extendImm));
 	
 	// Register bank access
-	registerBank #(.Index_size(4),.width(24)) myRegisterBank (.clk(clk),.rst(rst),.Ra(Ra), .Rb(Rb) ,.Rc(Rc),.Rd(Rd),.WE(WE),.WD(WD),.RD1(RD1),.RD2(RD2),.RD3(RD3));
+	registerBank #(.Index_size(4),.width(24)) myRegisterBank (.clk(clk),.rst(rstTotal),.Ra(Ra), .Rb(Rb) ,.Rc(Rc),.Rd(Rd),.WE(WE),.WD(WD),.RD1(RD1),.RD2(RD2),.RD3(RD3));
 	
 	
 	//buffer setup

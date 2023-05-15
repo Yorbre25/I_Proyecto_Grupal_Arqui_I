@@ -16,13 +16,10 @@ def SinMif():
         for total in im.read().splitlines():
             hexa = hex(abs(int(total)))
             if total[0] == '-':
-                if len(hexa[2:]) < 2:
-                    hexa = f'0x80000{hexa[2:]}'
-                else:
-                    hexa = f'0x8000{hexa[2:]}'
+                hexa = hex(int(hexa[2:],16)|128)
             if (total == 0):
-                hexa = "0x0000"
-            while len(hexa[2:]) < 6:
+                hexa = "0x00"
+            while len(hexa[2:]) < 2:
                 hexa = f'0x0{hexa[2:]}'
             f.append(hex(index)[2:] + ":\t"+hexa[2:]+";\n")
 

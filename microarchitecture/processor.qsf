@@ -134,7 +134,28 @@ set_global_assignment -name EDA_TEST_BENCH_FILE memoryStage.sv -section_id memor
 set_global_assignment -name EDA_TEST_BENCH_FILE memoryStage_tb.sv -section_id memoryStage_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE hazardUnit_tb.sv -section_id hazardUnit_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE hazardUnit.sv -section_id hazardUnit_tb
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VERILOG_FILE vpg_source/vpg_mode.v
+set_global_assignment -name VERILOG_FILE vpg_source/vpg.v
+set_global_assignment -name SOURCE_FILE vpg_source/vpg.h
+set_global_assignment -name VERILOG_FILE vpg_source/vga_generator.v
+set_global_assignment -name VERILOG_FILE vpg_source/pll_controller.v
+set_global_assignment -name VERILOG_FILE pll/sys_pll.v
+set_global_assignment -name QIP_FILE pll/sys_pll.qip
+set_global_assignment -name VERILOG_FILE pll/pll_reconfig.v
+set_global_assignment -name QIP_FILE pll/pll_reconfig.qip
+set_global_assignment -name VERILOG_FILE pll/pll.v
+set_global_assignment -name QIP_FILE pll/pll.qip
+set_global_assignment -name SDC_FILE DE10_Nano_HDMI_TX.sdc
+set_global_assignment -name SYSTEMVERILOG_FILE processor_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE processor.sv
+set_global_assignment -name SYSTEMVERILOG_FILE memory.sv
+set_global_assignment -name SYSTEMVERILOG_FILE flagRegister.sv
+set_global_assignment -name VERILOG_FILE I2C_WRITE_WDATA.v
+set_global_assignment -name VERILOG_FILE I2C_HDMI_Config.v
+set_global_assignment -name VERILOG_FILE I2C_Controller.v
+set_global_assignment -name VERILOG_FILE DE10_Nano_HDMI_TX.v
+set_global_assignment -name VERILOG_FILE ColorSelector.v
+set_global_assignment -name VERILOG_FILE AUDIO_IF.v
 set_global_assignment -name MIF_FILE dataMemory.mif
 set_global_assignment -name MIF_FILE image.mif
 set_global_assignment -name SYSTEMVERILOG_FILE testExec.sv
@@ -188,3 +209,5 @@ set_global_assignment -name SYSTEMVERILOG_FILE memoryStage_tb.sv
 set_global_assignment -name QIP_FILE mainMemory.qip
 set_global_assignment -name SYSTEMVERILOG_FILE ALUMux.sv
 set_global_assignment -name SYSTEMVERILOG_FILE testALUMUX.sv
+set_global_assignment -name VERILOG_FILE MainConnection.v
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

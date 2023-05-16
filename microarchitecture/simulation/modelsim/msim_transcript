@@ -14,7 +14,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:12:50 on May 15,2023
+# Start time: 21:27:27 on May 15,2023
 # vlog -reportprogress 300 -vlog01compat -work altera_ver d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -96,7 +96,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 21:12:50 on May 15,2023, Elapsed time: 0:00:00
+# End time: 21:27:28 on May 15,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -107,7 +107,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:12:51 on May 15,2023
+# Start time: 21:27:29 on May 15,2023
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -171,7 +171,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 21:12:51 on May 15,2023, Elapsed time: 0:00:00
+# End time: 21:27:29 on May 15,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -182,7 +182,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:12:51 on May 15,2023
+# Start time: 21:27:29 on May 15,2023
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -224,7 +224,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 21:12:51 on May 15,2023, Elapsed time: 0:00:00
+# End time: 21:27:29 on May 15,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -235,7 +235,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:12:51 on May 15,2023
+# Start time: 21:27:29 on May 15,2023
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -365,7 +365,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 21:12:52 on May 15,2023, Elapsed time: 0:00:01
+# End time: 21:27:31 on May 15,2023, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -376,7 +376,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:12:53 on May 15,2023
+# Start time: 21:27:31 on May 15,2023
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -459,7 +459,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 21:12:54 on May 15,2023, Elapsed time: 0:00:01
+# End time: 21:27:33 on May 15,2023, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_ver
@@ -470,7 +470,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_ver {d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:12:55 on May 15,2023
+# Start time: 21:27:34 on May 15,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -484,19 +484,19 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 21:12:57 on May 15,2023, Elapsed time: 0:00:02
+# End time: 21:27:36 on May 15,2023, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 20
 # vlog -vlog01compat -work cyclonev_ver {d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:12:57 on May 15,2023
+# Start time: 21:27:36 on May 15,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 21:12:59 on May 15,2023, Elapsed time: 0:00:02
+# End time: 21:27:38 on May 15,2023, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_ver {d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/cyclonev_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:13:01 on May 15,2023
+# Start time: 21:27:38 on May 15,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/cyclonev_atoms.v 
 # -- Compiling UDP CYCLONEV_PRIM_DFFE
 # -- Compiling UDP CYCLONEV_PRIM_DFFEAS
@@ -636,7 +636,7 @@
 # 	cyclonev_mem_phy
 # 	cyclonev_oscillator
 # 	cyclonev_hps_interface_fpga2sdram
-# End time: 21:13:01 on May 15,2023, Elapsed time: 0:00:00
+# End time: 21:27:40 on May 15,2023, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_hssi_ver
@@ -647,15 +647,15 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_hssi_ver {d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:13:01 on May 15,2023
+# Start time: 21:27:41 on May 15,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 21:13:03 on May 15,2023, Elapsed time: 0:00:02
+# End time: 21:27:43 on May 15,2023, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_hssi_ver {d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/cyclonev_hssi_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:13:03 on May 15,2023
+# Start time: 21:27:43 on May 15,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/cyclonev_hssi_atoms.v 
 # -- Compiling module cyclonev_hssi_8g_pcs_aggregate
 # -- Compiling module cyclonev_hssi_8g_rx_pcs
@@ -755,7 +755,7 @@
 # 	arriav_hssi_avmm_interface
 # 	arriav_hssi_pma_hi_pmaif
 # 	arriav_hssi_pma_hi_xcvrif
-# End time: 21:13:04 on May 15,2023, Elapsed time: 0:00:01
+# End time: 21:27:44 on May 15,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_pcie_hip_ver
@@ -766,7 +766,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:13:04 on May 15,2023
+# Start time: 21:27:44 on May 15,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -776,18 +776,18 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 21:13:06 on May 15,2023, Elapsed time: 0:00:02
+# End time: 21:27:46 on May 15,2023, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 12
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:13:06 on May 15,2023
+# Start time: 21:27:47 on May 15,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v 
 # -- Compiling module cyclonev_hd_altpe2_hip_top
 # -- Compiling module arriav_hd_altpe2_hip_top
 # 
 # Top level modules:
 # 	cyclonev_hd_altpe2_hip_top
-# End time: 21:13:07 on May 15,2023, Elapsed time: 0:00:01
+# End time: 21:27:47 on May 15,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -806,70 +806,102 @@
 # vmap work rtl_work 
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+D:/Universidad/Semestre\ 1\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory.v}
+# vlog -sv -work work +incdir+D:/Universidad/Semestre\ 1\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:13:07 on May 15,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory.v 
-# -- Compiling module mainMemory
+# Start time: 21:27:48 on May 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv 
+# -- Compiling module buffer
 # 
 # Top level modules:
-# 	mainMemory
-# End time: 21:13:07 on May 15,2023, Elapsed time: 0:00:00
+# 	buffer
+# End time: 21:27:48 on May 15,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -vlog01compat -work work +incdir+D:/Universidad/Semestre\ 1\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory.v}
+# vlog -sv -work work +incdir+D:/Universidad/Semestre\ 1\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mux21.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:13:07 on May 15,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory.v 
-# -- Compiling module mainMemory
+# Start time: 21:27:48 on May 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mux21.sv 
+# -- Compiling module mux21
 # 
 # Top level modules:
-# 	mainMemory
-# End time: 21:13:07 on May 15,2023, Elapsed time: 0:00:00
+# 	mux21
+# End time: 21:27:48 on May 15,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+D:/Universidad/Semestre\ 1\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory_tb.sv}
+# vlog -sv -work work +incdir+D:/Universidad/Semestre\ 1\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionFetch.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:13:07 on May 15,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory_tb.sv 
-# -- Compiling module mainMemory_tb
+# Start time: 21:27:50 on May 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionFetch.sv 
+# -- Compiling module instructionFetch
 # 
 # Top level modules:
-# 	mainMemory_tb
-# End time: 21:13:07 on May 15,2023, Elapsed time: 0:00:00
+# 	instructionFetch
+# End time: 21:27:50 on May 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Universidad/Semestre\ 1\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:27:50 on May 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 21:27:50 on May 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Universidad/Semestre\ 1\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/pcUpdate.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:27:50 on May 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/pcUpdate.sv 
+# -- Compiling module pcUpdate
+# 
+# Top level modules:
+# 	pcUpdate
+# End time: 21:27:50 on May 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Universidad/Semestre\ 1\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionMemory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:27:51 on May 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionMemory.sv 
+# -- Compiling module instructionMemory
+# 
+# Top level modules:
+# 	instructionMemory
+# End time: 21:27:51 on May 15,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  mainMemory_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" mainMemory_tb 
-# Start time: 21:13:07 on May 15,2023
+# vlog -sv -work work +incdir+D:/Universidad/Semestre\ 1\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionFetch.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:27:51 on May 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionFetch.sv 
+# -- Compiling module instructionFetch
+# 
+# Top level modules:
+# 	instructionFetch
+# End time: 21:27:51 on May 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Universidad/Semestre\ 1\ 2023/Arqui/Proyecto\ 2/ybrenes_computer_architecture_1_2023/microarchitecture {D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionFetch_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:27:51 on May 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture" D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionFetch_tb.sv 
+# -- Compiling module instructionFetch_tb
+# 
+# Top level modules:
+# 	instructionFetch_tb
+# End time: 21:27:51 on May 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  instructionFetch_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" instructionFetch_tb 
+# Start time: 21:27:51 on May 15,2023
 # Loading sv_std.std
-# Loading work.mainMemory_tb
-# Loading work.mainMemory
-# Loading altera_mf_ver.altsyncram
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# 
-# add wave *
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: AMD  Hostname: DESKTOP-10GV6F8  ProcessID: 1572
-#           Attempting to use alternate WLF file "./wlft1yb57z".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft1yb57z
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# ** Error: Lectura incorrecta de estado inicial
-#    Time: 60 ns  Scope: mainMemory_tb File: D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory_tb.sv Line: 42
-# ** Error: Lectura incorrecta de estado inicial
-#    Time: 60 ns  Scope: mainMemory_tb File: D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory_tb.sv Line: 44
-# Escritura realizada correctamente con wren_a en alto
-# Escritura no realizada con wren_a en bajo
-# Escritura realizada con wren_b en alto
-# Escritura realizada con wren_a en alto
-# Escritura no realizada con wren_b en bajo
-# Break key hit
-# Break in Module mainMemory_tb at D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory_tb.sv line 23
-# End time: 21:14:37 on May 15,2023, Elapsed time: 0:01:30
-# Errors: 2, Warnings: 2
+# Loading work.instructionFetch_tb
+# Loading work.instructionFetch
+# Loading work.pcUpdate
+# Loading work.buffer
+# Loading work.adder
+# Loading sgate_ver.mux21
+# Loading work.instructionMemory
+# ** Error (suppressible): (vsim-3584) D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/pcUpdate.sv(7): Module parameter 'N' not found for override.
+#    Time: 0 ps  Iteration: 0  Instance: /instructionFetch_tb/myInstructionFetch/mypc File: D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/pcUpdate.sv
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./processor_run_msim_rtl_verilog.do PAUSED at line 58

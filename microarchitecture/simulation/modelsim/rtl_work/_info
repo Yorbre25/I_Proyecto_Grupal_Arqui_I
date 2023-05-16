@@ -8,52 +8,182 @@ z2
 !i10f 100
 cModel Technology
 Z0 dD:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/simulation/modelsim
-vmainMemory
-Z1 !s110 1684206787
+vadder
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1684207670
 !i10b 1
-!s100 I7Sdf[KKdhOzH?fd@KYgL3
-IB75FBgn@[NA]Mh<XfADi40
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-R0
-w1684206444
-8D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory.v
-FD:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory.v
-L0 40
-Z3 OV;L;10.5b;63
-r1
-!s85 0
-31
-Z4 !s108 1684206787.000000
-!s107 D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture|D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory.v|
-!i113 1
-o-vlog01compat -work work
-!s92 -vlog01compat -work work {+incdir+D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture}
-Z5 tCvgOpt 0
-nmain@memory
-vmainMemory_tb
-DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-R1
-!i10b 1
-!s100 nVo_cO2alVzM]Q3ERYcaK1
-IYl1ed_EA1D;O:ZA3bbRJU2
-R2
-!s105 mainMemory_tb_sv_unit
+!s100 S]OaX]cV5h?U@gRLg]hdm2
+II7XF@laI:kX`8DDV9SnSl3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 adder_sv_unit
 S1
 R0
-w1684205720
-8D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory_tb.sv
-FD:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory_tb.sv
-L0 2
-R3
+Z4 w1683683698
+8D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/adder.sv
+FD:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/adder.sv
+L0 1
+Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-R4
-!s107 D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture|D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory_tb.sv|
+Z6 !s108 1684207670.000000
+!s107 D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture|D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/adder.sv|
 !i113 1
-o-sv -work work
-!s92 -sv -work work {+incdir+D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture}
+Z7 o-sv -work work
+Z8 !s92 -sv -work work {+incdir+D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture}
+Z9 tCvgOpt 0
+vbuffer
+R1
+Z10 !s110 1684207668
+!i10b 1
+!s100 oRU>cH6?KTR829i<2_:i32
+IPCz1[gzIgZ?PW7;;JIklL0
+R3
+!s105 buffer_sv_unit
+S1
+R0
+Z11 w1684197956
+8D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv
+FD:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv
+L0 1
 R5
-nmain@memory_tb
+r1
+!s85 0
+31
+Z12 !s108 1684207668.000000
+!s107 D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture|D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv|
+!i113 1
+R7
+R8
+R9
+vinstructionFetch
+R1
+Z13 !s110 1684207671
+!i10b 1
+!s100 8a8bYNE7ZhhjUhLVMm>l[0
+I8QS@AmIiDY`bJ3F<lzVXR1
+R3
+!s105 instructionFetch_sv_unit
+S1
+R0
+R11
+8D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionFetch.sv
+FD:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionFetch.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z14 !s108 1684207671.000000
+!s107 D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionFetch.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture|D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionFetch.sv|
+!i113 1
+R7
+R8
+R9
+ninstruction@fetch
+vinstructionFetch_tb
+R1
+R13
+!i10b 1
+!s100 JJDT[NgZhBQbZJ@jFMHBl2
+IJhFlaYIWmRg[_hdkmhk^@1
+R3
+!s105 instructionFetch_tb_sv_unit
+S1
+R0
+R11
+8D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionFetch_tb.sv
+FD:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionFetch_tb.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R14
+!s107 D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionFetch_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture|D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionFetch_tb.sv|
+!i113 1
+R7
+R8
+R9
+ninstruction@fetch_tb
+vinstructionMemory
+R1
+R13
+!i10b 1
+!s100 Z<1WUneOQ7UD_KLX10F]^3
+I8ifP:c@EN0H:g28C733JV1
+R3
+!s105 instructionMemory_sv_unit
+S1
+R0
+R4
+8D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionMemory.sv
+FD:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionMemory.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R14
+!s107 D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionMemory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture|D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/instructionMemory.sv|
+!i113 1
+R7
+R8
+R9
+ninstruction@memory
+vmux21
+R1
+R10
+!i10b 1
+!s100 Kd3Oe_X;>=D?oO5oaGbbV0
+IROlc9d8a4obZFicF`JAIm3
+R3
+!s105 mux21_sv_unit
+S1
+R0
+R4
+8D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mux21.sv
+FD:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mux21.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R12
+!s107 D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mux21.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture|D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/mux21.sv|
+!i113 1
+R7
+R8
+R9
+vpcUpdate
+R1
+R2
+!i10b 1
+!s100 jhVP:ojH[5a?0Rfd:QNHR0
+ICG:P7KWDV94b7Nge3BM4_0
+R3
+!s105 pcUpdate_sv_unit
+S1
+R0
+R11
+8D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/pcUpdate.sv
+FD:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/pcUpdate.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/pcUpdate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture|D:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/pcUpdate.sv|
+!i113 1
+R7
+R8
+R9
+npc@update

@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dD:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/simulation/modelsim
 vlpm_abs
-Z1 !s110 1684206771
+Z1 !s110 1684207649
 !i10b 1
 !s100 O9i<YS?ECZC8XU2m2T>HQ0
 IP:5WDkKD5VJ1=0ali;^6<1
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1684206771.000000
+Z7 !s108 1684207649.000000
 Z8 !s107 d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/220model.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|lpm_ver|d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/220model.v|
 !i113 1

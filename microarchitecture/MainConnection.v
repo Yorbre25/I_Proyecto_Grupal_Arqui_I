@@ -31,7 +31,7 @@ module MainConnection(
 );
 
 reg [17:0] offset;
-
+wire [7:0] q;
 
 processor processor(.rst(switches[0]),
 	.clk(FPGA_CLK1_50), 

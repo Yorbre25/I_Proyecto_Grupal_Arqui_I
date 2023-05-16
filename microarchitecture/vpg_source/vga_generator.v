@@ -212,7 +212,7 @@ always@(posedge clk or negedge reset_n)
 			//Codigo para asignar el color
 			pos_x <= counter_x - 141;
 			pos_y <= counter_y - 34;
-			parallelAddress <= 376 + (pos_x*300 + pos_y); // array[address_color]
+			parallelAddress <= 304; // array[address_color]
 			//color <= color_array[address_color];
 			//color <= 8'hFF;
 			screen_color <= color;

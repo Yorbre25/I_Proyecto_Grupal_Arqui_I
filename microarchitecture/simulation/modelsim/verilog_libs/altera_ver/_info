@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dD:/Universidad/Semestre 1 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/simulation/modelsim
 valt_bidir_buf
-Z1 !s110 1684206770
+Z1 !s110 1684207647
 !i10b 1
 !s100 `k9N_NNE[omlCfHHm=PO53
 I9ZzUM@Cz?gzmFD01:WEdB1
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1684206770.000000
+Z7 !s108 1684207647.000000
 Z8 !s107 d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_primitives.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|altera_ver|d:/apps/quartus/intelfpga_lite/21.1/quartus/eda/sim_lib/altera_primitives.v|
 !i113 1
@@ -618,7 +618,7 @@ R9
 R10
 R11
 UPRIM_GDFF_HIGH
-R1
+Z12 !s110 1684207648
 !i10b 1
 !s100 SScBZ?gdYFgRTOVYmj^Jh2
 IZZ[:mQ9WMPzROM@^lcXTb0
@@ -640,7 +640,7 @@ R10
 R11
 n@p@r@i@m_@g@d@f@f_@h@i@g@h
 UPRIM_GDFF_HIGH_SCLR_PRIORITY
-R1
+R12
 !i10b 1
 !s100 F63MIm7BDi6=;U3:nVoTc3
 IQ8@hAh6hi:VF8B58EPQjj3

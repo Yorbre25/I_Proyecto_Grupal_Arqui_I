@@ -16,7 +16,7 @@ module hazardUnit(input [3:0] Ra,Rb,Rc,Rd_EXMEM,Rd_MEMWB,input  [1:0] opTypeMem,
 	assign flush3=flushCondition;
 	assign flush4=flushCondition;
 	assign flush5=0;
-	assign Fa= (Ra==Rd_EXMEM & writtenOnMem ) | (Ra==Rd_MEMWB & writtenOnWB);
+	assign Fa= (Ra==Rd_EXMEM & writtenOnMem) | (Ra==Rd_MEMWB & writtenOnWB);
 	assign Fb= (Rb==Rd_EXMEM & writtenOnMem) | (Rb==Rd_MEMWB & writtenOnWB);
 	assign Fc= (Rc==Rd_EXMEM & writtenOnMem) | (Rc==Rd_MEMWB & writtenOnWB);
 	always_comb begin

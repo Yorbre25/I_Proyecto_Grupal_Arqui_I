@@ -1,5 +1,5 @@
 module hazardUnit_tb();
-	logic [3:0] Ra,Rb,Rd_EXMEM,Rd_MEMWB;
+	logic [3:0] Ra,Rb,Rc,Rd_EXMEM,Rd_MEMWB;
 	logic [1:0] opTypeMem,opTypeWB;
 	logic [3:0] opCodeMem,opCodeWB;
 	logic [31:0] aluResult,Result,Forward1,Forward2,Forward3;
@@ -8,6 +8,7 @@ module hazardUnit_tb();
 	hazardUnit myhazardUnit(
 		.Ra(Ra),
 		.Rb(Rb),
+		.Rc(Rc),
 		.Rd_EXMEM(Rd_EXMEM),
 		.Rd_MEMWB(Rd_MEMWB),
 		.opTypeMem(opTypeMem),
@@ -38,6 +39,7 @@ module hazardUnit_tb();
 		#10;
 		Ra=4'b0001;
 		Rb=4'b0010;
+//		Rc=
 		Rd_EXMEM=4'b1010;
 		Rd_MEMWB=4'b1111;
 		opTypeMem=2'b00;
@@ -81,6 +83,7 @@ module hazardUnit_tb();
 		Rd_MEMWB=4'b1111;
 		opTypeMem=2'b00;
 		opCodeMem=4'b0010;
+		regWrite_ex_mem = 1;
 		
 		#10;
 		assert(stall==0) $display("stall no realizado conflicto con unidad de adelantamiento");
@@ -118,6 +121,7 @@ module hazardUnit_tb();
 		Rd_MEMWB=4'b0010;
 		opTypeWB=2'b00;
 		opCodeWB=4'b0010;
+		regWriteWB=1;
 		
 		#10;
 		assert(stall==0) $display("stall no realizado conflicto con unidad de adelantamiento");
@@ -156,6 +160,7 @@ module hazardUnit_tb();
 		Rd_MEMWB=4'b1010;
 		opTypeMem=2'b10;
 		opCodeMem=4'b0000;
+		branchTakenFlag = 1;
 		
 		#10;
 		assert(stall==1) $display("stall realizado correctamente debido a ld imposible de unidad de adelantamiento");
@@ -246,6 +251,8 @@ module hazardUnit_tb();
 		opTypeWB=2'b10;
 		opCodeWB=4'b0000;
 		branchTakenFlag=0;
+		regWrite_ex_mem = 0;
+		regWriteWB = 1;
 		
 		#10;
 		assert(stall==0) $display("stall no realizado correctamente");
@@ -274,15 +281,17 @@ module hazardUnit_tb();
 		#10;
 		
 		
-		Ra=4'b1001;
+		Ra=4'b0101;
 		Rb=4'b0111;
 		Rd_EXMEM=4'b0111;
-		Rd_MEMWB=4'b1001;
+		Rd_MEMWB=4'b0111;
 		opTypeMem=2'b01;
 		opCodeMem=4'b1011;
 		opTypeWB=2'b10;
 		opCodeWB=4'b0001;
 		branchTakenFlag=0;
+		regWrite_ex_mem = 0;
+		regWriteWB = 1;
 		
 		#10;
 		assert(stall==0) $display("stall no realizado correctamente");

@@ -9,7 +9,7 @@ module hazardUnit(input [3:0] Ra,Rb,Rc,Rd_EXMEM,Rd_MEMWB,input  [1:0] opTypeMem,
 	
 	assign writtenOnMem=regWriteMem;
 	assign writtenOnWB=regWriteWB;
-	assign stall = ((Ra==Rd_EXMEM) & ldFlag) | ((Rb==Rd_EXMEM) & ldFlag);
+	assign stall = ((Ra==Rd_EXMEM) & ldFlag) | ((Rb==Rd_EXMEM) & ldFlag) | ((Rc==Rd_EXMEM) & ldFlag);
 	assign flushCondition=branchTakenFlag;
 	assign flush1=0;
 	assign flush2=flushCondition;

@@ -2,7 +2,7 @@ Start:
 mov r1, #74
 LD r1, r1, r0
 cmp r1,r0
-bg Start
+beq Start
 Main:
 MOV r1, r0
 ProgramLoop:
@@ -19,11 +19,10 @@ MOV r4,#299
 CMP r3,r4
 MOV r5,r0
 Bg ProgramLoop
-bi YLoop
 YLoop:
 MOV r4,#299
 CMP r5,r4
-Bg XLoop
+Bg ExitYForLoop
 MOV r6, #76
 LD  r6, r6, r5
 MULT r6, r6, r1
@@ -41,11 +40,11 @@ exitYLoop:
 ADD r5,r5,#1
 bi YLoop
 CMPX:
-CMP r6, r4
+CMP r6, #299
 Bleq CMPY
 Bi exitYLoop
 CMPY:
-CMP r7, r4
+CMP r7, #299
 Bleq MOVIMGIMG
 bi BlankIMG
 MOVIMGIMG:
@@ -73,8 +72,11 @@ MOV r8,#376
 MOV r9,#90376
 MULT r10, r6, #300
 ADD r10,r10, r7
-STR r12, r9, r0
+STR r0, r9, r10
 bi exitYLoop
 Exit:
 MOV r1,#0
 bi Start
+ExitYForLoop:
+ADD r3, r3, #1
+bi XLoop

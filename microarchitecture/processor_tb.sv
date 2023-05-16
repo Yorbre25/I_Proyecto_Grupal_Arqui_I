@@ -18,7 +18,7 @@ module processor_tb();
 			rst=1;
 			gpio1=0;
 			parallelAdress=179;
-			switches=0;
+			switches=4'b0000;
 			
 			#10; //posedge
 			
@@ -26,6 +26,11 @@ module processor_tb();
 			
 			#10; //posedge
 			rst=0;
+			
+			
+			#100; 
+			switches=4'b0100;
+			
 			
 			#500;
 			

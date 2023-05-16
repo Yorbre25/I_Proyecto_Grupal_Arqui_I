@@ -6,7 +6,7 @@ JedecChain;
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSEMA5F31) Path("D:/TEC/Primer Semestre 2023/Arqui/Proyecto 2/ybrenes_computer_architecture_1_2023/microarchitecture/output_files/") File("processor.sof") MfrSpec(OpMask(1));
+		Device PartName(5CSEBA6U23) Path("D:/Git/ybrenes_computer_architecture_1_2023/microarchitecture/output_files/") File("processor.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

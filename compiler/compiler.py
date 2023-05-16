@@ -141,11 +141,7 @@ def GetRegisterOpcode(register):
 
 def SetBranches():
     branchLine = 0
-    print("__________________")
-    print(instructionResult)
-    print("__________________")
-    print(functions) 
-    print("XXXXXXXXXXXXX")
+    
     for branch in instructionResult:
         
         if( "=" in branch):
@@ -180,7 +176,7 @@ def SetBranches():
     return ""
 
 def CreateFile():
-    with open('output.mem', 'w') as f:
+    with open('compiler/output.mem', 'w') as f:
         counter = 0
         for line in instructionResult:
             hexadecimal = ConvertToHex(line)

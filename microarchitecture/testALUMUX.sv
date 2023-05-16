@@ -18,7 +18,7 @@ module testALUMUX;
 		Fa = 0; 
 		Fb = 0;
 		
-		//MUX inputs
+		//MUX inputs a
 		rd1 = 2; 
 		rd2 = 2; 
 		pc = 0; 

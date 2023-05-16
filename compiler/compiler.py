@@ -176,7 +176,7 @@ def SetBranches():
     return ""
 
 def CreateFile():
-    with open('compiler/output.mem', 'w') as f:
+    with open('microarchitecture\instructionMemory.mem', 'w') as f:
         counter = 0
         for line in instructionResult:
             hexadecimal = ConvertToHex(line)

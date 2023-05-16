@@ -4,7 +4,7 @@ module mainMemory_tb();
 	
 	logic	[17:0]  address_a,address_b;
 	logic clk,wren_a,wren_b;
-	logic [23:0]  data_a,data_b,q_a,q_b;
+	logic [7:0]  data_a,data_b,q_a,q_b;
 	
 	
 	mainMemory myMainMemory (
@@ -36,7 +36,7 @@ module mainMemory_tb();
 		
 		#10; //posedge
 		wren_a=1;
-		assert(q_a==24'hffffff) $display("Lectura correcta de estado inicial");
+		assert(q_a==8'hff) $display("Lectura correcta de estado inicial");
 		else $error("Lectura incorrecta de estado inicial");
 		#10; //negedge
 		
@@ -60,7 +60,7 @@ module mainMemory_tb();
 		address_a=200000;
 		wren_a=1;
 		data_a=3444;
-		assert(q_b==65535) $display("Escritura realizada con wren_b en alto");
+		assert(q_b==8'hff) $display("Escritura realizada con wren_b en alto");
 		else $error("Escritura no realizada con wren_b en alto");
 		
 		#10; //negedge
@@ -68,7 +68,7 @@ module mainMemory_tb();
 		#10; //posedge
 		wren_b=0;
 		data_b=90;
-		assert(q_a==3444) $display("Escritura realizada con wren_a en alto");
+		assert(q_a==8'h74) $display("Escritura realizada con wren_a en alto");
 		else $error("Escritura no realizada con wren_a en alto");
 		
 		
@@ -78,11 +78,10 @@ module mainMemory_tb();
 		
 		#10; //posedge
 		
-		assert(q_b==65535) $display("Escritura no realizada con wren_b en bajo");
+		assert(q_b==8'hff) $display("Escritura no realizada con wren_b en bajo");
 		else $error("Escritura realizada con wren_b en bajo");
 		
-		
-		
+
 		#10;
 	
 	end

@@ -26,83 +26,108 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 05:00:13 on May 16,2023
+# Start time: 05:27:40 on May 16,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory.v 
 # -- Compiling module mainMemory
 # 
 # Top level modules:
 # 	mainMemory
-# End time: 05:00:13 on May 16,2023, Elapsed time: 0:00:00
+# End time: 05:27:40 on May 16,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -vlog01compat -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory.v}
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mux21.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 05:00:13 on May 16,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory.v 
-# -- Compiling module mainMemory
+# Start time: 05:27:40 on May 16,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mux21.sv 
+# -- Compiling module mux21
 # 
 # Top level modules:
-# 	mainMemory
-# End time: 05:00:13 on May 16,2023, Elapsed time: 0:00:00
+# 	mux21
+# End time: 05:27:40 on May 16,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/IOMemory.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 05:00:13 on May 16,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory_tb.sv 
-# -- Compiling module mainMemory_tb
+# Start time: 05:27:40 on May 16,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/IOMemory.sv 
+# -- Compiling module IOMemory
 # 
 # Top level modules:
-# 	mainMemory_tb
-# End time: 05:00:13 on May 16,2023, Elapsed time: 0:00:00
+# 	IOMemory
+# End time: 05:27:40 on May 16,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/chipSet.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 05:27:40 on May 16,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/chipSet.sv 
+# -- Compiling module chipSet
+# 
+# Top level modules:
+# 	chipSet
+# End time: 05:27:40 on May 16,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/dataMemory.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 05:27:40 on May 16,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/dataMemory.sv 
+# -- Compiling module dataMemory
+# 
+# Top level modules:
+# 	dataMemory
+# End time: 05:27:40 on May 16,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  mainMemory_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" mainMemory_tb 
-# Start time: 05:00:13 on May 16,2023
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/dataMemory.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 05:27:40 on May 16,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/dataMemory.sv 
+# -- Compiling module dataMemory
+# 
+# Top level modules:
+# 	dataMemory
+# End time: 05:27:40 on May 16,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/dataMemory_tb.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 05:27:40 on May 16,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/dataMemory_tb.sv 
+# -- Compiling module dataMemory_tb
+# 
+# Top level modules:
+# 	dataMemory_tb
+# End time: 05:27:40 on May 16,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  dataMemory_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" dataMemory_tb 
+# Start time: 05:27:40 on May 16,2023
 # ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/dataMemory.sv(26): (vopt-2732) Module parameter 'N' not found for override.
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./processor_run_msim_rtl_verilog.do PAUSED at line 17
+vsim -voptargs=+acc work.dataMemory_tb
+# vsim -voptargs="+acc" work.dataMemory_tb 
+# Start time: 05:27:40 on May 16,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory.v(75): Module 'altsyncram' is not defined.
+#  For instance 'altsyncram_component' at path 'dataMemory_tb.myDataMemory.mymainMemory'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=0.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./processor_run_msim_rtl_verilog.do PAUSED at line 17
+vsim -L altera_mf_ver -L lpm_ver dataMemory_tb
+# vsim -L altera_mf_ver -L lpm_ver dataMemory_tb 
+# Start time: 05:27:40 on May 16,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/dataMemory_tb.sv(9): (vopt-2241) Connection width does not match width of port 'data2'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/dataMemory.sv(1).
+# ** Warning: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/dataMemory_tb.sv(9): (vopt-2241) Connection width does not match width of port 'qb'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/dataMemory.sv(1).
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=2.
 # Loading sv_std.std
-# Loading work.mainMemory_tb(fast)
+# Loading work.dataMemory_tb(fast)
 # Loading work.mainMemory(fast)
-# Loading altera_mf_ver.altsyncram(fast)
-# Loading altera_mf_ver.altsyncram_body(fast)
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (24) for port 'data_a'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory.v(44).
-#    Time: 0 ps  Iteration: 0  Instance: /mainMemory_tb/myMainMemory File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory_tb.sv Line: 10
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (24) for port 'data_b'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory.v(45).
-#    Time: 0 ps  Iteration: 0  Instance: /mainMemory_tb/myMainMemory File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory_tb.sv Line: 10
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (24) for port 'q_a'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory.v(48).
-#    Time: 0 ps  Iteration: 0  Instance: /mainMemory_tb/myMainMemory File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory_tb.sv Line: 10
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (24) for port 'q_b'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory.v(49).
-#    Time: 0 ps  Iteration: 0  Instance: /mainMemory_tb/myMainMemory File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory_tb.sv Line: 10
-# 
-# add wave *
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: yraul  Hostname: DESKTOP-PJ5L1KF  ProcessID: 9360
-#           Attempting to use alternate WLF file "./wlft36ykq8".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft36ykq8
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "../dataMemory.mif" for reading.
-# No such file or directory. (errno = ENOENT)    : C:/intelFPGA_lite/22.1std/questa_fse/win64/../intel/verilog/src/altera_mf.v(264)
-#    Time: 0 ps  Iteration: 0  Instance: /mainMemory_tb/myMainMemory/altsyncram_component/m_default/altsyncram_inst
-# ERROR: cannot read ../dataMemory.mif.
-# ** Warning: (vsim-7) Failed to open readmem file "../dataMemory.ver" in read mode.
-# No such file or directory. (errno = ENOENT)    : C:/intelFPGA_lite/22.1std/questa_fse/win64/../intel/verilog/src/altera_mf.v(48978)
-#    Time: 0 ps  Iteration: 0  Instance: /mainMemory_tb/myMainMemory/altsyncram_component/m_default/altsyncram_inst
-# ** Error: Lectura incorrecta de estado inicial
-#    Time: 20 ns  Scope: mainMemory_tb File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory_tb.sv Line: 40
-# ** Error: Escritura no realizada correctamente con wren_a en alto
-#    Time: 40 ns  Scope: mainMemory_tb File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory_tb.sv Line: 47
-# ** Error: Escritura realizada con wren_a en bajo
-#    Time: 60 ns  Scope: mainMemory_tb File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory_tb.sv Line: 54
-# ** Error: Escritura no realizada con wren_b en alto
-#    Time: 80 ns  Scope: mainMemory_tb File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory_tb.sv Line: 64
-# ** Error: Escritura no realizada con wren_a en alto
-#    Time: 100 ns  Scope: mainMemory_tb File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory_tb.sv Line: 72
-# ** Error: Escritura realizada con wren_b en bajo
-#    Time: 120 ns  Scope: mainMemory_tb File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mainMemory_tb.sv Line: 82
+# End time: 05:28:55 on May 16,2023, Elapsed time: 0:01:15
+# Errors: 2, Warnings: 2

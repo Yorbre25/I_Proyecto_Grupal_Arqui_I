@@ -1,3 +1,5 @@
+import numpy as np
+
 Instructions = {
     "sub":{"opType":"art", "opcode":0},
     "add":{"opType":"art", "opcode":1},
@@ -62,12 +64,16 @@ def GetFunction(functionText, registersList):
     #If operation es aritmethic
     if(result.get("opType") == "art"):
         flag =  IsInmediate(registersList[len(registersList)-1])
+        
         code += "01" if flag else "00"
         opcode = format(result.get("opcode"), 'b')
         while (len(opcode) < 4): opcode = "0"+opcode
         code += opcode
         if(functionText == "cmp" or functionText == "mov" or functionText == "not"): #It's an op of 2 operands
-            code += GetAllRegistersOpcode(registersList[0], "r0" ,registersList[1])
+            if(functionText == "cmp"):
+                code += GetAllRegistersOpcode("r0", registersList[0] ,registersList[1]) 
+            else:   
+                code += GetAllRegistersOpcode(registersList[0], "r0" ,registersList[1])
         else:
             code += GetAllRegistersOpcode(registersList[0], registersList[1], registersList[2])
     #If operation is Memory
@@ -112,17 +118,11 @@ def GetAllRegistersOpcode(register1, register2, register3):
         registerNumber = register3.replace("#","")
         registerNumber = int(registerNumber)
         reg3Aux = format(registerNumber, 'b')
-        reg3 = reg3Aux.replace("-","")
-        counter = len(reg3)
-        print("Int is: ", registerNumber)
-        print("reg3Aux is: ", reg3Aux)
-        print("reg3 is: ", reg3)
-        while(counter < 18):
-            if("-" in reg3Aux and counter == 17):
-                reg3 = "1" + reg3
-            else:
-                reg3 = "0" + reg3
-            counter += 1
+        #print("Int is: ", registerNumber)
+        #print("reg3Aux is: ", reg3Aux)
+        #print("reg3 is: ", reg3)
+        reg3 = negative_to_twos_complement(int(reg3Aux,2),18)
+        
     else:
         reg3 = GetRegisterOpcode(register3)
         reg3 += "0" * 14
@@ -153,14 +153,14 @@ def SetBranches():
               
             newInstruction = branch[:branch.find("=")]
             branchLabel = branch[branch.find("=") + 1 :]
-            print("Instruccion ",newInstruction)
-            print("Branch Label is: ", branchLabel)
-    
+            #print("Instruccion ",newInstruction)
+            #print("Branch Label ",branchLabel)
+
             jump = functions.get(branchLabel)
             
             actualInstructionAux = branchLine
-            print("Pc Relative ", jump)
-            print("Actual Line ", branchLine)
+            #print("Pc Relative ", jump)
+            #print("Actual Line ", branchLine)
             if(jump > branchLine):
                 while(jump > actualInstructionAux):
                     pcRelative += 4
@@ -171,26 +171,53 @@ def SetBranches():
                     actualInstructionAux -= 1
 
             resultAux = format(pcRelative, 'b')
-            result = resultAux.replace("-","")
-            counter = len(result)
-            while(counter < 18):
-                if("-" in resultAux and counter == 17):
-                    result = "1" + result
-                else:
-                    result = "0" + result
-                counter += 1
+            print("PC Relative: ", int(resultAux, 2))
+            result = negative_to_twos_complement(int(resultAux, 2), 18)
+            
             instructionResult[branchLine] = newInstruction + result
+            print("Branch code result: ", instructionResult[branchLine])
         branchLine += 1
     return ""
 
 def CreateFile():
-    with open('output.txt', 'w') as f:
+    with open('output.mem', 'w') as f:
         counter = 0
         for line in instructionResult:
-            if(counter == len(instructionResult) - 1):
-                f.writelines(line)
-            else:
-                f.writelines(line+"\n")
+            hexadecimal = ConvertToHex(line)
+            f.writelines(hexadecimal[6:8]+"\n"+hexadecimal[4:6]+"\n"+hexadecimal[2:4]+"\n"+hexadecimal[0:2]+"\n")
+            counter += 4
+        while(counter < 16384):
+            f.writelines("00\n")
             counter += 1
     f.close()
+
+def ConvertToHex(binaryNumber):
+    hexNumber = hex(int(binaryNumber,2))
+    hexNumberSplit = hexNumber.split("x")
+    hexNumber = hexNumberSplit[1]
+    counter = len(hexNumber)
+    while (counter < 8):
+        hexNumber = "0" +hexNumber
+        counter += 1
+    return hexNumber
+
+def negative_to_twos_complement(number, num_bits):
+    if (number<0):
+        # Convertir el número negativo a su valor absoluto
+        abs_number = abs(number)
+
+        # Representar el número en binario
+        binary = bin(abs_number)[2:].zfill(num_bits)
+
+        # Invertir los bits
+        inverted_bits = ''.join('1' if bit == '0' else '0' for bit in binary)
+
+        # Sumar 1 al número invertido
+        twos_complement = np.binary_repr(int(inverted_bits, 2) + 1, width=num_bits)
+
+        return twos_complement
+    else:
+        binary = bin(number)[2:].zfill(num_bits)
+        return binary
+    
 openFile()

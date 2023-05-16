@@ -216,19 +216,19 @@ always@(negedge clk or negedge reset_n)
 		begin
 			//pos_x <= 0;
 			//pos_y <= 0;
-			parallelAddress <= 24'd304;
+			parallelAddress <= 262220;
 			screen_color <= 8'h00;
 		end
 	else begin
 		if((InBoxX == 1'b1) && (InBoxY == 1'b1))
 		begin
-			parallelAddress <= 24'd300 + (pos_x * 24'd300 + pos_y);
+			//parallelAddress <= 300 + (pos_x  + pos_y * 300);
 			//Codigo para asignar el color
 			//pos_x <= pos_x + 24'd1;
 			//pos_y <= pos_y + 24'd1;
 			
 			//parallelAddress <=  (pos_x + pos_y);
-			//parallelAddress <= 304; 
+			parallelAddress <= 0; 
 			//color <= color_array[address_color];
 			//color <= 8'hFF;
 			screen_color <= color;
@@ -236,7 +236,7 @@ always@(negedge clk or negedge reset_n)
 		else begin
 			//pos_x <= 0;
 			//pos_y <= 0;
-			parallelAddress <= 24'd304;
+			parallelAddress <= 0;
 			screen_color <= 8'h00;
 			
 		end
@@ -244,7 +244,7 @@ always@(negedge clk or negedge reset_n)
 	
 	
 //pattern generator and display enable
-always @(*)
+always @(posedge clk)
 begin
 		vga_de		<=	pre_vga_de;
 		pre_vga_de	<=	v_act && h_act;

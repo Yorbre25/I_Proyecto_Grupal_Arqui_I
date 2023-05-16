@@ -44,16 +44,7 @@ if (len(sys.argv) < 2):
                 hexa = f'0x0{hexa[2:]}'
             lines.append(hex(index)[2:] + ":\t"+hexa[2:]+";\n")
             index += 1
-    for x in range(0, w):
-        for y in range(0, h):
-            total = im.getpixel((x,y))& 255
-            hexa = hex(total)
-            if (total == 0):
-                hexa = "0x00"
-            while len(hexa[2:]) < 2:
-                hexa = f'0x0{hexa[2:]}'
-            lines.append(hex(index)[2:] + ":\t"+hexa[2:]+";\n")
-            index += 1
+    
     f.writelines(lines)
     f.write("END;")
 

@@ -4,7 +4,7 @@ module memoryStage(input clk,rst,en,input [1:0] opType,input [3:0] opCode,input 
 
 	logic [23:0] qa;
 	logic [59:0] bufferInput;
-	dataMemory myDataMemory(.clk(clk),.rst(rst),.memWrite(memWrite),.address1(address1[18:0]),.address2(address2[18:0]),.data1(writeData),.data2({8{1'b0}}),.switches(switches),.gpio1(gpio1),.gpio2(gpio2),.qa(qa),.qb(q));
+	dataMemory myDataMemory(.clk(clk),.rst(rst),.memWrite(memWrite),.address1(address1[19:0]),.address2(address2[19:0]),.data1(writeData),.data2({8{1'b0}}),.switches(switches),.gpio1(gpio1),.gpio2(gpio2),.qa(qa),.qb(q));
 	
 	
 	buffer #(.Buffer_size(60)) myBuffer(.rst(rst),.clk(clk),.en(en),.bufferInput(bufferInput),.bufferOut(bufferOut));

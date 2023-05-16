@@ -32,10 +32,10 @@ module MainConnection(
 );
 wire [23:0] parallelAddress;
 reg [17:0] offset;
-wire [31:0] var1;
+
 wire [7:0] q;
 assign colors = q;
-/*
+
 processor processor(.rst(switches[0]),
 	.clk(FPGA_CLK1_50), 
 	.gpio1(gpio1),
@@ -43,15 +43,10 @@ processor processor(.rst(switches[0]),
 	.switches(switches),
 	.gpio2(gpio2),
 	.q(q));
-*/	
 
-instructionMemory myInst 
-(
-    .addr(parallelAddress[13:0]),
-    .data(var1)
-);
 
-assign q = var1[7:0];
+
+
 DE10_Nano_HDMI_TX hdmi(
 
 

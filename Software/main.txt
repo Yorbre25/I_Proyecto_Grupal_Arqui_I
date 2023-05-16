@@ -25,13 +25,15 @@ YLoop:
 MOV r4,#299
 CMP r5,r4
 Bg ExitYForLoop
-MOV r6, SinPinter
+MOV r6, #65555
+mult r6, r6, #4
 LD  r6, r6, r5
 MULT r6, r6, r1
 DIV r6, r6, #100
 ADD r6, r6, r3
 MOD r6, r6, #300
-MOV r7, SinPinter
+MOV r7, #65555
+mult r7, r7, #4
 LD  r7, r7, r3
 MULT r7, r7, r1
 DIV r7, r7, #100
@@ -85,7 +87,9 @@ bi XLoop
 MOVIMGLoop2:
 MOV r8, #90000
 MOV r6, #90376
-MOV r7, PointerRomImg
+MOV r7, #65555
+mult r7, r7, #4
+ADD r7, r7, #300
 LD r9, r7, r4
 STR r9, r6, r4
 ADD r4, r4, #1

@@ -216,19 +216,19 @@ always@(negedge clk or negedge reset_n)
 		begin
 			//pos_x <= 0;
 			//pos_y <= 0;
-			parallelAddress <= 262220;
+			parallelAddress <= 0;
 			screen_color <= 8'h00;
 		end
 	else begin
 		if((InBoxX == 1'b1) && (InBoxY == 1'b1))
 		begin
-			//parallelAddress <= 300 + (pos_x  + pos_y * 300);
+			parallelAddress <=   (pos_x *300 + pos_y );
 			//Codigo para asignar el color
 			//pos_x <= pos_x + 24'd1;
 			//pos_y <= pos_y + 24'd1;
 			
 			//parallelAddress <=  (pos_x + pos_y);
-			parallelAddress <= 0; 
+			//parallelAddress <= 0; 
 			//color <= color_array[address_color];
 			//color <= 8'hFF;
 			screen_color <= color;

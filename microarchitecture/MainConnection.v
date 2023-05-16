@@ -72,7 +72,8 @@ DE10_Nano_HDMI_TX hdmi(
 
 
       ///////// KEY /////////
-      .KEY(KEY)
+      .KEY(KEY),
+		.parallelAddress(parallelAddress)
 
 );
 

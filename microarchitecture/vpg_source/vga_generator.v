@@ -71,12 +71,13 @@ reg				pre_vga_de;
 wire				h_max, hs_end, hr_start, hr_end;
 wire				v_max, vs_end, vr_start, vr_end;
 wire				v_act_14, v_act_24, v_act_34;
+reg            InBoxX, InBoxY;
 reg				boarder;
 reg	[3:0]		color_mode;
 reg	[1:0]		columna;
 reg	[1:0]		fila;
-reg [9:0] pos_x; // horizontal counter
-reg [9:0] pos_y;
+reg [23:0] pos_x; // horizontal counter
+reg [23:0] pos_y;
 reg [17:0] address_color;
 reg [7:0] screen_color;
 
@@ -109,16 +110,20 @@ always @ (posedge clk or negedge reset_n)
 		h_act		<=	1'b0;
 		columna <= 2'b00;
 		counter_x <= 0;
+		pos_x <= 0;
 	end
 	else
 	begin
 		h_act_d	<=	h_act;
-
+		
+		// Cuando se ha llegado al final de la fila
 		if (h_max)
 		begin
 			h_count	<=	12'b0;
 			counter_x <= 0;
+			pos_x <= 0;
 		end
+		
 		else
 		begin
 			h_count	<=	h_count + 12'b1;
@@ -140,12 +145,16 @@ always @ (posedge clk or negedge reset_n)
 		else if (hr_end)
 			h_act		<=	1'b0;
 			
-		if(counter_x > 12'd141 && counter_x < 12'd354)
-			columna <= 2'b00;
-		else if(counter_x > 12'd354 && counter_x < 12'd567)
-			columna <= 2'b01;
-		else if(counter_x > 12'd567 && counter_x < h_end)
-			columna <= 2'b10;
+		if(counter_x >= 141 && counter_x < 441)
+			begin
+				InBoxX <= 1'b1;
+				pos_x <= pos_x + 1;
+			end
+		else
+			begin
+				InBoxX <= 1'b0;
+				pos_x <= 0;
+			end
 			
 	end
 
@@ -159,6 +168,7 @@ always@(posedge clk or negedge reset_n)
 		v_act			<=	1'b0;
 		fila <= 2'b00;
 		counter_y <= 0;
+		pos_y <= 0;
 	end
 	else 
 	begin		
@@ -170,6 +180,7 @@ always@(posedge clk or negedge reset_n)
 			begin
 				v_count	<=	12'b0;
 				counter_y <= 0;
+				pos_y <= 0;
 			end
 			else
 			begin
@@ -186,41 +197,46 @@ always@(posedge clk or negedge reset_n)
 				v_act <=	1'b1;
 			else if (vr_end)
 				v_act <=	1'b0;
-
-			
-			if(counter_y > 12'd34 && counter_y < 12'd194)
-				fila <= 2'b00;
-			else if(counter_y > 12'd194 && counter_y < 12'd354)
-				fila <= 2'b01;
-			else if(counter_y > 12'd354 && counter_y < v_end)
-				fila <= 2'b10;
-			
+			if( counter_y >= 34 && counter_y < 334)
+				begin
+					InBoxY <= 1'b1;
+					pos_y <= pos_y + 1;
+				end
+			else
+				begin
+					InBoxY <= 1'b0;
+					pos_y <= 0;
+				end
 		end
 	end
 
 // Assign of colors by column and row
-always@(posedge clk or negedge reset_n)
+always@(negedge clk or negedge reset_n)
 	if(!reset_n)
 		begin
-			pos_x <= 0;
-			pos_y <= 0;
-			parallelAddress <= 0;
+			//pos_x <= 0;
+			//pos_y <= 0;
+			parallelAddress <= 24'd304;
+			screen_color <= 8'h00;
 		end
 	else begin
-		if( counter_y > 34 && counter_y < 334 && counter_x > 141 && counter_x < 441)
+		if((InBoxX == 1'b1) && (InBoxY == 1'b1))
 		begin
+			parallelAddress <= 24'd300 + (pos_x * 24'd300 + pos_y);
 			//Codigo para asignar el color
-			pos_x <= counter_x - 141;
-			pos_y <= counter_y - 34;
-			parallelAddress <= 304; // array[address_color]
+			//pos_x <= pos_x + 24'd1;
+			//pos_y <= pos_y + 24'd1;
+			
+			//parallelAddress <=  (pos_x + pos_y);
+			//parallelAddress <= 304; 
 			//color <= color_array[address_color];
 			//color <= 8'hFF;
 			screen_color <= color;
 		end
 		else begin
-			pos_x <= 0;
-			pos_y <= 0;
-			parallelAddress <= 0;
+			//pos_x <= 0;
+			//pos_y <= 0;
+			parallelAddress <= 24'd304;
 			screen_color <= 8'h00;
 			
 		end
@@ -228,16 +244,8 @@ always@(posedge clk or negedge reset_n)
 	
 	
 //pattern generator and display enable
-always @(posedge clk or negedge reset_n)
+always @(*)
 begin
-	if (!reset_n)
-	begin
-		vga_de		<=	1'b0;
-		pre_vga_de	<=	1'b0;
-		boarder		<=	1'b0;		
-	end
-	else
-	begin
 		vga_de		<=	pre_vga_de;
 		pre_vga_de	<=	v_act && h_act;
     
@@ -247,28 +255,16 @@ begin
 			boarder	<=	1'b0;   		
 		
 		if (boarder)
-			{vga_r, vga_g, vga_b} <= {8'hFF,8'hFF,8'hFF};
+			{vga_r, vga_g, vga_b} <= {8'hFF,8'h88,8'h88};
 		else
-			//case (color_mode)
-				//4'b0001	:	{vga_r, vga_g, vga_b}	<=	{pixel_x,8'h00,8'h00};
-				//4'b0010	:	{vga_r, vga_g, vga_b}	<=	{8'h00,pixel_x,8'h00};
-				//4'b0100	:	{vga_r, vga_g, vga_b}	<=	{8'h00,8'h00,pixel_x};
-				//4'b1000	:	{vga_r, vga_g, vga_b}	<=	{pixel_x,pixel_x,pixel_x};
-				//default	:	{vga_r, vga_g, vga_b}	<=	{8'h00,8'h00,8'h00};
-				//4'b0000	:	{vga_r, vga_g, vga_b}	<=	{8'hAC,8'h99,8'hFF};
-				//4'b0001	:	{vga_r, vga_g, vga_b}	<=	{8'h7C,8'h60,8'hF9};
-				//4'b0010	:	{vga_r, vga_g, vga_b}	<=	{8'h40,8'h19,8'hF0};
-				//4'b0011	:	{vga_r, vga_g, vga_b}	<=	{8'h68,8'hF3,8'h68};
-				//4'b0100	:	{vga_r, vga_g, vga_b}	<=	{8'h22,8'hB5,8'h22};
-				//4'b0101	:	{vga_r, vga_g, vga_b}	<=	{8'h14,8'h7B,8'h14};
-				//4'b0110	:	{vga_r, vga_g, vga_b}	<=	{8'hF7,8'hB5,8'hE5};
-				//4'b0111	:	{vga_r, vga_g, vga_b}	<=	{8'hF6,8'h79,8'hE5};
-				//4'b1000	:	{vga_r, vga_g, vga_b}	<=	{8'hF3,8'h16,8'hD9};
-				
-				//default	:	{vga_r, vga_g, vga_b}	<=	{8'h00,8'h00,8'h00};
-			//endcase
-			{vga_r, vga_g, vga_b}	<=	{screen_color,screen_color,screen_color};
-	end
+			begin
+				if((InBoxX == 1'b1) && (InBoxY == 1'b1))
+					begin
+						{vga_r, vga_g, vga_b}	<=	{color,color,color};
+					end
+				else
+					{vga_r, vga_g, vga_b}	<=	{8'h00,8'h00,8'h00};
+			end
 end	
 
 endmodule

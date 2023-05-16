@@ -5,15 +5,21 @@ module memoryStage_tb();
 	logic [3:0] opCode;
 	logic [23:0] address1,address2;
 	logic [3:0] Rc,switches;
-	logic [23:0] writeData,q;
+	logic [23:0] writeData;
+	logic [7:0] q;
 	logic [35:0] gpio1,gpio2;
 	logic [59:0] bufferOut;
 	
 	logic [60:0] bufferInput,out;
 
-	memoryStage myMemoryStage(.clk(clk),.rst(rst),.en(en),.opType(out[57:56]),.opCode(out[55:52]),.address1(out[51:28]),
-	.address2(address2),.memWrite(out[60]),.memToReg(out[59]),.regWrite(out[58]),
-	.Rc(out[27:24]),.writeData(out[23:0]),.switches(switches),.gpio1(gpio1),.gpio2(gpio2),.q(q),.bufferOut(bufferOut));
+	memoryStage myMemoryStage(
+	.clk(clk),.rst(rst),.en(en),
+	.opType(out[57:56]),.opCode(out[55:52]),
+	.address1(out[51:28]),.address2(address2),
+	.memWrite(out[60]),.memToReg(out[59]),.regWrite(out[58]),
+	.Rc(out[27:24]),.writeData(out[23:0]),
+	.switches(switches),.gpio1(gpio1),.gpio2(gpio2),.q(q),
+	.bufferOut(bufferOut));
 	
 	
 	buffer #(.Buffer_size(61)) myBuffer(.rst(rst),.clk(clk),.en(en),.bufferInput(bufferInput),.bufferOut(out));

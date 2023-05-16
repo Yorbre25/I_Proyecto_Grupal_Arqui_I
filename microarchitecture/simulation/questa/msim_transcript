@@ -24,206 +24,138 @@
 # Copying C:/intelFPGA_lite/22.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/SetFlags.sv}
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 10:21:23 on May 13,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/SetFlags.sv 
-# -- Compiling module SetFlags
-# 
-# Top level modules:
-# 	SetFlags
-# End time: 10:21:23 on May 13,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv}
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 10:21:23 on May 13,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv 
-# -- Compiling module Operator
-# 
-# Top level modules:
-# 	Operator
-# End time: 10:21:23 on May 13,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv}
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 10:21:23 on May 13,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv 
-# -- Compiling module Mux
-# 
-# Top level modules:
-# 	Mux
-# End time: 10:21:23 on May 13,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv}
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 10:21:23 on May 13,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv 
-# -- Compiling module ALU
-# 
-# Top level modules:
-# 	ALU
-# End time: 10:21:23 on May 13,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 10:21:23 on May 13,2023
+# Start time: 00:21:58 on May 16,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv 
 # -- Compiling module buffer
 # 
 # Top level modules:
 # 	buffer
-# End time: 10:21:23 on May 13,2023, Elapsed time: 0:00:00
+# End time: 00:21:58 on May 16,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/operatorsAluMux.sv}
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mux21.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 10:21:23 on May 13,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/operatorsAluMux.sv 
-# -- Compiling module operatorsALUMux
+# Start time: 00:21:58 on May 16,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mux21.sv 
+# -- Compiling module mux21
 # 
 # Top level modules:
-# 	operatorsALUMux
-# End time: 10:21:23 on May 13,2023, Elapsed time: 0:00:00
+# 	mux21
+# End time: 00:21:58 on May 16,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mux41.sv}
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/instructionFetch.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 10:21:23 on May 13,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/mux41.sv 
-# -- Compiling module mux41
+# Start time: 00:21:58 on May 16,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/instructionFetch.sv 
+# -- Compiling module instructionFetch
 # 
 # Top level modules:
-# 	mux41
-# End time: 10:21:23 on May 13,2023, Elapsed time: 0:00:00
+# 	instructionFetch
+# End time: 00:21:59 on May 16,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/exec.sv}
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/adder.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 10:21:23 on May 13,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/exec.sv 
-# -- Compiling package exec_sv_unit
-# -- Compiling module exec
+# Start time: 00:21:59 on May 16,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/adder.sv 
+# -- Compiling module adder
 # 
 # Top level modules:
-# 	exec
-# End time: 10:21:24 on May 13,2023, Elapsed time: 0:00:01
+# 	adder
+# End time: 00:21:59 on May 16,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALUMux.sv}
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/pcUpdate.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 10:21:24 on May 13,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALUMux.sv 
-# -- Compiling module ALUMux
+# Start time: 00:21:59 on May 16,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/pcUpdate.sv 
+# -- Compiling module pcUpdate
 # 
 # Top level modules:
-# 	ALUMux
-# End time: 10:21:24 on May 13,2023, Elapsed time: 0:00:00
+# 	pcUpdate
+# End time: 00:21:59 on May 16,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/testExec.sv}
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/instructionMemory.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 10:21:24 on May 13,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/testExec.sv 
-# -- Compiling module testExec
+# Start time: 00:21:59 on May 16,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/instructionMemory.sv 
+# -- Compiling module instructionMemory
 # 
 # Top level modules:
-# 	testExec
-# End time: 10:21:24 on May 13,2023, Elapsed time: 0:00:00
+# 	instructionMemory
+# End time: 00:21:59 on May 16,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  testExec
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" testExec 
-# Start time: 10:21:24 on May 13,2023
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/instructionFetch.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 00:21:59 on May 16,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/instructionFetch.sv 
+# -- Compiling module instructionFetch
+# 
+# Top level modules:
+# 	instructionFetch
+# End time: 00:21:59 on May 16,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture {C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/instructionFetch_tb.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 00:21:59 on May 16,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture" C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/instructionFetch_tb.sv 
+# -- Compiling module instructionFetch_tb
+# 
+# Top level modules:
+# 	instructionFetch_tb
+# End time: 00:21:59 on May 16,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  instructionFetch_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" instructionFetch_tb 
+# Start time: 00:21:59 on May 16,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/pcUpdate.sv(7): (vopt-2732) Module parameter 'N' not found for override.
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./processor_run_msim_rtl_verilog.do PAUSED at line 18
+vsim -voptargs=+acc work.instructionFetch_tb
+# vsim -voptargs="+acc" work.instructionFetch_tb 
+# Start time: 00:21:59 on May 16,2023
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading sv_std.std
-# Loading work.testExec(fast)
+# Loading work.instructionFetch_tb(fast)
+# Loading work.instructionFetch(fast)
+# Loading work.pcUpdate(fast)
 # Loading work.buffer(fast)
-# Loading work.exec_sv_unit(fast)
-# Loading work.exec(fast)
-# Loading work.ALUMux(fast)
-# Loading work.operatorsALUMux(fast)
-# Loading work.mux41(fast)
-# Loading work.ALU(fast)
-# Loading work.Operator(fast)
-# Loading work.Mux(fast)
-# Loading work.SetFlags(fast)
+# Loading work.adder(fast)
+# Loading work.mux21(fast)
+# Loading work.instructionMemory(fast)
 # Loading work.buffer(fast__1)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (123) does not match connection size (124) for port 'bufferInput'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/ID_EX File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/testExec.sv Line: 35
-# ** Warning: (vsim-3015) [PCDPC] - Port size (123) does not match connection size (124) for port 'bufferOut'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/buffer.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/ID_EX File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/testExec.sv Line: 35
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (1) for port 'pc'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/exec.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/testExec.sv Line: 44
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (1) for port 'imm'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/exec.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/testExec.sv Line: 44
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (1) for port 'aluOut'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/exec.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/testExec.sv Line: 44
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (1) for port 'result'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/exec.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/testExec.sv Line: 44
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'r_mov'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/operator File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'r_comp'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/operator File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'r_add'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/operator File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'r_sub'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/operator File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'r_mul'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/operator File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'r_div'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv(9).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/operator File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'r_xor'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv(10).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/operator File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'r_and'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv(11).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/operator File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'r_not'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv(12).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/operator File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'r_shl'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv(13).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/operator File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'r_shr'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv(14).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/operator File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'r_mod'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Operator.sv(15).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/operator File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 12
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'r_mov'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv(3).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/mux1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 13
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'r_comp'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/mux1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 13
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'r_add'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/mux1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 13
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'r_sub'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv(6).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/mux1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 13
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'r_mul'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/mux1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 13
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'r_div'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/mux1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 13
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'r_xor'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv(9).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/mux1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 13
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'r_and'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv(10).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/mux1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 13
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'r_not'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv(11).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/mux1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 13
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'r_shl'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv(12).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/mux1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 13
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'r_shr'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv(13).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/mux1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 13
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'r_mod'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv(14).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/mux1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 13
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'result'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/Mux.sv(15).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/mux1 File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 13
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (25) for port 'result'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/SetFlags.sv(3).
-#    Time: 0 ps  Iteration: 0  Instance: /testExec/exec1/AluMux1/alu/set_flags File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/ALU.sv Line: 14
-# 
-# add wave *
+# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/adder.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /instructionFetch_tb/myInstructionFetch/mypc/adder File: C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/pcUpdate.sv Line: 6
+add wave -position insertpoint  \
+sim:/instructionFetch_tb/clk \
+sim:/instructionFetch_tb/rst1 \
+sim:/instructionFetch_tb/rst2 \
+sim:/instructionFetch_tb/en1 \
+sim:/instructionFetch_tb/en2 \
+sim:/instructionFetch_tb/branchFlag \
+sim:/instructionFetch_tb/branchAddr \
+sim:/instructionFetch_tb/bufferOut
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: yraul  Hostname: DESKTOP-PJ5L1KF  ProcessID: 9360
-#           Attempting to use alternate WLF file "./wlft127448".
+#           Attempting to use alternate WLF file "./wlftii7y1m".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft127448
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# Data: 000000000000000000000100
-# Data: 000000000000000000000000
-# Data: 111111111111111111111111
-# Break key hit
-# Simulation stop requested.
-# End time: 10:21:36 on May 13,2023, Elapsed time: 0:00:12
-# Errors: 0, Warnings: 34
+#           Using alternate file: ./wlftii7y1m
+run -all
+# Data: 01100000010000000000000000001010000000000000000000000000
+# Instruccion 1 leida correctamente
+# Data: 01001100100000000000000011111111000000000000000000000100
+# Instruccion 2 leida correctamente
+# Data: 10000010100010000000000000000000000000000000000000001100
+# Instruccion 4 leida correctamente
+# ** Note: $finish    : C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/instructionFetch_tb.sv(74)
+#    Time: 260 ns  Iteration: 0  Instance: /instructionFetch_tb
+# 1
+# Break in Module instructionFetch_tb at C:/Users/yraul/Documents/Github/ybrenes_computer_architecture_1_2023/microarchitecture/instructionFetch_tb.sv line 74
+# End time: 00:33:16 on May 16,2023, Elapsed time: 0:11:17
+# Errors: 1, Warnings: 3

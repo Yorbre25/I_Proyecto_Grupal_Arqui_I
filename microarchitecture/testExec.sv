@@ -1,7 +1,7 @@
 module testExec;
 	parameter setValuesBuffer = 16;
 	parameter RW = 24;
-	parameter BufferW = setValuesBuffer + 2*RW;
+	parameter BufferW = 64;
 
 
 	logic clk, rst, en;
@@ -15,8 +15,8 @@ module testExec;
 	logic signed [RW-1:0] extendImm;
 	
 	//DECODE BUFFER
-	logic [123:0]bufferInput_decode;
-	logic [123:0]bufferOutput_decode;
+	logic [147-1:0]bufferInput_decode;
+	logic [147-1:0]bufferOutput_decode;
 
 	//Exec inputs
 	logic [1:0] opType_e;
@@ -25,14 +25,15 @@ module testExec;
 	logic signed [3:0] aluControl_e, Rc_e;
 	logic signed [RW-1:0] rd1_e, rd2_e, rd3_e;
 	// outside decode buffer
-	logic Fa_e, Fb_e;
-	logic [RW-1:0] aluOut_e, result_e, imm_e, pc_e;
+	logic Fa, Fb;
+	logic [RW-1:0] aluOut_e, result_e, imm, pc;
+	logic [RW-1:0] forward1, forward2, forward3;
 
 	
 	logic [BufferW-1:0] bufferOut;
 	
 	
-	buffer #(.Buffer_size(123)) ID_EX(
+	buffer #(.Buffer_size(147)) ID_EX(
 		.rst(rst),
 		.clk(clk),
 		.en(en),
@@ -43,10 +44,11 @@ module testExec;
 	
 	exec #(.N(RW), .BW(BufferW)) exec1(
 	.clk(clk), .rst(rst), .en(en),
-	.rd1(rd1), .rd2(rd2), .pc(pc), .imm(imm), .aluOut(aluOut), .result(result),
+	.rd1(rd1), .rd2(rd2), .pc(pc), .imm(imm),
+	.Forward1(forward1), .Forward2(forward2), .Forward3(forward3),
 	.rd3(rd3),
 	.aluControl(aluControl),
-	.Rc(Rc),
+	.Rc(Rc_e),
 	.immSrc(immSrc), .branchFlag(branchFlag), .memWrite(memWrite), .memToReg(memToReg), .regWrite(regWrite),
 	.Fa(Fa), .Fb(Fb),
 	.opType(opType), .opCode(opCode),
@@ -85,10 +87,13 @@ module testExec;
 		//Exec Inputs
 		aluOut_e = 0; 
 		result_e = 0;
-		imm_e = 0;
-		pc_e = 0;
-		Fa_e = 0;
-		Fb_e = 0;
+		imm = 0;
+		pc = 0;
+		Fa = 0;
+		Fb = 0;
+		forward1 = 0;
+		forward2 = 0;
+		forward3 = 0;
 		
 		//Decode Buffer (rd1 + rd2)
 		opType = 0; opCode = 1; immSrc = 0; branchFlag = 0; memWrite = 0; memToReg = 0; regWrite = 0; aluControl = 1; Ra = 0; rd1 = 2; Rb = 0; rd2 = 2; Rc = 3; rd3 = 0; extendImm = 0;

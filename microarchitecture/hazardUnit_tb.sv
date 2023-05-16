@@ -2,9 +2,36 @@ module hazardUnit_tb();
 	logic [3:0] Ra,Rb,Rd_EXMEM,Rd_MEMWB;
 	logic [1:0] opTypeMem,opTypeWB;
 	logic [3:0] opCodeMem,opCodeWB;
-	logic [31:0] aluResult,Result,Forward1,Forward2;
-	logic branchTakenFlag,Fa,Fb,stall,flush1,flush2,flush3,flush4,flush5;
-	hazardUnit myhazardUnit(.Ra(Ra),.Rb(Rb),.Rd_EXMEM(Rd_EXMEM),.Rd_MEMWB(Rd_MEMWB),.opTypeMem(opTypeMem),.opTypeWB(opTypeWB),.opCodeMem(opCodeMem),.opCodeWB(opCodeWB),.aluResult(aluResult),.Result(Result), .branchTakenFlag(branchTakenFlag),.Fa(Fa),.Fb(Fb),.stall(stall),.flush1(flush1),.flush2(flush2),.flush3(flush3),.flush4(flush4),.flush5(flush5), .Forward1(Forward1),.Forward2(Forward2));
+	logic [31:0] aluResult,Result,Forward1,Forward2,Forward3;
+	logic branchTakenFlag,Fa,Fb,Fc,stall,flush1,flush2,flush3,flush4,flush5;
+	logic regWrite_ex_mem, regWriteWB;
+	hazardUnit myhazardUnit(
+		.Ra(Ra),
+		.Rb(Rb),
+		.Rd_EXMEM(Rd_EXMEM),
+		.Rd_MEMWB(Rd_MEMWB),
+		.opTypeMem(opTypeMem),
+		.opTypeWB(opTypeWB),
+		.opCodeMem(opCodeMem),
+		.opCodeWB(opCodeWB),
+		.aluResult(aluResult),
+		.Result(Result), 
+		.branchTakenFlag(branchTakenFlag),
+		.Fa(Fa),
+		.Fb(Fb),
+		.Fc(Fc),
+		.stall(stall),
+		.flush1(flush1),
+		.flush2(flush2),
+		.flush3(flush3),
+		.flush4(flush4),
+		.flush5(flush5), 
+		.Forward1(Forward1),
+		.Forward2(Forward2),
+		.Forward3(Forward3),
+		.regWriteMem(regWrite_ex_mem),
+		.regWriteWB(regWriteWB)
+	);
 	
 	initial begin
 	

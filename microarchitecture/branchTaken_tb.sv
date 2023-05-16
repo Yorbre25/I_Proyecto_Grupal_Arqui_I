@@ -6,7 +6,12 @@ module branchTaken_tb();
 	logic branchTakenFlag;
 	
 	
-	branchTaken myBranchTakenFlag(.opType(opType),.opCode(opCode),.flags(flags),.branchTakenFlag(branchTakenFlag));
+	branchTaken myBranchTakenFlag(
+	.opType(opType),
+	.opCode(opCode),
+	.flags(flags),
+	.branchTakenFlag(branchTakenFlag)
+	);
 	
 	
 	initial begin

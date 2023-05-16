@@ -178,10 +178,10 @@ def CreateFile():
         counter = 0
         for line in instructionResult:
             hexadecimal = ConvertToHex(line)
-            if(counter == len(instructionResult) - 1):
-                f.writelines(hexadecimal[6:8]+"\n"+hexadecimal[4:6]+"\n"+hexadecimal[2:4]+"\n"+hexadecimal[0:2])
-            else:
-                f.writelines(hexadecimal[6:8]+"\n"+hexadecimal[4:6]+"\n"+hexadecimal[2:4]+"\n"+hexadecimal[0:2]+"\n")
+            f.writelines(hexadecimal[6:8]+"\n"+hexadecimal[4:6]+"\n"+hexadecimal[2:4]+"\n"+hexadecimal[0:2]+"\n")
+            counter += 4
+        while(counter < 16384):
+            f.writelines("00\n")
             counter += 1
     f.close()
 

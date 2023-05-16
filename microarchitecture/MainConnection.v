@@ -23,9 +23,6 @@ module MainConnection(
 
       ///////// KEY /////////
       input       [1:0]  KEY,
-		
-		input rst,
-		input clk, 
 		input [35:0] gpio1,
 		input [3:0] switches,
 		output [35:0] gpio2
@@ -36,8 +33,8 @@ module MainConnection(
 reg [17:0] offset;
 
 
-processor processor(.rst(rst),
-	.clk(clk), 
+processor processor(.rst(switches[0]),
+	.clk(FPGA_CLK1_50), 
 	.gpio1(gpio1),
 	.parallelAddress(parallelAddress),
 	.switches(switches),

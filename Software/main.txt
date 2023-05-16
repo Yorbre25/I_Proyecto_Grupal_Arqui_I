@@ -1,0 +1,103 @@
+Start:
+mov r1, #74
+LD r1, r1, r0
+cmp r1,r0
+beq Start
+Main:
+MOV r1, r0
+mov r4, r0
+bi MOVIMGLoop2
+ProgramLoop:
+MOV r2, #400
+CMP r1, r2
+Bg Exit
+ADD r1,r1,#5
+MOV r3,r0
+MOVIMGTOHDMI:
+mov r4, 0
+bi MOVIMGLoop
+XLoop:
+MOV r4,#299
+CMP r3,r4
+MOV r5,r0
+Bg ProgramLoop
+YLoop:
+MOV r4,#299
+CMP r5,r4
+Bg ExitYForLoop
+MOV r6, #65555
+mult r6, r6, #4
+LD  r6, r6, r5
+MULT r6, r6, r1
+DIV r6, r6, #100
+ADD r6, r6, r3
+MOD r6, r6, #300
+MOV r7, #65555
+mult r7, r7, #4
+LD  r7, r7, r3
+MULT r7, r7, r1
+DIV r7, r7, #100
+ADD r7, r7, r5
+mod r7, r7, #300
+bi CMPX
+exitYLoop:
+ADD r5,r5,#1
+bi YLoop
+CMPX:
+CMP r6, #299
+Bleq CMPY
+Bi exitYLoop
+CMPY:
+CMP r7, #299
+Bleq MOVIMGIMG
+bi BlankIMG
+MOVIMGIMG:
+MOV r8,#76
+MOV r9,#90376
+MULT r10, r6, #300
+ADD r10,r10, r7
+MULT r11, r3, #300
+ADD r11, r11, r5
+LD r12, r8, r11
+STR r12, r9, r10
+bi exitYLoop
+MOVIMGLoop:
+MOV r8, #90000
+MOV r6, #76
+MOV r7, #90376
+LD r9, r7, r4
+STR r9, r6, r4
+ADD r4, r4, #1
+cmp r4, r8
+Bleq MOVIMGLoop
+bi XLoop
+BlankIMG:
+MOV r8,#76
+MOV r9,#90376
+MULT r10, r6, #300
+ADD r10,r10, r7
+STR r0, r9, r10
+bi exitYLoop
+Exit:
+MOV r1,#0
+bi Exit
+ExitYForLoop:
+ADD r3, r3, #1
+bi XLoop
+MOVIMGLoop2:
+MOV r8, #90000
+MOV r6, #90376
+MOV r7, #65555
+mult r7, r7, #4
+ADD r7, r7, #300
+LD r9, r7, r4
+STR r9, r6, r4
+ADD r4, r4, #1
+cmp r4, r8
+Bleq MOVIMGLoop2
+MOV r4, r0
+MOV r8, r0
+MOV r6, r0
+MOV r7, r0
+Mov r9, r0
+bi ProgramLoop

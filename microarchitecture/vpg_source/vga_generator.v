@@ -78,6 +78,7 @@ reg	[1:0]		fila;
 reg [9:0] pos_x; // horizontal counter
 reg [9:0] pos_y;
 reg [17:0] address_color;
+reg [7:0] screen_color;
 
 
 
@@ -203,7 +204,7 @@ always@(posedge clk or negedge reset_n)
 		begin
 			pos_x <= 0;
 			pos_y <= 0;
-			address_color <= 0;
+			parallelAddress <= 0;
 		end
 	else begin
 		if( counter_y > 34 && counter_y < 334 && counter_x > 141 && counter_x < 441)
@@ -211,13 +212,16 @@ always@(posedge clk or negedge reset_n)
 			//Codigo para asignar el color
 			pos_x <= counter_x - 141;
 			pos_y <= counter_y - 34;
-			parallelAddress <= offset + (pos_x*300 + pos_y); // array[address_color]
+			parallelAddress <= 376 + (pos_x*300 + pos_y); // array[address_color]
 			//color <= color_array[address_color];
+			//color <= 8'hFF;
+			screen_color <= color;
 		end
 		else begin
 			pos_x <= 0;
 			pos_y <= 0;
-			address_color <= 0;
+			parallelAddress <= 0;
+			screen_color <= 8'h00;
 			
 		end
 	end
@@ -263,7 +267,7 @@ begin
 				
 				//default	:	{vga_r, vga_g, vga_b}	<=	{8'h00,8'h00,8'h00};
 			//endcase
-			{vga_r, vga_g, vga_b}	<=	{color,color,color};
+			{vga_r, vga_g, vga_b}	<=	{screen_color,screen_color,screen_color};
 	end
 end	
 

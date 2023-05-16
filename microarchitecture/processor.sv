@@ -8,8 +8,6 @@ module processor(input rst,input clk, input [35:0] gpio1,input [23:0] parallelAd
 
 
 
-
-	
 	logic branchTakenFlag;
 	logic rst_pc,rst_if, rst_id, rst_ex, rst_mem;
 	logic flush1, flush2, flush3, flush4,flush5;

@@ -5,7 +5,8 @@ def SinMif():
         output_filename = 'Software/Sin100.mif'
 
         im = open(input_filename,'r')
-
+        new_image = im.resize((100, 100))
+        new_image.save('myimage_100.png')
         f = []
 
         print("")

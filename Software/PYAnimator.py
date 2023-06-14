@@ -4,9 +4,18 @@ from PIL import Image
 
 def main():
     SinFile = open('100sin.txt','r')
+    imgValFile = open('imageVal.txt','w')
     SinData = SinFile.read().splitlines()
     SinFile.close()
     Frame1 = Image.open('barbara300.png')
+    new_image = Frame1.resize((10, 10))
+    for i in range(100):
+        for j in range(100):
+            pixel = new_image.getpixel((i,j))
+            
+            imgValFile.write(str(pixel)+'\n')
+    new_image.save('myimage_100.png')
+    
     for frames in range(5,400,5):
         Axy = frames
         Frame2 = Image.new(mode="RGB", size=(300, 300))

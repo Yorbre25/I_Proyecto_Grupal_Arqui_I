@@ -1,0 +1,26 @@
+Ok I willl describe my steps:
+
+sudo dpkg --purge opera-stable
+sudo rm -rf /usr/lib/x86_64-linux-gnu/opera
+Find all Opera files
+
+find /home/valdinei/ -iname opera
+Delete all files in my home
+
+rm -rf /home/valdinei/.config/opera
+rm -rf /home/valdinei/.cache/opera
+After this I reinstalled a new opera version
+
+sudo dpkg -i opera-stable_86.0.4363.23_amd64.deb
+My last version is not broken page, but all whatsApp videos display a message "error" do not play.
+
+Youtube works fine,
+Instagram show me a video but when a I click play not work.
+
+Any idea to fix WhatsApp Videos and Instagram ?
+
+ 1
+aliceman
+
+
+https://servicios.educacionvial.go.cr

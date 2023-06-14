@@ -1,4 +1,5 @@
 
+from ast import Bytes
 import sys
 from PIL import Image
 from ARRAYMIF import *
@@ -15,8 +16,8 @@ CONTENT
 BEGIN\n"""
 
 if (len(sys.argv) < 2):
-    input_filename = 'Software/barbaraGrey300.png'
-    output_filename = 'Software/barbara300.mif'
+    input_filename = 'myimage_100.png'
+    output_filename = 'myimage_100.bin'
 
     im = Image.open(input_filename)
     f = open(output_filename, 'w');
@@ -28,26 +29,15 @@ if (len(sys.argv) < 2):
     h = im.size[1]
 
     print("> Writing to file: "+ output_filename)
-    lines,index = SinMif()
-    f.write(header)
-    f.write(str(8))
-    f.write(header_2)
-
-
+    lines = []
+    index = 0
     for x in range(0, w):
         for y in range(0, h):
-            total = im.getpixel((x,y))& 255
-            hexa = hex(total)
-            if (total == 0):
-                hexa = "0x00"
-            while len(hexa[2:]) < 2:
-                hexa = f'0x0{hexa[2:]}'
-            lines.append(hex(index)[2:] + ":\t"+hexa[2:]+";\n")
+            total = round(sum(im.getpixel((x,y)))/3)& 255
+            hexa = (bin(int(bin(ord(total)))-48))
+            lines.append(hexa)
             index += 1
-    
     f.writelines(lines)
-    f.write("END;")
-
     print(">>> DONE");
 
 else:
